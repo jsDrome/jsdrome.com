@@ -48,12 +48,10 @@ export const checkPayment = () => async dispatch => {
   const paymentMade = getParameterByName('payment');
   if (paymentMade) {
     if (paymentMade === 'true') {
-      // if (await revealClues()) {
       dispatch(setMessage({
         message: 'Payment Success!',
         type: 'success',
       }));
-      // }
     } else if (paymentMade === 'false') {
       dispatch(setMessage({
         message: 'Payment Failure!',

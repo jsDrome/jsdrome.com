@@ -2,7 +2,7 @@ export default theme => ({
   appBar: {
     // eslint-disable-next-line no-magic-numbers
     zIndex: theme.zIndex.drawer + 1,
-    // background: '#fff',
+    background: '#394959',
   },
   menuButton: {
     cursor: 'pointer',
@@ -30,6 +30,7 @@ export default theme => ({
     },
   },
   flex: {
+    color: '#fff',
     cursor: 'pointer',
     flexGrow: 1,
   },
@@ -40,6 +41,6 @@ export default theme => ({
     cursor: 'pointer',
     height: 25,
     width: 25,
-    marginRight: 10,
+    marginRight: 20,
   },
 });

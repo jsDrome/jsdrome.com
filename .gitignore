@@ -1,0 +1,15 @@
+node_modules
+.DS_STORE
+_dist
+_test
+_docs
+.firebase
+functions/index.js
+functions/templates
+functions/node_modules
+*.log
+*.err
+cypress/screenshots
+cypress/videos
+.env/env.sh
+output

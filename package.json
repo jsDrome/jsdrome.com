@@ -13,7 +13,7 @@
     "test:dev": "karma start ./karma/karma.conf.js --auto-watch=true --single-run=false",
     "test:browserstack": "karma start ./karma/karma.bs.conf.js",
     "test:codecov": "codecov -t $CODECOV_TOKEN",
-    "docs": "jsdoc src/components/**/*.js -c jsdoc.js"
+    "docs": "jsdoc src/components/**/*.js -c jsdoc.js -d _docs"
   },
   "repository": {
     "type": "git",

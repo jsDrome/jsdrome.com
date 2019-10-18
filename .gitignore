@@ -13,3 +13,5 @@ cypress/screenshots
 cypress/videos
 .env/env.sh
 output
+src/server/index.js
+src/server/templates

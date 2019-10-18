@@ -8,7 +8,7 @@ module.exports = function (config) {
     browsers: [ 'ChromeHeadless' ],
     frameworks: [ 'jasmine' ],
     files: [
-      './src/test.js',
+      './src/client/test.js',
     ],
     preprocessors: {
       './src/**/*.js': [ 'webpack', 'inject-html' ],

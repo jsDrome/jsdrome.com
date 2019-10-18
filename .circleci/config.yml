@@ -1,0 +1,139 @@
+version: 2
+jobs:
+  stage:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Build
+          command: npm run build:client:prod && npm run build:server:prod
+      - run:
+          name: Stage Functions
+          command: npm run firebase:stage:functions
+      - run:
+          name: Stage Hosting
+          command: npm run firebase:stage:hosting
+
+  unit_test:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Test
+          command: npm test
+      - run:
+          name: Codecov
+          command: npm run codecov
+      - run:
+          name: Browserstack
+          command: npm run browserstack
+
+  performance:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Cypress test
+          command: npm run cypress:run
+      - run:
+          name: Puppeteer Coverage
+          command: npm run puppeteer:coverage
+      - run:
+          name: Puppeteer SW Cache
+          command: npm run puppeteer:caching
+  #     - run:
+  #         name: Lighthouse
+  #         command: npm run lighthouse -- https://jsdrome-test.web.app
+
+  activate:
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Production Hosting
+          command: npm run firebase:prod:hosting
+
+workflows:
+  version: 2
+  build_and_activate:
+    jobs:
+      - stage
+      - unit_test
+      # - performance:
+      #     requires:
+      #       - stage
+      #       - unit_test
+      # - activate:
+      #     requires:
+      #       - stage
+      #       - unit_test
+      #       - performance
+      #     filters:
+      #       branches:
+      #         only: master

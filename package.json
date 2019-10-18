@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf _dist _test _docs .firebase ./*.log functions/templates functions/index.js",
+    "clean": "rimraf _dist _test _docs .firebase ./*.log functions/templates functions/posts functions/index.js src/server/templates src/server/index.js",
     "lint": "eslint .",
-    "build:dev": "webpack --env=dev --config=webpack/webpack.config.js",
-    "build:devserver": "webpack-dev-server --open --env=dev --config=webpack/webpack.config.js",
-    "build:prod": "webpack --env=prod --config=webpack/webpack.config.js",
+    "build:client:dev": "webpack --env=client.dev --config=webpack/webpack.config.js",
+    "build:client:devserver": "webpack-dev-server --open --env=client.dev --config=webpack/webpack.config.js",
+    "build:client:prod": "webpack --env=client.prod --config=webpack/webpack.config.js",
+    "build:server:dev": "webpack --env=server.dev --config=webpack/webpack.config.js",
+    "build:server:prod": "webpack --env=server.prod --config=webpack/webpack.config.js",
     "test": "karma start ./karma/karma.conf.js",
     "test:dev": "karma start ./karma/karma.conf.js --auto-watch=true --single-run=false",
     "test:browserstack": "karma start ./karma/karma.bs.conf.js",
     "test:codecov": "codecov -t $CODECOV_TOKEN",
-    "docs": "jsdoc src/components/**/*.js -c jsdoc.js -d _docs"
+    "docs": "jsdoc src/client/components/**/*.js -c jsdoc.js -d _docs",
+    "start": "source ./.env/env.sh && npm run build:client:dev && npm run build:server:dev && node src/server",
+    "firebase:stage:functions": "npm run build:server:prod && firebase use default && firebase deploy --only functions",
+    "firebase:stage:hosting": "npm run build:client:prod && firebase use test && firebase deploy --only hosting:test",
+    "firebase:prod:hosting": "npm run build:client:prod && firebase use default && firebase deploy --only hosting:prod"
   },
   "repository": {
     "type": "git",
@@ -70,24 +76,32 @@
     "webpack-dev-server": "^3.8.2",
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2",
     "webpack-visualizer-plugin": "^0.1.11",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "npm run clean && npm run lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.5.0",
     "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
+    "firebase-functions": "^3.3.0",
+    "fs": "0.0.1-security",
+    "ignore-styles": "^5.0.1",
+    "markdown-to-jsx": "^6.10.3",
+    "moment": "^2.24.0",
     "object-path-immutable": "^3.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",

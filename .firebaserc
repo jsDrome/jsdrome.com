@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "jsdrome",
+    "test": "jsdrome"
+  },
+  "targets": {
+    "zaxisapp": {
+      "hosting": {
+        "prod": [
+          "sreeram"
+        ],
+        "test": [
+          "sreeram-test"
+        ]
+      }
+    }
+  }
+}

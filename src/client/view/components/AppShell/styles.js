@@ -14,7 +14,7 @@ export default theme => ({
     },
   },
   content: {
-    maxWidth: 600,
+    maxWidth: 700,
     minWidth: 300,
   },
   fab: {

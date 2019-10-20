@@ -56,14 +56,14 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
           <Grid container spacing={0}>
-            <Grid item xs={12} lg={9} className={classes.content}>
+            <Grid item md={12} lg={9} className={classes.content}>
               <Toolbar />
               <Content>
                 {children}
               </Content>
             </Grid>
             <Grid item lg={3} className={classes.sidebar}>
-              <Hidden xsDown implementation="css">
+              <Hidden mdDown implementation="css">
                 <RightSidebar>
                   <Toolbar />
                   <RightSidebarContent />

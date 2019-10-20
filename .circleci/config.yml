@@ -59,9 +59,9 @@ jobs:
       - run:
           name: Codecov
           command: npm run test:codecov
-      - run:
-          name: Browserstack
-          command: npm run test:browserstack
+      # - run:
+      #     name: Browserstack
+      #     command: npm run test:browserstack
 
   # performance:
   #   working_directory: ~/repo
@@ -96,28 +96,28 @@ jobs:
   #         name: Lighthouse
   #         command: npm run lighthouse -- https://jsdrome-test.web.app
 
-  # activate:
-  #   docker:
-  #     - image: circleci/node:8-browsers
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-  #           - v1-deps-{{ .Branch }}
-  #           - v1-deps
-  #     - run:
-  #         name: Install dependencies
-  #         command: npm install
-  #     - save_cache:
-  #         key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-  #         paths:
-  #           - node_modules
-  #           - ~/.npm
-  #           - ~/.cache
-  #     - run:
-  #         name: Production Hosting
-  #         command: npm run firebase:prod:hosting
+  activate:
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Production Hosting
+          command: npm run firebase:prod:hosting
 
 workflows:
   version: 2
@@ -129,11 +129,11 @@ workflows:
       #     requires:
       #       - stage
       #       - unit_test
-      # - activate:
-      #     requires:
-      #       - stage
-      #       - unit_test
+      - activate:
+          requires:
+            - stage
+            - unit_test
       #       - performance
-      #     filters:
-      #       branches:
-      #         only: master
+          filters:
+            branches:
+              only: master

@@ -41,7 +41,7 @@ export const getLinks = (folder = 'home', subfolder = 'home', post = 'home') => 
   const selectedPostIndex = allLinks.findIndex(l => l.route === `/post/${folder}/${subfolder}/${post}`);
 
   return {
-    prevLink: selectedPostIndex !== 0 ? allLinks[selectedPostIndex - 1].route : null,
+    prevLink: selectedPostIndex !== 0 ? selectedPostIndex === 1 ? '/' : allLinks[selectedPostIndex - 1].route : null,
     prevTitle: selectedPostIndex !== 0 ? allLinks[selectedPostIndex - 1].title : null,
     currentLink: allLinks[selectedPostIndex].route,
     currentTitle: allLinks[selectedPostIndex].title,

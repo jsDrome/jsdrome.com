@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Post from '../../components/Post/Post';
-import FullPageLoader from '../../components/FullPageLoader/FullPageLoader';
+import FullpageLoader from '../../components/FullpageLoader/FullpageLoader';
 import MetaTags from '../../components/MetaTags/MetaTags';
 import Navigation from '../../components/Navigation/Navigation';
 
@@ -46,7 +46,7 @@ class Page extends Component {
     return <div>
       <MetaTags {...metaTags} />
       {message && message.message && <ErrorMessage variant={message.type} message={message.message} duration={2000} handleErrorClose={this.handleErrorClose.bind(this)} />}
-      {!error && !content[`${folder}/${subfolder}/${post}`] && <FullPageLoader />}
+      {!error && !content[`${folder}/${subfolder}/${post}`] && <FullpageLoader />}
       {content[`${folder}/${subfolder}/${post}`] && <React.Fragment>
         <Post>{content[`${folder}/${subfolder}/${post}`]}</Post>
         <Navigation links={getLinks(folder, subfolder, post)} />

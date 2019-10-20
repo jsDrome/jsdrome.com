@@ -3,8 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
-import PrevIcon from '@material-ui/icons/skipPrevious';
-import NextIcon from '@material-ui/icons/skipNext';
+import PrevIcon from '@material-ui/icons/SkipPrevious';
+import NextIcon from '@material-ui/icons/SkipNext';
 import Link from '@material-ui/core/Link';
 
 import styles from './styles';

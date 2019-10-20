@@ -8,9 +8,9 @@ import '../../images/site/og_image_2.jpg';
 import '../../images/site/partners.jpg';
 
 import '../../images/og/sreeram-collage.jpg';
-import '../../images/og/berlin.gif';
+import '../../images/og/berlin.jpg';
 import '../../images/og/indians-in-uk.jpg';
-import '../../images/og/fortress.gif';
+import '../../images/og/fortress.jpg';
 import '../../images/og/v-speech.gif';
 import '../../images/og/cosmos.gif';
 import '../../images/og/pale-blue-dot.jpg';

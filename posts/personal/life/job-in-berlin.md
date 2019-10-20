@@ -1,6 +1,6 @@
 # How I found a well paid job in Berlin
 
-![berlin](/img/berlin.gif "berlin")
+![berlin](/img/berlin.jpg "berlin")
 
 ## Summary
 

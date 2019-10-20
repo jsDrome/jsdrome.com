@@ -1,6 +1,6 @@
 # Edge of Forever by Carl Sagan (Cosmos)
 
-![cosmos](/img/cosmos.gif "cosmos")
+![cosmos](/img/cosmos.jpg "cosmos")
 
 
 If you want to know what it's like inside a black hole look around. But we don't yet know whether the universe is open or closed. More than that, some astronomers doubt that the red shift of distant galaxies is due to the Doppler effect.

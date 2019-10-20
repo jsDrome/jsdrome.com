@@ -1,6 +1,6 @@
 # The V monologue
 
-![v speech](/img/v-speech.gif "v speech")
+![v speech](/img/v-speech.jpg "v speech")
 
 
 *Voilà!* In *view*, a humble *vaudevillian veteran*, cast *vicariously* as both *victim* and *villain* by the *vicissitudes* of Fate. This *visage*, no mere *veneer* of *vanity*, is a *vestige* of the *vox populi*, now *vacant*, *vanished*.

@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 const { customLaunchers, browsers } = require('./karma.bs.launchers');
 const webpackConfig = require('../webpack/webpack.test');
-const { SHORT_NAME } = require('../variables');
+const { SHORT_NAME } = require('../src/variables');
 
 module.exports = function (config) {
   config.set({

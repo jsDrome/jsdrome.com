@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf _dist _test _docs .firebase ./*.log output firebase/templates firebase/posts firebase/index.js src/server/templates src/server/index.js",
+    "clean": "rimraf _dist _test _docs .firebase ./*.log output functions/templates functions/posts functions/index.js src/server/templates src/server/index.js",
     "lint": "eslint .",
     "build:client:dev": "webpack --env=client.dev --config=webpack/webpack.config.js",
     "build:client:devserver": "webpack-dev-server --open --env=client.dev --config=webpack/webpack.config.js",

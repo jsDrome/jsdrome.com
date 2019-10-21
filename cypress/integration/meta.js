@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable no-undef */
-import { STAGE_URL as URL } from '../../src/variables';
+import { STAGE_URL, URL } from '../../src/variables';
 import links from '../../src/client/list';
 
 beforeEach(() => {
@@ -17,7 +17,7 @@ beforeEach(() => {
 describe('My First Test', function () {
   it('Visits the Home page', function () {
     const post = links[0].links[0];
-    cy.visit(URL);
+    cy.visit(STAGE_URL);
     cy.title().should('eq', post.title)
     cy.get('meta[name="description"]').should("have.attr", "content", post.description);
     cy.get('meta[property="og:description"]').should("have.attr", "content", post.ogDescription);

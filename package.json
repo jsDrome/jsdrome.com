@@ -19,7 +19,9 @@
     "start": "source ./.env/env.sh && npm run build:client:dev && npm run build:server:dev && node src/server",
     "firebase:stage:functions": "npm run build:server:prod && firebase use default && firebase deploy --only functions",
     "firebase:stage:hosting": "npm run build:client:prod && firebase use test && firebase deploy --only hosting:test",
-    "firebase:prod:hosting": "npm run build:client:prod && firebase use default && firebase deploy --only hosting:prod"
+    "firebase:prod:hosting": "npm run build:client:prod && firebase use default && firebase deploy --only hosting:prod",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --record --key $CYPRESS_TOKEN"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "codecov": "^3.6.1",
     "copy-webpack-plugin": "^5.0.4",
+    "cypress": "^3.4.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.5.1",

@@ -63,38 +63,38 @@ jobs:
       #     name: Browserstack
       #     command: npm run test:browserstack
 
-  # performance:
-  #   working_directory: ~/repo
-  #   docker:
-  #     - image: circleci/node:8-browsers
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-  #           - v1-deps-{{ .Branch }}
-  #           - v1-deps
-  #     - run:
-  #         name: Install dependencies
-  #         command: npm install
-  #     - save_cache:
-  #         key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-  #         paths:
-  #           - node_modules
-  #           - ~/.npm
-  #           - ~/.cache
-  #     - run:
-  #         name: Cypress test
-  #         command: npm run cypress:run
-  #     - run:
-  #         name: Puppeteer Coverage
-  #         command: npm run puppeteer:coverage
-  #     - run:
-  #         name: Puppeteer SW Cache
-  #         command: npm run puppeteer:caching
-  #     - run:
-  #         name: Lighthouse
-  #         command: npm run lighthouse -- https://jsdrome-test.web.app
+  performance:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          name: Cypress test
+          command: npm run cypress:run
+      # - run:
+      #     name: Puppeteer Coverage
+      #     command: npm run puppeteer:coverage
+      # - run:
+      #     name: Puppeteer SW Cache
+      #     command: npm run puppeteer:caching
+      # - run:
+      #     name: Lighthouse
+      #     command: npm run lighthouse -- https://jsdrome-test.web.app
 
   activate:
     docker:
@@ -125,15 +125,15 @@ workflows:
     jobs:
       - stage
       - unit_test
-      # - performance:
-      #     requires:
-      #       - stage
-      #       - unit_test
+      - performance:
+          requires:
+            - stage
+            - unit_test
       - activate:
           requires:
             - stage
             - unit_test
-      #       - performance
+            - performance
           filters:
             branches:
               only: master

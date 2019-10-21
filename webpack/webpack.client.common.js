@@ -53,7 +53,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new ManifestPlugin({
-      MANIFEST_SEED,
+      seed: MANIFEST_SEED,
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",

@@ -10,7 +10,6 @@ import fs from 'fs';
 
 import ErrorBoundary from '../client/view/components/ErrorBoundary/ErrorBoundary';
 import AppShell from '../client/view/components/AppShell/AppShell';
-import FullpageLoader from '../client/view/components/FullpageLoader/FullpageLoader';
 
 import theme from '../theme';
 import store from '../client/data/store';
@@ -57,9 +56,7 @@ app.get('**', (req, res) => {
       <ThemeProvider theme={theme}>
         <ErrorBoundary>
           <ReduxProvider store={store}>
-            <AppShell>
-              <FullpageLoader />
-            </AppShell>
+            <AppShell />
           </ReduxProvider>
         </ErrorBoundary>
       </ThemeProvider>,

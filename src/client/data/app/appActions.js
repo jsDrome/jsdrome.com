@@ -1,4 +1,5 @@
 import { createAction, getParameterByName } from '../../utils/helpers';
+require('isomorphic-fetch');
 
 export const SET_MESSAGE = 'APP::MESSAGE';
 export const SET_CHECKSUM = 'APP::CHECKSUM';

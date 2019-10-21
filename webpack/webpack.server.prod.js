@@ -8,7 +8,7 @@ module.exports = {
     index: ['./src/server/prod.js'],
   },
   output: {
-    path: path.resolve(__dirname, '../functions'),
+    path: path.resolve(__dirname, '../firebase'),
     libraryTarget: 'commonjs2',
   },
   module: {

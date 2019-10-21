@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable no-undef */
-import { URL } from '../../src/variables';
+import { STAGE_URL as URL } from '../../src/variables';
 import links from '../../src/client/list';
 
 beforeEach(() => {

@@ -70,5 +70,8 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "source": "firebase"
+  }
 }

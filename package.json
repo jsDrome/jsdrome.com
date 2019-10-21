@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf _dist _test _docs .firebase ./*.log functions/templates functions/posts functions/index.js src/server/templates src/server/index.js",
+    "clean": "rimraf _dist _test _docs .firebase ./*.log output firebase/templates firebase/posts firebase/index.js src/server/templates src/server/index.js",
     "lint": "eslint .",
     "build:client:dev": "webpack --env=client.dev --config=webpack/webpack.config.js",
     "build:client:devserver": "webpack-dev-server --open --env=client.dev --config=webpack/webpack.config.js",
@@ -21,7 +21,11 @@
     "firebase:stage:hosting": "npm run build:client:prod && firebase use test && firebase deploy --only hosting:test",
     "firebase:prod:hosting": "npm run build:client:prod && firebase use default && firebase deploy --only hosting:prod",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record --key $CYPRESS_TOKEN"
+    "cypress:run": "cypress run --record --key $CYPRESS_TOKEN",
+    "puppeteer:coverage": "node puppeteer/coverage",
+    "puppeteer:crawlsite": "node puppeteer/crawlsite",
+    "puppeteer:googlesearch": "node puppeteer/google_search_features",
+    "puppeteer:caching": "node puppeteer/verify_sw_caching"
   },
   "repository": {
     "type": "git",
@@ -111,5 +115,11 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0"
+  },
+  "optionalDependencies": {
+    "caniuse-db": "^1.0.30001002",
+    "puppeteer": "^1.17.0",
+    "puppeteer-core": "^1.17.0",
+    "sharp": "^0.23.1"
   }
 }

@@ -86,15 +86,9 @@ jobs:
       - run:
           name: Cypress test
           command: npm run cypress:run
-      # - run:
-      #     name: Puppeteer Coverage
-      #     command: npm run puppeteer:coverage
-      # - run:
-      #     name: Puppeteer SW Cache
-      #     command: npm run puppeteer:caching
-      # - run:
-      #     name: Lighthouse
-      #     command: npm run lighthouse -- https://jsdrome-test.web.app
+      - run:
+          name: Puppeteer Coverage
+          command: npm run puppeteer:coverage
 
   activate:
     docker:

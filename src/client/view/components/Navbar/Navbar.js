@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Hidden from '@material-ui/core/Hidden';
+
 import styles from './styles';
 
 class Navbar extends React.Component {
@@ -23,8 +23,10 @@ class Navbar extends React.Component {
             <MenuIcon className={classes.menuIcon} />
           </IconButton>
           <img alt="logo" src="/img/logo-56.png" className={classes.logoIcon} />
-          <Typography variant="h6" className={classes.flex} noWrap onClick={onNavbarTitleClick}>{title}</Typography>
-          {<Hidden xsDown implementation="css"><Typography variant="subtitle1" color="inherit" className={classes.italics} noWrap>{description}</Typography></Hidden>}
+          <div className={classes.flex} onClick={onNavbarTitleClick}>
+            <Typography variant="h6" className={classes.title} noWrap>{title}</Typography>
+            <Typography variant="caption" color="inherit" className={classes.description} noWrap>{description}</Typography>
+          </div>
         </Toolbar>
       </AppBar>
     );

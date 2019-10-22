@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Typography } from '@material-ui/core';
 
 export default class ErrorBoundary extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default class ErrorBoundary extends Component {
     });
   }
   render() {
-    if (this.state.hasError) return <h1>Something went wrong.</h1>;
+    if (this.state.hasError) return <Typography style={{ textAlign: 'center' }} variant="h6">Oops! Something went wrong.</Typography>;
     return this.props.children;
   }
 }

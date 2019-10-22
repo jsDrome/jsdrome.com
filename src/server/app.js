@@ -8,7 +8,6 @@ import { Provider as ReduxProvider } from 'react-redux';
 import bodyParser from 'body-parser';
 import fs from 'fs';
 
-import ErrorBoundary from '../client/view/components/ErrorBoundary/ErrorBoundary';
 import AppShell from '../client/view/components/AppShell/AppShell';
 
 import theme from '../theme';
@@ -24,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors);
 
-if( process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   app.use(express.static('_dist'));
 }
 
@@ -54,11 +53,9 @@ app.get('**', (req, res) => {
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
-        <ErrorBoundary>
-          <ReduxProvider store={store}>
-            <AppShell />
-          </ReduxProvider>
-        </ErrorBoundary>
+        <ReduxProvider store={store}>
+          <AppShell />
+        </ReduxProvider>
       </ThemeProvider>,
     ),
   );

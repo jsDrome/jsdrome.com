@@ -33,7 +33,12 @@ export default theme => ({
     cursor: 'pointer',
     flexGrow: 1,
   },
-  italics: {
+  title: {
+    display: 'inline',
+  },
+  description: {
+    marginLeft: 5,
+    display: 'inline',
     fontStyle: 'italic',
   },
   logoIcon: {

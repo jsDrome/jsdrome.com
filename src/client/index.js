@@ -20,13 +20,13 @@ function Main() {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <ErrorBoundary>
-        <ReduxProvider store={store}>
-          <AppShell>
+      <ReduxProvider store={store}>
+        <AppShell>
+          <ErrorBoundary>
             <Routes />
-          </AppShell>
-        </ReduxProvider>
-      </ErrorBoundary>
+          </ErrorBoundary>
+        </AppShell>
+      </ReduxProvider>
     </MuiThemeProvider>
   );
 }

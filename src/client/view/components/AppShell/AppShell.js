@@ -62,9 +62,7 @@ class App extends Component {
               <Content>
                 {children}
               </Content>
-              <div style={{ marginBottom: 20 }}>
-                <PayButton />
-              </div>
+              <PayButton />
             </Grid>
             <Grid item lg={3} className={classes.sidebar}>
               <Hidden mdDown implementation="css">

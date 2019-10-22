@@ -4,7 +4,9 @@
 
 ![sreeram padmanabhan](/img/sreeram-collage.jpg "sreeram padmanabhan")
 
-Hey, I am **Sreeram Padmanabhan**. Some friends call me Siri. I am a Web Developer and this is my personal website/tech blog/gallery. I like to think I am an artist of the Web because I believe web developers have a great responsibility of architecting a virtual world. It takes a great deal of creativity to do that. I live in London and am involved in one of the leading banks here. I travel regularly and have so far covered 12 countries in 2 continents. I believe small things done over a long period of time yield the greatest results.
+Hey, I am **Sreeram Padmanabhan**. Some friends call me Siri. I am a Web Developer and this is my personal website/tech blog/gallery.
+
+I like to think I am an artist of the Web because I believe web developers have a great responsibility of architecting a virtual world. It takes a great deal of creativity to do that. I live in London and am involved in one of the leading banks here. I travel regularly and have so far covered 12 countries in 2 continents. I believe small things done over a long period of time yield the greatest results.
 
 I am also active on instagram at [sreeramofficial](https://instagram.com/sreeramofficial).
 

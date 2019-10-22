@@ -26,6 +26,10 @@ import '../../images/og/tech/web/command-line-shortcuts.jpg';
 import '../../images/og/tech/web/machine-configuration.jpg';
 import '../../images/og/tech/web/vscode-extensions.jpg';
 import '../../images/og/tech/web/vscode-preferences.jpg';
+import '../../images/og/tech/web/redux.jpg';
+import '../../images/og/tech/web/visualizer-output.jpg';
+import '../../images/og/tech/web/bundle-analysis-output.jpg';
+import '../../images/og/tech/web/webpack-code-splitting.jpg';
 
 import '../../images/blog/webpack-dev-output.png';
 import '../../images/blog/webpack-dev-code.png';

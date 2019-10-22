@@ -14,7 +14,7 @@ module.exports = [
     ],
   },
   {
-    title: 'My Life experiences',
+    title: 'My life experiences',
     links: [
       {
         title: 'My professional life so far',
@@ -31,6 +31,14 @@ module.exports = [
         ogDescription: 'My experiences of living in the UK for 3 years',
         ogImage: '/img/indians-in-uk.jpg',
         route: '/post/personal/life/indians-in-britain',
+      },
+      {
+        title: 'First things to do in Britain',
+        ogTitle: 'First things to do in Britain',
+        description: 'These are some of the things I had to do when I first landed in the UK.',
+        ogDescription: 'These are some of the things I had to do when I first landed in the UK.',
+        ogImage: '/img/great-britain.jpg',
+        route: '/post/personal/life/things-to-do-first-in-britain',
       },
       {
         title: 'How I found a job in Germany',

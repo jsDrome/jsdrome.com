@@ -10,6 +10,7 @@ import '../../images/site/partners.jpg';
 import '../../images/og/sreeram-collage.jpg';
 import '../../images/og/berlin.jpg';
 import '../../images/og/indians-in-uk.jpg';
+import '../../images/og/great-britain.jpg';
 import '../../images/og/fortress.jpg';
 import '../../images/og/v-speech.jpg';
 import '../../images/og/cosmos.jpg';

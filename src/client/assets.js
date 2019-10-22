@@ -7,14 +7,37 @@ import '../../images/site/og_image.jpg';
 import '../../images/site/og_image_2.jpg';
 import '../../images/site/partners.jpg';
 
-import '../../images/og/sreeram-collage.jpg';
-import '../../images/og/berlin.jpg';
-import '../../images/og/indians-in-uk.jpg';
-import '../../images/og/great-britain.jpg';
-import '../../images/og/fortress.jpg';
-import '../../images/og/v-speech.jpg';
-import '../../images/og/cosmos.jpg';
-import '../../images/og/pale-blue-dot.jpg';
-import '../../images/og/speech.jpg';
-import '../../images/og/christopher-reeve.jpg';
-import '../../images/og/zach-wahls.jpg';
+import '../../images/og/personal/sreeram-collage.jpg';
+import '../../images/og/personal/berlin.jpg';
+import '../../images/og/personal/indians-in-uk.jpg';
+import '../../images/og/personal/great-britain.jpg';
+
+import '../../images/og/inspirational/fortress.jpg';
+import '../../images/og/inspirational/v-speech.jpg';
+import '../../images/og/inspirational/cosmos.jpg';
+import '../../images/og/inspirational/pale-blue-dot.jpg';
+import '../../images/og/inspirational/speech.jpg';
+import '../../images/og/inspirational/christopher-reeve.jpg';
+import '../../images/og/inspirational/zach-wahls.jpg';
+
+import '../../images/og/tech/web/automated-pipeline.jpg';
+import '../../images/og/tech/web/browser-extensions.jpg';
+import '../../images/og/tech/web/command-line-shortcuts.jpg';
+import '../../images/og/tech/web/machine-configuration.jpg';
+import '../../images/og/tech/web/vscode-extensions.jpg';
+import '../../images/og/tech/web/vscode-preferences.jpg';
+
+import '../../images/blog/webpack-dev-output.png';
+import '../../images/blog/webpack-dev-code.png';
+import '../../images/blog/webpack-html-webpack-plugin-output.png';
+import '../../images/blog/webpack-dev-server-compress-network.png';
+import '../../images/blog/webpack-dev-server-no-compress-header.png';
+import '../../images/blog/webpack-dev-server-no-compress-network.png';
+import '../../images/blog/webpack-dev-server-compress-header.png'
+import '../../images/blog/webpack-prod-output.png';
+import '../../images/blog/webpack-prod-code.png';
+import '../../images/blog/webpack-error.png';
+import '../../images/blog/webpack-sourcemap.png';
+import '../../images/blog/webpack-sourcemap-debugging.gif';
+import '../../images/blog/karma-html-output.png';
+import '../../images/blog/karma-console-output.png';

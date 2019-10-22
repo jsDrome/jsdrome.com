@@ -48,6 +48,14 @@ module.exports = [
         ogImage: '/img/berlin.jpg',
         route: '/post/personal/life/job-in-berlin',
       },
+      {
+        title: 'First things to do in Germany',
+        ogTitle: 'First things to do in Germany',
+        description: 'These are some of the things I had to do when I first landed in Germany.',
+        ogDescription: 'These are some of the things I had to do when I first landed in Germany.',
+        ogImage: '/img/berlin.jpg',
+        route: '/post/personal/life/things-to-do-first-in-germany',
+      },
     ],
   },
   {

@@ -13,7 +13,7 @@ class Navigation extends React.Component {
   render() {
     const { links: { prevLink, prevTitle, nextLink, nextTitle } } = this.props;
 
-    return <Stepper activeStep={1} alternativeLabel style={{ padding: 10, marginTop: 30 }}>
+    return <Stepper activeStep={1} alternativeLabel style={{ padding: 0, marginTop: 30 }}>
       {prevLink && <Step>
         <StepLabel icon={<PrevIcon />}>
           <Button color="primary" href={prevLink}>{prevTitle}</Button>

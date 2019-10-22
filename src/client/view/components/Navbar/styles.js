@@ -41,5 +41,8 @@ export default theme => ({
     height: 25,
     width: 25,
     marginRight: 20,
+    [theme.breakpoints.down('sm')]: {
+      marginRight: 10,
+    },
   },
 });

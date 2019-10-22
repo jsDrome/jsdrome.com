@@ -16,11 +16,18 @@ export default theme => ({
   content: {
     maxWidth: 700,
     minWidth: 300,
+    [theme.breakpoints.down('xs')]: {
+      minWidth: '100%',
+    },
   },
   fab: {
     position: 'fixed',
     bottom: 20,
     right: 20,
     zIndex: 2002,
+    [theme.breakpoints.down('xs')]: {
+      top: 'calc(50% - 25px)',
+      right: 10,
+    },
   },
 });

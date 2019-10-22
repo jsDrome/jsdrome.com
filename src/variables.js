@@ -36,7 +36,7 @@ const OG_IMAGE_ALT = TITLE;
 const OG_TYPE = 'website';
 const OG_FB_APP_ID = '297023651089707';
 const PAYTM_TEST = {
-  amount: 90,
+  amount: 75,
   merchantId: 'lfBFyS02396274370168',
   website: "WEBSTAGING",
   orderId: TIMESTAMP,

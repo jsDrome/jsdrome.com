@@ -33,7 +33,7 @@ class Paytmbutton extends Component {
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
       <Button variant="contained" color="primary" disabled={this.state.submit} style={{ margin: 'auto', display: 'block' }} onClick={this.onSubmit.bind(this)}>
-        {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'GBP' })}`}
+        {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })}`}
       </Button>
     </form>;
   }

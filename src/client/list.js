@@ -4,7 +4,7 @@ module.exports = [
     keywords: [ 'sreeram', 'sreeram padmanabhan' ],
     links: [
       {
-        title: 'Home',
+        title: 'Sreeram Padmanabhan - Home',
         ogTitle: 'Sreeram Padmanabhan - Web Artist | Web of thoughts',
         description: 'An artist of the web, perfectionist engineering the web using JavaScript. I emphasise on creativity, out of the box thinking and efficiency. Most important of all, I let my work do the talking!',
         ogDescription: 'An artist of the web, perfectionist engineering the web using JavaScript. I emphasise on creativity, out of the box thinking and efficiency. Most important of all, I let my work do the talking!',

@@ -15,6 +15,7 @@ module.exports = merge(commonConfig, {
     proxy: {
       '/checksum': 'http://localhost:5000',
       '/data': 'http://localhost:5000',
+      '/paymentprocess': 'http://localhost:5000',
     },
   },
   devtool: 'inline-source-map',

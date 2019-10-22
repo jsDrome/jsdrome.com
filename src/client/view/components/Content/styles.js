@@ -12,6 +12,8 @@ export default theme => ({
       padding: 20,
       paddingTop: 0,
     },
-    marginBottom: 60,
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: 20,
+    },
   },
 });

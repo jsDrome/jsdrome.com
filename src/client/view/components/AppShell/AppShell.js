@@ -13,6 +13,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import SidebarContent from '../SidebarContent/SidebarContent';
 import RightSidebarContent from '../SidebarContent/RightSidebarContent';
+import PayButton from '../PayButton/PayButton';
 
 import styles from './styles';
 import { Toolbar } from '@material-ui/core';
@@ -61,6 +62,7 @@ class App extends Component {
               <Content>
                 {children}
               </Content>
+              <PayButton />
             </Grid>
             <Grid item lg={3} className={classes.sidebar}>
               <Hidden mdDown implementation="css">

@@ -28,7 +28,7 @@ class Pay extends Component {
   render() {
     const { app: { checksum } } = this.props;
 
-    return checksum && <PaytmButton
+    return <PaytmButton
       amount={amount}
       merchantId={merchantId}
       orderId={orderId}
@@ -40,7 +40,8 @@ class Pay extends Component {
       channelId={channelId}
       checksum={checksum}
       callbackUrl={callbackUrl}
-      url={url} />;
+      url={url}
+      text={"Become a Sponsor: "}/>;
   }
 }
 

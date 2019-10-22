@@ -15,9 +15,9 @@ class Paytmbutton extends Component {
   }
   render() {
     // const { classes } = this.props;
-    const { url, orderId, merchantId, website, industryTypeId, channelId, customerId, amount, phone, email, callbackUrl, checksum } = this.props;
+    const { url, orderId, merchantId, website, industryTypeId, channelId, customerId, amount, phone, email, callbackUrl, checksum, text } = this.props;
 
-    return <form id="pay-form" className="form-control" action={url} name="f1" method="POST">
+    return <form id="pay-form" action={url} name="f1" method="POST">
       <input type="hidden" name="MID" value={merchantId} />
       <input type="hidden" name="WEBSITE" value={website} />
       <input type="hidden" name="INDUSTRY_TYPE_ID" value={industryTypeId} />
@@ -32,8 +32,8 @@ class Paytmbutton extends Component {
       <input type="hidden" name="EMAIL" value={email} />
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
-      <Button variant="contained" color="primary" style={{ width: '100%' }} disabled={this.state.submit} onClick={this.onSubmit.bind(this)}>
-        {this.state.submit ? <HourGlassIcon /> : `${(1).toLocaleString('en-GB', { style: 'currency', currency: 'GBP' })}`}
+      <Button variant="contained" color="primary" disabled={this.state.submit} style={{ margin: 'auto', display: 'block' }} onClick={this.onSubmit.bind(this)}>
+        {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'GBP' })}`}
       </Button>
     </form>;
   }

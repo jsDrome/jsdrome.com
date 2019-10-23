@@ -26,7 +26,7 @@
     "firebase:prod:functions": "npm run build:server:prod && firebase use default && firebase deploy --only functions",
     "firebase:stage:hosting": "npm run build:client:prod && firebase use test && firebase deploy --only hosting:test",
     "firebase:prod:hosting": "npm run build:client:prod && firebase use default && firebase deploy --only hosting:prod",
-    "deploy": "npm run firebase:stage:functions && npm run firebase:prod:hosting"
+    "deploy": "source ./.env/env.sh && npm run firebase:prod:functions && npm run firebase:prod:hosting && npm run clean"
   },
   "repository": {
     "type": "git",

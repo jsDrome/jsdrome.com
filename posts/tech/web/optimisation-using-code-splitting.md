@@ -45,4 +45,4 @@ Run `npm run build:prod` and examine the output.
 
 You can see that all the npm bundles have been put in an npm folder now.
 
-![webpack code splitting](/img/webpack-code-splitting.png "webpack code splitting")
+![webpack code splitting](/img/webpack-code-splitting.jpg "webpack code splitting")

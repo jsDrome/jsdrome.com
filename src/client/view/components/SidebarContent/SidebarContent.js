@@ -27,7 +27,7 @@ class SidebarContent extends Component {
 
     return <div className={classes.root}>
       {/* eslint-disable-next-line no-magic-numbers */}
-      {list.slice(1).map((item, i) => item.links.length ? <NestedList key={i} title={`${item.title}`} className={classes.nestedList} open={item.title === selectedList}>
+      {list.slice(1).map((item, i) => item.links.length ? <NestedList key={i} title={`${item.title} ${process.env.NODE_ENV === 'development' ? `(${item.links.length})` : '' }`} className={classes.nestedList} open={item.title === selectedList}>
         {item.links.map((link, j) => <ListItem key={j} component={'a'} onClick={() => this.onSelect(i, j, link.title)} className={this.isSelected(i, j, link.title) ? classes.activeListItem : classes.nestedListItem} href={link.route}>
           <ListItemText secondary={link.title} className={classes.nestedListItemText} onClick={onLinkClick} />
         </ListItem>)}

@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 import list from '../list';
-import { URL } from '../../variables';
+import { URL, DESCRIPTION } from '../../variables';
 
 export const getMetaTags = (folder = 'home', subfolder = 'home', post = 'home') => {
   let selectedList = list[0];
@@ -13,7 +13,7 @@ export const getMetaTags = (folder = 'home', subfolder = 'home', post = 'home') 
   list.forEach(item => {
     const selectedPost = item.links.find(l => l.route === `/post/${folder}/${subfolder}/${post}`);
     if (selectedPost) {
-      title = selectedPost.title || title;
+      title = selectedPost.title + ' | ' + DESCRIPTION || title;
       ogTitle = selectedPost.ogTitle || ogTitle;
       description = selectedPost.description || description;
       ogDescription = selectedPost.ogDescription || ogDescription;

@@ -49,7 +49,7 @@ const PAYTM_TEST = {
   url: `https://securegw-stage.paytm.in/theia/processTransaction?ORDER_ID=${TIMESTAMP}`,
 };
 const PAYTM_PROD = {
-  amount: 90,
+  amount: 75,
   merchantId: 'lzSXOq48634307639622',
   website: "DEFAULT",
   orderId: TIMESTAMP,

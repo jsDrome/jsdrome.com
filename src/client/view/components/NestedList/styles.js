@@ -4,5 +4,6 @@ export default () => ({
   },
   nestedList: {
     padding: 0,
+    paddingBottom: 10,
   },
 });

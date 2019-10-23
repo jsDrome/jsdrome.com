@@ -16,4 +16,8 @@ export default theme => ({
     borderLeft: `solid 5px ${theme.background.secondary}`,
     background: theme.background.primary,
   },
+  fixed: {
+    position: 'fixed',
+    top: 65,
+  },
 });

@@ -11,5 +11,8 @@ const reducer = combineReducers({
 
 const middleware = applyMiddleware(thunk, reduxMulti);
 
-export default middleware(createStore)(reducer, state);
-// export default middleware(createStore)(reducer, state, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+if (typeof window === 'undefined') {
+  global.window = {};
+}
+
+export default middleware(createStore)(reducer, state, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

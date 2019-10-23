@@ -1,4 +1,4 @@
-# Things I did when I first landed in Britain
+# Things to do post moving to the UK
 
 ![great-britain](/img/great-britain.jpg "great-britain")
 

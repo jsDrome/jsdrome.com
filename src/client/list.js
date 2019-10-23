@@ -34,8 +34,8 @@ module.exports = [
         route: '/post/personal/life/indians-in-britain',
       },
       {
-        title: 'First things to do in Britain',
-        ogTitle: 'First things to do in Britain',
+        title: 'Things to do post moving to the UK',
+        ogTitle: 'Things to do post moving to the UK',
         description: 'These are some of the things I had to do when I first landed in the UK.',
         ogDescription: 'These are some of the things I had to do when I first landed in the UK.',
         ogImage: '/img/great-britain.jpg',
@@ -50,7 +50,15 @@ module.exports = [
         route: '/post/personal/life/job-in-berlin',
       },
       {
-        title: 'Moving to Germany',
+        title: 'Moving to Germany from India',
+        ogTitle: 'Moving to Germany from India',
+        description: 'What does it take for an Indian to move to Germany? - Sreeram Padmanabhan',
+        ogDescription: 'What does it take for an Indian to move to Germany? - Sreeram Padmanabhan',
+        ogImage: '/img/berlin.jpg',
+        route: '/post/personal/life/moving-to-germany',
+      },
+      {
+        title: 'Things to do post moving to Germany',
         ogTitle: 'Moving to and the first things to do in Germany',
         description: 'These are the things I had to do when I moved to Germany.',
         ogDescription: 'These are the things I had to do when I moved to Germany.',
@@ -63,6 +71,14 @@ module.exports = [
     title: 'Inspirational speeches',
     keywords: [ 'inspirational speeches' ],
     links: [
+      {
+        title: 'Carl Sagan - Pale Blue Dot',
+        ogTitle: 'Carl Sagan\'s Pale blue dot speech - Inpirational speeches',
+        description: 'Carl Sagan\'s description of the earth from the distant image Voyager sent',
+        ogDescription: 'Carl Sagan\'s description of the earth from the distant image Voyager sent',
+        ogImage: '/img/pale-blue-dot.jpg',
+        route: '/post/personal/inspirational/pale-blue-dot',
+      },
       {
         title: 'Fortress of Solitude',
         ogTitle: 'Fortress of Solitude - Inpirational speeches',
@@ -86,14 +102,6 @@ module.exports = [
         ogDescription: 'Atticus Finch defends Tom Robinson with this great speech.',
         ogImage: '/img/speech.jpg',
         route: '/post/personal/inspirational/atticus-finch',
-      },
-      {
-        title: 'Carl Sagan - Pale Blue Dot',
-        ogTitle: 'Carl Sagan\'s Pale blue dot speech - Inpirational speeches',
-        description: 'Carl Sagan\'s description of the earth from the distant image Voyager sent',
-        ogDescription: 'Carl Sagan\'s description of the earth from the distant image Voyager sent',
-        ogImage: '/img/pale-blue-dot.jpg',
-        route: '/post/personal/inspirational/pale-blue-dot',
       },
       {
         title: 'Carl Sagan - Edge of forever',

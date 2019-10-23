@@ -25,7 +25,8 @@
     "puppeteer:coverage": "node puppeteer/coverage",
     "puppeteer:crawlsite": "node puppeteer/crawlsite",
     "puppeteer:googlesearch": "node puppeteer/google_search_features",
-    "puppeteer:caching": "node puppeteer/verify_sw_caching"
+    "puppeteer:caching": "node puppeteer/verify_sw_caching",
+    "deploy": "npm run firebase:stage:functions && npm run firebase:prod:hosting"
   },
   "repository": {
     "type": "git",

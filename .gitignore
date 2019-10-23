@@ -6,6 +6,7 @@ _docs
 .firebase
 functions/index.js
 functions/templates
+functions/posts
 functions/node_modules
 *.log
 *.err
@@ -15,3 +16,4 @@ cypress/videos
 output
 src/server/index.js
 src/server/templates
+src/server/posts

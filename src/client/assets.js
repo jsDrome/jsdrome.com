@@ -7,18 +7,20 @@ import '../../images/site/og_image.jpg';
 import '../../images/site/og_image_2.jpg';
 import '../../images/site/partners.jpg';
 
-import '../../images/og/personal/sreeram-collage.jpg';
-import '../../images/og/personal/berlin.jpg';
-import '../../images/og/personal/indians-in-uk.jpg';
-import '../../images/og/personal/great-britain.jpg';
+import '../../images/og/home/home/sreeram-collage.jpg';
 
-import '../../images/og/inspirational/fortress.jpg';
-import '../../images/og/inspirational/v-speech.jpg';
-import '../../images/og/inspirational/cosmos.jpg';
-import '../../images/og/inspirational/pale-blue-dot.jpg';
-import '../../images/og/inspirational/speech.jpg';
-import '../../images/og/inspirational/christopher-reeve.jpg';
-import '../../images/og/inspirational/zach-wahls.jpg';
+import '../../images/og/personal/life/berlin.jpg';
+import '../../images/og/personal/life/indians-in-uk.jpg';
+import '../../images/og/personal/life/great-britain.jpg';
+import '../../images/og/personal/life/solo-travel.jpg';
+
+import '../../images/og/perosonal/inspirational/fortress.jpg';
+import '../../images/og/perosonal/inspirational/v-speech.jpg';
+import '../../images/og/perosonal/inspirational/cosmos.jpg';
+import '../../images/og/perosonal/inspirational/pale-blue-dot.jpg';
+import '../../images/og/perosonal/inspirational/speech.jpg';
+import '../../images/og/perosonal/inspirational/christopher-reeve.jpg';
+import '../../images/og/perosonal/inspirational/zach-wahls.jpg';
 
 import '../../images/og/tech/web/automated-pipeline.jpg';
 import '../../images/og/tech/web/browser-extensions.jpg';

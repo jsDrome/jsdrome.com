@@ -34,6 +34,14 @@ module.exports = [
         route: '/post/personal/life/indians-in-britain',
       },
       {
+        title: 'Solo adventure to 12 countries',
+        ogTitle: 'My solo adventure to 12 countries - Sreeram Padmanabhan',
+        // description: '',
+        // ogDescription: '',
+        ogImage: '/img/solo-travel.jpg',
+        route: '/post/personal/life/solo-travel',
+      },
+      {
         title: 'Things to do post moving to the UK',
         ogTitle: 'Things to do post moving to the UK - Sreeram Padmanabhan',
         description: 'These are some of the things I had to do when I first landed in the UK.',

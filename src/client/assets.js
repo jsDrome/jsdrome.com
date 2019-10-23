@@ -14,13 +14,13 @@ import '../../images/og/personal/life/indians-in-uk.jpg';
 import '../../images/og/personal/life/great-britain.jpg';
 import '../../images/og/personal/life/solo-travel.jpg';
 
-import '../../images/og/perosonal/inspirational/fortress.jpg';
-import '../../images/og/perosonal/inspirational/v-speech.jpg';
-import '../../images/og/perosonal/inspirational/cosmos.jpg';
-import '../../images/og/perosonal/inspirational/pale-blue-dot.jpg';
-import '../../images/og/perosonal/inspirational/speech.jpg';
-import '../../images/og/perosonal/inspirational/christopher-reeve.jpg';
-import '../../images/og/perosonal/inspirational/zach-wahls.jpg';
+import '../../images/og/personal/inspirational/fortress.jpg';
+import '../../images/og/personal/inspirational/v-speech.jpg';
+import '../../images/og/personal/inspirational/cosmos.jpg';
+import '../../images/og/personal/inspirational/pale-blue-dot.jpg';
+import '../../images/og/personal/inspirational/speech.jpg';
+import '../../images/og/personal/inspirational/christopher-reeve.jpg';
+import '../../images/og/personal/inspirational/zach-wahls.jpg';
 
 import '../../images/og/tech/web/automated-pipeline.jpg';
 import '../../images/og/tech/web/browser-extensions.jpg';

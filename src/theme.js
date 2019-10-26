@@ -8,7 +8,7 @@ export default createMuiTheme({
     secondary: '#394959',
   },
   typography: {
-    fontSize: 12,
+    fontSize: 13,
     fontFamily: "Ubuntu, sans-serif, Verdana, 'Trebuchet MS', 'Tahoma'",
     fontWeightLight: 300,
     fontWeightRegular: 400,

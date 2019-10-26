@@ -1,7 +1,8 @@
+<img src="/img/zach-wahls.jpg" title="zach-wahls" class="post-first-image" />
+
 # Zach Wahls speech in 2011
 
-![zach wahls](/img/zach-wahls.jpg "zach wahls")
-
+&nbsp;
 
 Good evening Mr. Chairman. My name is Zach Wahls. I'm a sixth-generation Iowan and an engineering student at the University of Iowa and I was raised by two women.
 

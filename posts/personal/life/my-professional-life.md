@@ -1,4 +1,3 @@
-
 # My professional life so far
 
 &nbsp;

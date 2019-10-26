@@ -1,7 +1,5 @@
 # Aync/Await
 
-#### Sep 21, 2018 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary

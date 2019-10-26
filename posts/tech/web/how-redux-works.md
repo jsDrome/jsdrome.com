@@ -1,8 +1,8 @@
+<img src="/img/redux.jpg" title="redux" class="post-first-image" />
+
 # Redux in a nutshell - How does it work?
 
-#### July 5, 2019 by Sreeram Padmanabhan
-
-![redux](/img/redux.jpg "redux")
+&nbsp;
 
 ## Summary
 Its said that the view is a function of the state. If something needs to change in the view, you need to change the state. Its like the backbone of an app.

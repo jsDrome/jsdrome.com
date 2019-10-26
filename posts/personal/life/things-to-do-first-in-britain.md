@@ -1,6 +1,8 @@
+<img src="/img/great-britain.jpg" title="great-britain" class="post-first-image" />
+
 # Things to do post moving to the UK
 
-![great-britain](/img/great-britain.jpg "great-britain")
+&nbsp;
 
 ## Travel card
 
@@ -33,7 +35,11 @@ Online banks are abundant in the UK. I got HSBC before that. Then got Monzo, Rev
 
 ## UTR number
 
-Register with HMRC for getting the Unique Tax Reference Number. This is used to file tax returns. Froms required for this are:
+Register with HMRC for getting the Unique Tax Reference Number. This is used to file tax returns.
+
+## Filing Self Assessment every year
+
+Froms required for this are:
 
  - P60 - Like Form 16 in India: A report of all the tax paid in the fiscal year
  - P11D - Any benefits received

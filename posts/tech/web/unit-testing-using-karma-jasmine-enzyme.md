@@ -1,7 +1,5 @@
 # Unit testing using Karma, Jasmine & Enzyme
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Install

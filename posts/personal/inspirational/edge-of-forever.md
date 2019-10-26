@@ -1,7 +1,8 @@
+<img src="/img/cosmos.jpg" title="cosmos" class="post-first-image" />
+
 # Edge of Forever by Carl Sagan (Cosmos)
 
-![cosmos](/img/cosmos.jpg "cosmos")
-
+&nbsp;
 
 If you want to know what it's like inside a black hole look around. But we don't yet know whether the universe is open or closed. More than that, some astronomers doubt that the red shift of distant galaxies is due to the Doppler effect.
 They are skeptical about the expanding universe and the big bang. Perhaps our descendants will regard our present ignorance with as much sympathy as we feel to the ancients for not knowing whether the Earth went around the sun.

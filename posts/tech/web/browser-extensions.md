@@ -1,8 +1,8 @@
+<img src="/img/browser-extensions.jpg" title="browser-extensions" class="post-first-image" />
+
 # Browser Extensions
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
-![browser-extensions](/img/browser-extensions.jpg "browser-extensions")
+&nbsp;
 
 ## Summary
 

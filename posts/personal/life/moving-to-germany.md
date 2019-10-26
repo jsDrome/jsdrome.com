@@ -1,6 +1,8 @@
+<img src="/img/berlin.jpg" title="berlin" class="post-first-image" />
+
 # Moving to Germany from India
 
-![berlin](/img/berlin.jpg "berlin")
+&nbsp;
 
 ## Book a National Visa Appointment
 I wish someone had told me this because this took the longest time in the movement. Visa appointments in German consulates in India take a long time because of the number of people applying for it, especially if you fall in the jurisdiction of the Bangalore consulate. The best strategy is to book an appintment in anticipation of finding a job. Cost me a new internet connection for about INR 500. More on this in a later post because thats an interesting story. Cost = INR 500.

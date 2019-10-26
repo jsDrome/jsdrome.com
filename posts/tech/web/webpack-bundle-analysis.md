@@ -1,7 +1,5 @@
 # Webpack Bundle Analysis
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary
@@ -43,8 +41,6 @@ You can see a file called `bundle.html` in the dist folder once the prod build h
 Commit and push.
 
 # Webpack Bundle Analysis
-
-#### June 1, 2019 by Sreeram Padmanabhan
 
 &nbsp;
 

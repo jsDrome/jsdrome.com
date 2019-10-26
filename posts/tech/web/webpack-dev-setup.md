@@ -1,7 +1,5 @@
 # Webpack Dev Config
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary

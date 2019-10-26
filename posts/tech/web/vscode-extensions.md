@@ -1,8 +1,8 @@
+<img src="/img/vscode-extensions.jpg" title="vscode-extensions" class="post-first-image" />
+
 # Visual Studio Code Extensions
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
-![vscode-extensions](/img/vscode-extensions.jpg "vscode-extensions")
+&nbsp;
 
 ## Summary
 

@@ -1,6 +1,8 @@
+<img src="/img/christopher-reeve.jpg" title="christopher-reeve" class="post-first-image" />
+
 # Christopher Reeve
 
-![christopher-reeve](/img/christopher-reeve.jpg "christopher-reeve")
+&nbsp;
 
 In early October 2004 Reeve was busy promoting The Brooke Ellison Story, which he had directed, and Dana Reeve was appearing onstage in Los Angeles in Brooklyn Boy preparing to bringing the play to New York. It was the first time she had been away from her husband and son for an extended period. At the time, Reeve was being treated for a pressure wound, a common complication for people with paralysis that he had experienced many times before. The wound had become severely infected, resulting in a systemic infection; yet there seemed no unusual cause for concern. On Saturday, October 9th, Reeve attended one of Will's hockey games. That night, he went into cardiac arrest after receiving an antibiotic. He fell into a coma and was rushed to Northern Westchester Hospital. Dana Reeve would later point out that Reeve had a history of being sensitive to drugs that were usually well tolerated by most people. With the help of Robin Williams' wife, Dana was able to board a plane and rush cross country to join Alexandra and Will at her husband's bedside; arriving shortly before his death on October 10. Christopher Reeve was 52 years old.
 

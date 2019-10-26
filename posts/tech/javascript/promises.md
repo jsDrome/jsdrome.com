@@ -1,7 +1,5 @@
 # Promises
 
-#### Sep 16, 2018 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary

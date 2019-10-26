@@ -1,8 +1,8 @@
+<img src="/img/automated-pipeline.jpg" title="automated-pipeline" class="post-first-image" />
+
 # How I deploy to production - My automated CI/CD Pipeline
 
-#### Aug 24, 2019 by Sreeram Padmanabhan
-
-![automated pipeline](/img/automated-pipeline.jpg "automated pipeline")
+&nbsp;
 
 ## Summary
 

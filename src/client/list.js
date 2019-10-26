@@ -73,6 +73,14 @@ module.exports = [
         ogImage: '/img/berlin.jpg',
         route: '/post/personal/life/things-to-do-first-in-germany',
       },
+      {
+        title: 'Things I tell my students',
+        ogTitle: 'Things I tell my students - Sreeram Padmanabhan',
+        description: 'The simple rules I follow to succeed I hope others find useful.',
+        ogDescription: 'The simple rules I follow to succeed I hope others find useful.',
+        // ogImage: '',
+        route: '/post/personal/life/things-i-tell-my-students',
+      },
     ],
   },
   {

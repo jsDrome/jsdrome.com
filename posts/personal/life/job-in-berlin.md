@@ -1,6 +1,8 @@
+<img src="/img/berlin.jpg" title="berlin" class="post-first-image" />
+
 # How I found a well paid job in Berlin
 
-![berlin](/img/berlin.jpg "berlin")
+&nbsp;
 
 ## Summary
 

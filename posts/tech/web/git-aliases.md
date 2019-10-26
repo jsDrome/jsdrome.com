@@ -1,8 +1,8 @@
+<img src="/img/command-line-shortcuts.jpg" title="command-line-shortcuts" class="post-first-image" />
+
 # My favourite Git aliases
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
-![command-line-shortcuts](/img/command-line-shortcuts.jpg "command-line-shortcuts")
+&nbsp;
 
 ## Summary
 

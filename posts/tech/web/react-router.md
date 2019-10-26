@@ -1,7 +1,5 @@
 # Routing using React Router
 
-#### May 19, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary

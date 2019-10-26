@@ -1,7 +1,5 @@
 # Atticus Finch
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 To begin with, this case should never have come to trial. The State has not produced one iota of medical evidence that the crime Tom Robinson is charged with ever took place. It has relied instead upon the testimony of two witnesses whose evidence has not only been called into serious question on cross examination, but has been flatly contradicted by the defendant. Now there is circumstantial evidence to indicate that Mayella Ewell was beaten savagely by someone who led, almost exclusively, with his left hand. And Tom Robinson now sits before you, having taken "The Oath" with the only good hand he possesses -- his right.

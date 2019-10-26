@@ -1,7 +1,5 @@
 # Webpack Prod Config
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary
@@ -45,9 +43,9 @@ or
 
 `npx webpack --env=prod --config=webpack/webpack.config.js`
 
-The output will look like this. Notice the build time, asset name and the asset size. Also notice the vast savings in the size of the bundled file.
+The output will look like this. Notice the build time, asset name and the asset size. Also notice the vast savings in the size of the bundled files.
 
-![webpack prod output](/img/webpack-prod-output.png "webpack prod output")
+<img class="post-img" title="webpack prod output" src="/img/webpack-prod-output.png">
 
 &nbsp;
 

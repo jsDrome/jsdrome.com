@@ -1,6 +1,8 @@
+<img src="/img/berlin.jpg" title="berlin" class="post-first-image" />
+
 # Things to do after moving to Germany
 
-![berlin](/img/berlin.jpg "berlin")
+&nbsp;
 
 I will update this in time.
 

@@ -1,7 +1,8 @@
+<img src="/img/fortress.jpg" title="fortress" class="post-first-image" />
+
 # Marlon Brando Fortress of Solitude speech in Superman
 
-![fortress of solitude](/img/fortress.jpg "fortress of solitude")
-
+&nbsp;
 
 Come with me now my son, as we break through the bars of your Earthly confinement, travelling through time and space..  In the 6 known dimensions.. Your powers, will far exceed those of mortal man.. It is forbidden for you to interfere with human history. Rather let your leadership, stir others to..
 

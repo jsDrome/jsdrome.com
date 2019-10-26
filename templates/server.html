@@ -38,19 +38,23 @@
     }
     .post img {
       height: auto;
-      width: 100%;
       overflow: hidden;
       display: block;
+      width: 100%;
       margin: 20px 0;
     }
-    .post img[title='sreeram padmanabhan'] {
-      width: 175px;
+    .post-first-image {
+      width: calc(100% + 30px) !important;
+      margin: -15px -15px 15px -15px !important;
+    }
+    .left-float-img {
+      width: 175px !important;
       border: none;
       display: block;
       float: left;
-      margin: 0;
-      margin-right: 15px;
-      margin-bottom: 5px;
+      margin: 0 !important;
+      margin-right: 15px !important;
+      margin-bottom: 5px !important;
     }
     .container {
       display: flex;

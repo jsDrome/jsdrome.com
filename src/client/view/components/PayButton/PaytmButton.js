@@ -1,7 +1,12 @@
 /* eslint-disable no-magic-numbers */
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import HourGlassIcon from '@material-ui/icons/HourglassFull';
+import FreeBreakfast from '@material-ui/icons/FreeBreakfast';
+// import AttachMoney from '@material-ui/icons/AttachMoney';
+// import MonetizationOnSharpIcon from '@material-ui/icons/MonetizationOnSharp';
+// import EuroTwoTone from '@material-ui/icons/EuroTwoTone';
+import Fab from '@material-ui/core/Fab';
 
 class Paytmbutton extends Component {
   state = {
@@ -32,9 +37,18 @@ class Paytmbutton extends Component {
       <input type="hidden" name="EMAIL" value={email} />
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
-      <Button variant="contained" color="primary" disabled={this.state.submit} style={{ width: '100%', display: 'block' }} onClick={this.onSubmit.bind(this)}>
+      <Fab
+        variant="extended"
+        // size="small"
+        color="secondary"
+        style={{ width: '100%' }}>
+        <FreeBreakfast style={{ marginRight: 10 }} />
+        {this.state.submit ? <HourGlassIcon /> : text }
+      </Fab>
+      {/* <Button variant="contained" color="primary" disabled={this.state.submit} style={{ width: '100%', display: 'block' }} onClick={this.onSubmit.bind(this)}>
         {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })}`}
-      </Button>
+      </Button> */}
+      {/* ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })} */}
     </form>;
   }
 }

@@ -5,7 +5,7 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 // import PrevIcon from '@material-ui/icons/ArrowLeft';
 // import NextIcon from '@material-ui/icons/ArrowRight';
-import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 import styles from './styles';
@@ -21,12 +21,18 @@ class Navigation extends React.Component {
     return <Stepper activeStep={1}>
       {<Step>
         <StepLabel icon={null}>
-          {prevLink ? <Button color="primary" href={prevLink}>{prevTitle}</Button> : <HomeIcon />}
+          {prevLink ? <Link
+            component="button"
+            variant="body2"
+            onClick={() => window.location=prevLink}>{prevTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}
       {<Step>
         <StepLabel icon={null}>
-          {nextLink ? <Button color="primary" href={nextLink}>{nextTitle}</Button> : <HomeIcon />}
+          {nextLink ? <Link
+            component="button"
+            variant="body2"
+            onClick={() => window.location=nextLink}>{nextTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}
     </Stepper>;

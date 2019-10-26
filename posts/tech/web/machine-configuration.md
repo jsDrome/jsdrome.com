@@ -1,8 +1,8 @@
+<img src="/img/machine-configuration.jpg" title="machine-configuration" class="post-first-image" />
+
 # Machine configuration
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
-![machine-configuration](/img/machine-configuration.jpg "machine-configuration")
+&nbsp;
 
 ## Summary
 

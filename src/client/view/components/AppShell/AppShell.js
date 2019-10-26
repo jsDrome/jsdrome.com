@@ -14,9 +14,9 @@ import RightSidebar from '../RightSidebar/RightSidebar';
 import SidebarContent from '../SidebarContent/SidebarContent';
 import RightSidebarContent from '../SidebarContent/RightSidebarContent';
 import PayButton from '../PayButton/PayButton';
+import Toolbar from '../Toolbar/Toolbar';
 
 import styles from './styles';
-import { Toolbar } from '@material-ui/core';
 
 const { TITLE, DESCRIPTION } = require('../../../../variables');
 
@@ -57,19 +57,19 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
           <Grid container spacing={0}>
-            <Grid item md={12} lg={9} className={classes.content}>
+            <Grid item xs={12} sm={9} className={classes.content}>
               <Toolbar />
               <Content>
                 {children}
               </Content>
-              <Hidden smUp>
+              <Hidden mdUp>
                 <div style={{ margin: 20 }}>
                   <PayButton />
                 </div>
               </Hidden>
             </Grid>
-            <Grid item lg={3} className={classes.sidebar}>
-              <Hidden mdDown implementation="css">
+            <Grid item sm={3} className={classes.sidebar}>
+              <Hidden smDown implementation="css">
                 <RightSidebar>
                   <Toolbar />
                   <RightSidebarContent />

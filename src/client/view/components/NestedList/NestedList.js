@@ -31,7 +31,7 @@ class NestedList extends React.Component {
           <ListItemText primary={title} />
           {this.state.open ? <ExpandMore /> : <ExpandLess />}
         </ListItem>
-        <Collapse in={this.state.open} timeout="auto" unmountOnExit>
+        <Collapse in={this.state.open} timeout="auto">
           <List component="div" className={classes.nestedList} >
             {children}
           </List>

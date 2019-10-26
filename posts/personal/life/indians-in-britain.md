@@ -1,6 +1,6 @@
-# How are Indians treated in Britain?
+<img src="/img/indians-in-uk.jpg" title="indians-in-uk" class="post-first-image" />
 
-![indians-in-uk](/img/indians-in-uk.jpg "indians-in-uk")
+# How are Indians treated in Britain?
 
 ## Summary
 
@@ -91,7 +91,7 @@ The Australian friend moved to Australia. The German friend moved to Germany, th
 
 ## As of 2020
 
-I am back in India. Its time for my next journey. I have found a new job in Germany and will be moving there next. [Read about it here.](https://sreeram.app/post/personal/life/job-in-berlin)
+I am back in India. Its time for my next journey. I have found a new job in Germany and will be moving there next. [Read about it here.](/post/personal/life/job-in-berlin)
 
 ## Inference
 

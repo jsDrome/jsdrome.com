@@ -1,7 +1,5 @@
 # Closures in Javascript
 
-#### Sep 18, 2018 by Sreeram Padmanabhan
-
 &nbsp;
 
 ## Summary

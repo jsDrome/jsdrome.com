@@ -1,8 +1,8 @@
+<img src="/img/vscode-preferences.jpg" title="vscode-preferences" class="post-first-image" />
+
 # VS Code preferences
 
-#### June 1, 2019 by Sreeram Padmanabhan
-
-![vscode-preferences](/img/vscode-preferences.jpg "vscode-preferences")
+&nbsp;
 
 Given below is my VS Code preferences JSON file. Use this to give VS Code a dark theme with smaller font. Allows you to see many things at once. Or you could tweak this later.
 

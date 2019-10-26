@@ -38,13 +38,13 @@ class Paytmbutton extends Component {
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
       <Fab
+        disabled={this.state.submit}
         onClick={this.onSubmit.bind(this)}
         variant="extended"
         // size="small"
         color="secondary"
         style={{ width: '100%' }}>
-        <FreeBreakfast style={{ marginRight: 10 }} />
-        {this.state.submit ? <HourGlassIcon /> : text }
+        {this.state.submit ? <HourGlassIcon /> : <React.Fragment><FreeBreakfast style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
       </Fab>
       {/* <Button variant="contained" color="primary" disabled={this.state.submit} style={{ width: '100%', display: 'block' }} onClick={this.onSubmit.bind(this)}>
         {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })}`}

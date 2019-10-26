@@ -81,6 +81,22 @@ module.exports = [
         // ogImage: '',
         route: '/post/personal/life/things-i-tell-my-students',
       },
+      {
+        title: 'Getting a web developer job',
+        ogTitle: 'Getting a web developer job - Sreeram Padmanabhan',
+        description: 'How hard can it be to become a Web developer?',
+        ogDescription: 'How hard can it be to become a Web developer?',
+        // ogImage: '',
+        route: '/post/personal/career/web-developer-job',
+      },
+      {
+        title: 'Coolest thing I\'ve seen from an Airplane',
+        ogTitle: 'The coolest thing I\'ve from an Airplane - Sreeram Padmanabhan',
+        description: 'A view of the snow covered mountains stretching as far as I could see..',
+        ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
+        ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',
+        route: '/post/personal/life/snow-mountains',
+      },
     ],
   },
   {

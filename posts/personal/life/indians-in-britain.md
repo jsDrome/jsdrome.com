@@ -2,6 +2,8 @@
 
 # How are Indians treated in Britain?
 
+&nbsp;
+
 ## Summary
 
 I am an Online Web Development trainer and I have been fortunate to have travelled quite extensively before the age of 30. I have been living in London for over 3 years now. I have travelled to countries UK-like countries like France, Netherlands, Germany, Italy, Spain, Belgium and Switzerland. I haven't lived outside London and the results could vary. London being a multi cultural society might be more receptive to foreigners. I shift my house every 6 months just to explore all parts of London. So I have lived in about 10 different places and that has helped me meet and talk to people of all kinds, nationalities, faiths, sexual orientation etc.

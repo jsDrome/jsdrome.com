@@ -15,7 +15,7 @@ export default class ErrorBoundary extends Component {
     });
   }
   render() {
-    if (this.state.hasError) return <Typography style={{ textAlign: 'center' }} variant="h6">Oops! Something went wrong.</Typography>;
+    if (this.state.hasError) return <Typography style={{ textAlign: 'center' }} variant="h6">404! Something went wrong.</Typography>;
     return this.props.children;
   }
 }

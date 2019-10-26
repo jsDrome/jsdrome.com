@@ -69,7 +69,10 @@ export const getContent = (folder = 'home', subfolder = 'home', post = 'home') =
   if (content[`${folder}/${subfolder}/${post}`]) return;
 
   fetch(`/data?folder=${folder}&subfolder=${subfolder}&post=${post}`)
-    .then(response => response.text())
+    .then(response => {
+      if(response.ok) return response.text();
+      throw new Error('Network response was not ok.');
+    })
     .then(text => {
       content[`${folder}/${subfolder}/${post}`] = text;
       dispatch([
@@ -77,6 +80,9 @@ export const getContent = (folder = 'home', subfolder = 'home', post = 'home') =
       ]);
     })
     .catch(() => {
-      dispatch(setMessage('Network Issues.'));
+      dispatch([
+        setContent(null),
+        setMessage('Network Issues.'),
+      ]);
     });
 };

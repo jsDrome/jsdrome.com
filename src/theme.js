@@ -1,11 +1,16 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import secondary from '@material-ui/core/colors/blue';
 
 export default createMuiTheme({
   palette: {
+    primary: {
+      main: '#37474f',
+    },
+    secondary,
   },
   background: {
-    primary: '#e9ebee',
-    secondary: '#394959',
+    primary: '#eceff1',
+    secondary,
   },
   typography: {
     fontSize: 13,

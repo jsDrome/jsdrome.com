@@ -17,7 +17,7 @@ export const getMetaTags = (folder = 'home', subfolder = 'home', post = 'home') 
       ogTitle = selectedPost.ogTitle || ogTitle;
       description = selectedPost.description || description;
       ogDescription = selectedPost.ogDescription || ogDescription;
-      ogImage = URL + (selectedPost.ogImage || ogImage);
+      ogImage = selectedPost.ogImage || ogImage;
       postUrl = folder === 'home' ? '/' : `/post/${folder}/${subfolder}/${post}`;
       selectedListTitle = item.title;
       selectedLinkTitle = selectedPost.title;

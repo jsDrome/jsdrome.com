@@ -38,6 +38,7 @@ class Paytmbutton extends Component {
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
       <Fab
+        onClick={this.onSubmit.bind(this)}
         variant="extended"
         // size="small"
         color="secondary"

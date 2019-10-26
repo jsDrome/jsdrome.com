@@ -91,7 +91,7 @@ module.exports = [
       },
       {
         title: 'Coolest thing I\'ve seen from an Airplane',
-        ogTitle: 'The coolest thing I\'ve from an Airplane - Sreeram Padmanabhan',
+        ogTitle: 'The coolest thing I\'ve seen from an Airplane - Sreeram Padmanabhan',
         description: 'A view of the snow covered mountains stretching as far as I could see..',
         ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
         ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',

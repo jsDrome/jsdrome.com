@@ -17,12 +17,13 @@ module.exports = function (config) {
     singleRun: true,
     frameworks: [ 'jasmine' ],
     files: [
-      './src/test.js',
+      './src/client/test.js',
     ],
     preprocessors: {
-      './src/test.js': [ 'webpack', 'sourcemap' ],
+      './src/client/test.js': [ 'webpack', 'sourcemap' ],
     },
     reporters: [ 'dots', 'BrowserStack' ],
     webpack: webpackConfig,
+    logLevel: config.LOG_INFO,
   });
 };

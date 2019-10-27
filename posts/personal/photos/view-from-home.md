@@ -1,4 +1,4 @@
-<img src='https://lh3.googleusercontent.com/m6ME4lelNY_cWIu7qJRKyBX09zOed1Pa-kS5WW0hadjAUyi99KMNacqtOR-Sa_Y8qKzyseNAySmIat5T7E8E0Gm692xvvaUb-hVKlllobdj_3YAyfoOa5VFLFgLXz7hhgJsMtZSB1c0=w3351-h1754-no' title='snow mountains' class='post-first-image img-portrait' />
+<img src='https://lh3.googleusercontent.com/m6ME4lelNY_cWIu7qJRKyBX09zOed1Pa-kS5WW0hadjAUyi99KMNacqtOR-Sa_Y8qKzyseNAySmIat5T7E8E0Gm692xvvaUb-hVKlllobdj_3YAyfoOa5VFLFgLXz7hhgJsMtZSB1c0=w3351-h1754-no' title='view from home' class='post-first-image img-portrait' />
 
 # The view from my home balcony in Trivandrum
 
@@ -7,6 +7,8 @@
 Seen above is the view from my home in Trivandrum. On a typical sunny day, it looks as if the heavens descented on earth.
 
 Trivandrum is an amazing city. In my opinion its one of the best cities in the world to live because of many reasons:
+
+## Whats best in Trivandrum?
 
  - Its costal. Kovalam and Varkala are renowned tourist spots and I plan to get a beachfront property some day.
 
@@ -26,6 +28,6 @@ Trivandrum is an amazing city. In my opinion its one of the best cities in the w
 
  - Public transport needs to improve.
 
- - Crime rate, curroption increasing.
+ - Crime rate, corruption on the rise and need to be checked.
 
  - Some auto drivers ruining the reputaion of others.

@@ -59,9 +59,9 @@ jobs:
       - run:
           name: Codecov
           command: npm run test:codecov
-      # - run:
-      #     name: Browserstack
-      #     command: npm run test:browserstack
+      - run:
+          name: Browserstack
+          command: npm run test:browserstack
 
   performance:
     working_directory: ~/repo

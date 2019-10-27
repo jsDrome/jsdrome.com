@@ -13,7 +13,7 @@ export default theme => ({
   activeListItem: {
     padding: 3,
     paddingLeft: 25,
-    borderLeft: `solid 5px ${theme.background.secondary}`,
+    borderLeft: `solid 5px`,
     background: theme.background.primary,
   },
   fixed: {

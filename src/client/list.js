@@ -14,16 +14,24 @@ module.exports = [
     ],
   },
   {
-    title: 'My life experiences',
-    keywords: [ 'life in uk', 'britain', 'germany', 'expat life', 'immigration', 'tax', 'indian' ],
+    title: 'My Photography',
+    keywords: [ 'iphone photography' ],
     links: [
       {
-        title: 'The view from my home in Trivandrum',
+        title: 'The best photo I\'ve ever taken',
+        ogTitle: 'The best photo I\'ve ever taken - Sreeram Padmanabhan',
+        description: 'I tried a bit of reflection photography in London.',
+        ogDescription: 'I tried a bit of reflection photography in London.',
+        ogImage: 'https://lh3.googleusercontent.com/_PFiXnhrPQmwCtBRo3jjpP1AGdayBJdlYtoENULWiMincscmWhwPtnOuGn3LaCeqtYk88Z_33zJj1eCr_05mSEj_Wlqm3jS8sZ0zmYKyWLiR9_YDuH21Y1JMtjseutauoo91SvzwODE6UoVWnxt47VHmGQj9Osie77EtfM3ngKV7x5ThY4irFwLlLV5GjTVBYxPamVBhnXNvpSLy9RdKX2xmBP9uCNGYfiTr8PPTlfdAO6vfehgUsVKK7MNz1vlXHj5cXmRRcOOXegVtlbFr8yf3t1CxhSB-bQPXF-rt-LL9KPp-RM9ceCb94Gp0XqCJK43WlAO_EmD-xrMa72vz8AXg1njG5R7GXgK4YD31Wq82sCPg0gw2Wq-4nWlGW6mCyO2y2UyojEIvaUNgQ-ADU9Fe1dT-8kFRIDdR-5uWn_h5XeOSK-ap2sm6SuY6Ssf-DV6deaXbu7BxuVRoL43RCQiYew0-uW2D-Imcoo24C_OEINYsw6NG4vVVr0RZLoJfUwhYf7V0REvNyzp1HoPEtq-tdtw7qEA0ELtIgaaEwf2BwH3lQVy8d9ldRfQw3MAww7rXNZuPuJjBKRIEMT_KPknMldl-UK77oz4pFSzqKSyBQG9_LMbOq-PIARN1Bg5Jsw_uJbjErpXa0IrFsudRqa0KUF4hz9iLKpghXeAL0JNDpd1_wSqj2Ok=s1754-no',
+        route: '/post/personal/photos/london-eye-photo',
+      },
+      {
+        title: 'The view from my home',
         ogTitle: 'The viw from my home in Trivandrum - Sreeram Padmanabhan',
         description: 'The breathtaking greenery of Trivandrum',
-        ogDescription: '',
-        ogImage: '',
-        route: '/post/personal/life/view-from-home',
+        ogDescription: 'The breathtaking greenery of Trivandrum',
+        ogImage: 'https://lh3.googleusercontent.com/m6ME4lelNY_cWIu7qJRKyBX09zOed1Pa-kS5WW0hadjAUyi99KMNacqtOR-Sa_Y8qKzyseNAySmIat5T7E8E0Gm692xvvaUb-hVKlllobdj_3YAyfoOa5VFLFgLXz7hhgJsMtZSB1c0=w3351-h1754-no',
+        route: '/post/personal/photos/view-from-home',
       },
       {
         title: 'Coolest thing I\'ve seen from an Airplane',
@@ -31,8 +39,14 @@ module.exports = [
         description: 'A view of the snow covered mountains stretching as far as I could see..',
         ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
         ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',
-        route: '/post/personal/life/snow-mountains',
+        route: '/post/personal/photos/snow-mountains',
       },
+    ],
+  },
+  {
+    title: 'My life experiences',
+    keywords: [ 'life in uk', 'britain', 'germany', 'expat life', 'immigration', 'tax', 'indian' ],
+    links: [
       {
         title: 'My professional life so far',
         ogTitle: 'My professional life so far - Sreeram Padmanabhan',
@@ -116,7 +130,7 @@ module.exports = [
         ogTitle: 'Carl Sagan\'s Pale blue dot speech - Inpirational speeches',
         description: 'Carl Sagan\'s description of the earth from the distant image Voyager sent.',
         ogDescription: 'Carl Sagan\'s description of the earth from the distant image Voyager sent.',
-        ogImage: '/img/pale-blue-dot.jpg',
+        ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e954b4948554c80e7181f07a00ddac99',
         route: '/post/personal/inspirational/pale-blue-dot',
       },
       {

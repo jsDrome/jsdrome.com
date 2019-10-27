@@ -17,7 +17,6 @@ import '../../images/og/personal/life/solo-travel.jpg';
 import '../../images/og/personal/inspirational/fortress.jpg';
 import '../../images/og/personal/inspirational/v-speech.jpg';
 import '../../images/og/personal/inspirational/cosmos.jpg';
-import '../../images/og/personal/inspirational/pale-blue-dot.jpg';
 import '../../images/og/personal/inspirational/speech.jpg';
 import '../../images/og/personal/inspirational/christopher-reeve.jpg';
 import '../../images/og/personal/inspirational/zach-wahls.jpg';

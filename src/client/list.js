@@ -18,6 +18,22 @@ module.exports = [
     keywords: [ 'life in uk', 'britain', 'germany', 'expat life', 'immigration', 'tax', 'indian' ],
     links: [
       {
+        title: 'The view from my home in Trivandrum',
+        ogTitle: 'The viw from my home in Trivandrum - Sreeram Padmanabhan',
+        description: 'The breathtaking greenery of Trivandrum',
+        ogDescription: '',
+        ogImage: '',
+        route: '/post/personal/life/view-from-home',
+      },
+      {
+        title: 'Coolest thing I\'ve seen from an Airplane',
+        ogTitle: 'The coolest thing I\'ve seen from an Airplane - Sreeram Padmanabhan',
+        description: 'A view of the snow covered mountains stretching as far as I could see..',
+        ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
+        ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',
+        route: '/post/personal/life/snow-mountains',
+      },
+      {
         title: 'My professional life so far',
         ogTitle: 'My professional life so far - Sreeram Padmanabhan',
         description: 'How I built a successful career for myself.',
@@ -88,14 +104,6 @@ module.exports = [
         ogDescription: 'How hard can it be to become a Web developer?',
         // ogImage: '',
         route: '/post/personal/career/web-developer-job',
-      },
-      {
-        title: 'Coolest thing I\'ve seen from an Airplane',
-        ogTitle: 'The coolest thing I\'ve seen from an Airplane - Sreeram Padmanabhan',
-        description: 'A view of the snow covered mountains stretching as far as I could see..',
-        ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
-        ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',
-        route: '/post/personal/life/snow-mountains',
       },
     ],
   },

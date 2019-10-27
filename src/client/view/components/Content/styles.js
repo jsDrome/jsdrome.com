@@ -8,7 +8,7 @@ export default theme => ({
   content: {
     flexGrow: 1,
     padding: 0,
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       padding: 20,
       paddingTop: 0,
     },

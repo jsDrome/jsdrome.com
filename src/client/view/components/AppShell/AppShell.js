@@ -57,19 +57,19 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
           <Grid container spacing={0}>
-            <Grid item xs={12} sm={9} className={classes.content}>
+            <Grid item sm={9} className={classes.content}>
               <Toolbar />
               <Content>
                 {children}
               </Content>
-              <Hidden mdUp>
+              <Hidden smUp>
                 <div style={{ margin: 10 }}>
                   <PayButton />
                 </div>
               </Hidden>
             </Grid>
             <Grid item sm={3} className={classes.sidebar}>
-              <Hidden smDown implementation="css">
+              <Hidden xsDown implementation="css">
                 <RightSidebar>
                   <Toolbar />
                   <RightSidebarContent />

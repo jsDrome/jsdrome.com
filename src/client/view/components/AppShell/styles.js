@@ -24,12 +24,19 @@ export default theme => ({
   },
   fab: {
     position: 'fixed',
-    bottom: 20,
+    bottom: 35,
     right: 20,
     zIndex: 2002,
+    background: theme.palette.tertiary,
     [theme.breakpoints.down('xs')]: {
-      top: 60,
-      right: 10,
+      top: 'calc(50% - 28px)',
+      right: -10,
+      '&:hover': {
+        right: 0,
+      },
+      '&:active': {
+        right: 0,
+      },
     },
   },
 });

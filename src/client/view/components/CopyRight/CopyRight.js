@@ -10,7 +10,7 @@ class Footer extends React.Component {
     const { classes } = this.props;
 
     return <div className={classes.root} >
-      <Typography variant="caption">Sreeram Padmanabhan &copy; {moment().format('YYYY')}  </Typography>
+      <Typography variant="caption">Sreeram Padmanabhan &copy; {moment().format('YYYY')} | All rights reserved </Typography>
     </div>;
   }
 }

@@ -42,7 +42,7 @@ class Paytmbutton extends Component {
         onClick={this.onSubmit.bind(this)}
         variant="extended"
         size="large"
-        color="primary"
+        color="secondary"
         style={{ width: '100%' }}>
         {this.state.submit ? <HourGlassIcon /> : <React.Fragment><SponsorIcon style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
       </Fab>

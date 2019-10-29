@@ -16,13 +16,14 @@ const HomeIcon = props => <SvgIcon {...props}>
 
 class Navigation extends React.Component {
   render() {
-    const { links: { prevLink, prevTitle, nextLink, nextTitle } } = this.props;
+    const { classes, links: { prevLink, prevTitle, nextLink, nextTitle } } = this.props;
 
     return <Stepper activeStep={1}>
       {<Step>
         <StepLabel icon={null}>
           {prevLink ? <Link
-            color={"secondary"}
+            className={classes.link}
+            color={"primary"}
             component="button"
             variant="body2"
             onClick={() => window.location=prevLink}>{prevTitle}</Link> : <HomeIcon />}
@@ -31,7 +32,8 @@ class Navigation extends React.Component {
       {<Step>
         <StepLabel icon={null}>
           {nextLink ? <Link
-            color={"secondary"}
+            className={classes.link}
+            color={"primary"}
             component="button"
             variant="body2"
             onClick={() => window.location=nextLink}>{nextTitle}</Link> : <HomeIcon />}

@@ -1,12 +1,14 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import secondary from '@material-ui/core/colors/indigo';
+import secondary from '@material-ui/core/colors/pink';
+import tertiary from '@material-ui/core/colors/indigo';
 
 export default createMuiTheme({
   palette: {
     primary: {
-      main: '#3a4e61',
+      main: '#000',
     },
     secondary,
+    tertiary: tertiary['800'],
   },
   background: {
     primary: '#eceff1',

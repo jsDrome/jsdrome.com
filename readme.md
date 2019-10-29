@@ -136,7 +136,7 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - `firebase:prod:hosting` Activates client in Firebase production. Note: `FIREBASE_TOKEN` env variable needs to be set.
  - `deploy` Activates server and client in production instantly. Note: `FIREBASE_TOKEN` env variable needs to be set.
 
-## To see the app
+## Run app locally
 
 - Run `npm run build:client:devserver` in one tab to start the client at `http://localhost:9000` and run `nodemon src/server/mock` in another to start the server parallely at `https://localhost:5000`.
 

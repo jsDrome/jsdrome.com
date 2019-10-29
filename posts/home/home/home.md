@@ -26,6 +26,8 @@ Some time in 2018, I wanted to create the perfect web boilerplate project. So I 
  - Eslint, Editorconfig integrated.
  - Commit Linting integrated.
  - JSDoc integrated.
+ - Privacy Policy
+ - Sitemaps
 
 ## Setup
 
@@ -39,7 +41,7 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - Create a new app.
  - Create 2 hosting environments one for production and one for testing.
  - Replace the project name values in `.firebaserc`.
- - Get your Firebase token (FIREBASE_TOKEN) by executing `firebase login:ci`.
+ - Get your Firebase token (`FIREBASE_TOKEN`) by executing `firebase login:ci`.
  - Put all the environment variables in `env.sh`.
  - Run `npm run deploy`. It will do the rest.
 
@@ -52,8 +54,8 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - Create 2 hosting environments one for production and one for testing.
  - Replace the project name values in `.firebaserc`.
  - Get your Firebase token `FIREBASE_TOKEN` by executing `firebase login:ci`.
- - Register at Circle CI - This is the Continous Integration Server. It builds the code runs some tests and deploys to Firebase. Set it up to build your repo.
- - Register at Codecov. Set it up to test your repo. Get the `CODECOV_TOKEN` token.
+ - Register at [Circle CI](https://cicleci.com) - This is the Continous Integration Server. It builds the code runs some tests and deploys to Firebase. Set it up to build your repo.
+ - Register at [Codecov](https://codecov.io). Set it up to test your repo. Get the `CODECOV_TOKEN` token.
  - Setup Cypress, get the `CYPRESS_TOKEN`.
  - Get a Browserstack account. Get the `BROWSERSTACK_USER` and `BROWSERSTACK_TOKEN`.
  - Get a PayTM Merchant account. Get your `PAYTM_KEY` and `PAYTM_TEST_KEY`.
@@ -134,7 +136,7 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - `firebase:prod:hosting` Activates client in Firebase production. Note: `FIREBASE_TOKEN` env variable needs to be set.
  - `deploy` Activates server and client in production instantly. Note: `FIREBASE_TOKEN` env variable needs to be set.
 
-## To see the app
+## Run app locally
 
 - Run `npm run build:client:devserver` in one tab to start the client at `http://localhost:9000` and run `nodemon src/server/mock` in another to start the server parallely at `https://localhost:5000`.
 

@@ -7,8 +7,6 @@ import '../../images/site/og_image.jpg';
 import '../../images/site/og_image_2.jpg';
 import '../../images/site/partners.jpg';
 
-import '../../images/og/home/home/sreeram-collage.jpg';
-
 import '../../images/og/personal/life/berlin.jpg';
 import '../../images/og/personal/life/indians-in-uk.jpg';
 import '../../images/og/personal/life/great-britain.jpg';

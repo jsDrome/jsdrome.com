@@ -8,6 +8,15 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
+import {
+  INSTAGRAMLINK,
+  FACEBOOKLINK,
+  LINKEDINLINK,
+  YOUTUBELINK,
+  TWITTERLINK,
+  EMAIL,
+} from '../../../../variables';
+
 import styles from './styles';
 
 class SocialLinks extends Component {
@@ -15,22 +24,22 @@ class SocialLinks extends Component {
     const { classes } = this.props;
     return <div className={classes.social}>
       <Link className={classes.socialLink} href="" target="_blank">
-        <InstagramIcon className={classes.socialIcon} onClick={() => window.location = 'https://instagram.com/sreeramofficial'} />
+        <InstagramIcon className={classes.socialIcon} onClick={() => window.location = INSTAGRAMLINK} />
       </Link>
       <Link className={classes.socialLink} href="" target="_blank">
-        <FacebookIcon className={classes.socialIcon} onClick={() => window.location = 'https://facebook.com/sreeram.io'} />
+        <FacebookIcon className={classes.socialIcon} onClick={() => window.location = FACEBOOKLINK} />
       </Link>
       <Link className={classes.socialLink} href="" target="_blank">
-        <LinkedInIcon className={classes.socialIcon} onClick={() => window.location = 'https://in.linkedin.com/in/sreeramofficial'} />
+        <LinkedInIcon className={classes.socialIcon} onClick={() => window.location = LINKEDINLINK} />
       </Link>
       <Link className={classes.socialLink} href="" target="_blank">
-        <YouTubeIcon className={classes.socialIcon} onClick={() => window.location = 'https://www.youtube.com/channel/UCBi39XFUKrqJtuN3DoKLDlg?view_as=subscriber'} />
+        <YouTubeIcon className={classes.socialIcon} onClick={() => window.location = YOUTUBELINK} />
       </Link>
       <Link className={classes.socialLink} href="" target="_blank">
-        <TwitterIcon className={classes.socialIcon} onClick={() => window.location = 'https://twitter.com/in/sreeramofficial'} />
+        <TwitterIcon className={classes.socialIcon} onClick={() => window.location = TWITTERLINK} />
       </Link>
       <Link className={classes.socialLink} href="" target="_blank">
-        <EmailIcon className={classes.socialIcon} onClick={() => window.location = 'mailto:me@sreeram.app'} />
+        <EmailIcon className={classes.socialIcon} onClick={() => window.location = `mailto:${EMAIL}`} />
       </Link>
     </div>;
   }

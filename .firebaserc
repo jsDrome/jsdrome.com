@@ -1,16 +1,16 @@
 {
   "projects": {
-    "default": "zaxisapp",
-    "test": "zaxisapp"
+    "default": "projectname",
+    "test": "projectname"
   },
   "targets": {
     "zaxisapp": {
       "hosting": {
         "prod": [
-          "sreeram"
+          "hostname-prod"
         ],
         "test": [
-          "sreeram-test"
+          "hostname-test"
         ]
       }
     }

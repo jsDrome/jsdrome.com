@@ -1,14 +1,14 @@
 const list = require('./client/list');
 
 const TIMESTAMP = new Date().getTime();
-const SHORT_NAME = 'Siri';
-const TITLE = 'Sreeram Padmanabhan';
-const AUTHOR = 'Sreeram Padmanabhan';
-const DESCRIPTION = 'Web of thoughts';
-const SHORT_DESCRIPTION = 'Web Artist';
-const DOMAIN = 'https://sreeram.app';
+const SHORT_NAME = 'Short name';
+const TITLE = 'Title';
+const AUTHOR = 'Author';
+const DESCRIPTION = 'Description';
+const SHORT_DESCRIPTION = 'Short description';
+const DOMAIN = "https://google.com"; // (without trailing slash)
 const URL = DOMAIN;
-const STAGE_URL = 'https://sreeram-test.web.app';
+const STAGE_URL = 'https://domain-test.web.app'; // (without trailing slash)
 const THEME_COLOR = '#ffffff';
 
 const MANIFEST_SEED = {
@@ -34,10 +34,10 @@ const MANIFEST_SEED = {
 const OG_IMAGE = DOMAIN + '/img/og_image.jpg';
 const OG_IMAGE_ALT = TITLE;
 const OG_TYPE = 'website';
-const OG_FB_APP_ID = '297023651089707';
+const OG_FB_APP_ID = ''; // Your facebook app id for facebook likes etc.
 const PAYTM_TEST = {
   amount: 75,
-  merchantId: 'lfBFyS02396274370168',
+  merchantId: '', // Your paytm merchant test id
   website: "WEBSTAGING",
   orderId: TIMESTAMP,
   customerId: `Customer-${TIMESTAMP}`,
@@ -50,7 +50,7 @@ const PAYTM_TEST = {
 };
 const PAYTM_PROD = {
   amount: 75,
-  merchantId: 'lzSXOq48634307639622',
+  merchantId: '', // your paytm prod test id
   website: "DEFAULT",
   orderId: TIMESTAMP,
   customerId: `Customer-${TIMESTAMP}`,
@@ -101,4 +101,10 @@ module.exports = {
   KEYWORDS,
   PATHS,
   THEME_COLOR,
+  INSTAGRAMLINK: 'https://instagram.com/sreeramofficial',
+  FACEBOOKLINK: 'https://facebook.com/sreeram.io',
+  LINKEDINLINK: 'https://www.linkedin.com/in/sreeramofficial/',
+  YOUTUBELINK: 'https://www.youtube.com/channel/UCBi39XFUKrqJtuN3DoKLDlg?view_as=subscriber',
+  TWITTERLINK: 'https://twitter.com/in/sreeramofficial',
+  EMAIL: 'me@sreeram.app',
 };

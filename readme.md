@@ -33,7 +33,7 @@ Some time in 2018, I wanted to create the perfect web boilerplate project. So I 
 
 There are 2 ways to deploy your site. A) The easy way where you fork the repo, make some configurations and deploy manually and B) The straight way, where all you do is write code and push it to Github, and Circle CI takes over, deploys the site on a staging server specified by you, runs the unit tests, cypress tests, browserstack tests, puppeteer tests and if everything pass, activates it in the production server.
 
-## Easy way
+## Short cut
 
  - Fork the repo.
  - Create a file `./.env/env.sh`. This is where all your secret tokens go. Do not commit it.
@@ -42,10 +42,12 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - Create 2 hosting environments one for production and one for testing.
  - Replace the project name values in `.firebaserc`.
  - Get your Firebase token (`FIREBASE_TOKEN`) by executing `firebase login:ci`.
- - Put all the environment variables in `env.sh`.
+ - Replace variables `OG_FB_APP_ID`, `PAYTM_TEST.merchantId`, `PAYTM_PROD.merchantId` with your values.
+ - Get your `PAYTM_KEY` and `PAYTM_TEST_KEY` secret variables.
+ - Put all the secret variables in `env.sh`.
  - Run `npm run deploy`. It will do the rest.
 
-## The best way
+## Long cut
 
  - Fork the repo.
  - Create a file `./.env/env.sh`. This is where all your secret tokens go. Do not commit it.
@@ -54,6 +56,8 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - Create 2 hosting environments one for production and one for testing.
  - Replace the project name values in `.firebaserc`.
  - Get your Firebase token `FIREBASE_TOKEN` by executing `firebase login:ci`.
+ - Replace variables `OG_FB_APP_ID`, `PAYTM_TEST.merchantId`, `PAYTM_PROD.merchantId` with your values.
+ - Get your `PAYTM_KEY` and `PAYTM_TEST_KEY` secret variables.
  - Register at [Circle CI](https://cicleci.com) - This is the Continous Integration Server. It builds the code runs some tests and deploys to Firebase. Set it up to build your repo.
  - Register at [Codecov](https://codecov.io). Set it up to test your repo. Get the `CODECOV_TOKEN` token.
  - Setup Cypress, get the `CYPRESS_TOKEN`.
@@ -136,7 +140,7 @@ There are 2 ways to deploy your site. A) The easy way where you fork the repo, m
  - `firebase:prod:hosting` Activates client in Firebase production. Note: `FIREBASE_TOKEN` env variable needs to be set.
  - `deploy` Activates server and client in production instantly. Note: `FIREBASE_TOKEN` env variable needs to be set.
 
-## Run app locally
+## Running the app locally
 
 - Run `npm run build:client:devserver` in one tab to start the client at `http://localhost:9000` and run `nodemon src/server/mock` in another to start the server parallely at `https://localhost:5000`.
 

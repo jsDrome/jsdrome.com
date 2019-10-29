@@ -34,10 +34,10 @@ const MANIFEST_SEED = {
 const OG_IMAGE = DOMAIN + '/img/og_image.jpg';
 const OG_IMAGE_ALT = TITLE;
 const OG_TYPE = 'website';
-const OG_FB_APP_ID = ''; // Your facebook app id for facebook likes etc.
+const OG_FB_APP_ID = '297023651089707'; // Your facebook app id for facebook likes etc.
 const PAYTM_TEST = {
   amount: 75,
-  merchantId: '', // Your paytm merchant test id
+  merchantId: 'lfBFyS02396274370168', // Your paytm merchant test id
   website: "WEBSTAGING",
   orderId: TIMESTAMP,
   customerId: `Customer-${TIMESTAMP}`,
@@ -50,7 +50,7 @@ const PAYTM_TEST = {
 };
 const PAYTM_PROD = {
   amount: 75,
-  merchantId: '', // your paytm prod test id
+  merchantId: 'lzSXOq48634307639622', // your paytm prod test id
   website: "DEFAULT",
   orderId: TIMESTAMP,
   customerId: `Customer-${TIMESTAMP}`,

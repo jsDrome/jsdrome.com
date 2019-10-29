@@ -24,14 +24,14 @@ class NestedList extends React.Component {
   }
 
   render() {
-    const { classes, title, children } = this.props;
+    const { classes, title, children, open } = this.props;
     return (
       <List component="div" className={classes.list}>
         <ListItem button onClick={() => this.handleClick()}>
           <ListItemText primary={title} />
           {this.state.open ? <ExpandMore /> : <ExpandLess />}
         </ListItem>
-        <Collapse in={this.state.open} timeout="auto">
+        <Collapse in={open || this.state.open} timeout="auto">
           <List component="div" className={classes.nestedList} >
             {children}
           </List>

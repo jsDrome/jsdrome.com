@@ -1,0 +1,25 @@
+# Features
+
+ - React, Material-ui as View layer
+ - Redux as the data layer
+ - Express as the node server
+ - Webpack as the build tool
+ - Built-in Components
+ - Progressive Web App
+ - Isomorphic
+ - Deployable in Firebase
+ - Optimised for Google Search
+ - Optimised for Performance
+ - Installable
+ - PayTM Payment Gateway Integrated.
+ - Circle CI Integrated
+ - Karma, Jasmine Unit test integrated.
+ - Codecov integrated.
+ - Cypress integrated.
+ - Browserstack integrated.
+ - Puppeteer integrated.
+ - Eslint, Editorconfig integrated.
+ - Commit Linting integrated.
+ - JSDoc integrated.
+ - Privacy Policy
+ - Sitemaps

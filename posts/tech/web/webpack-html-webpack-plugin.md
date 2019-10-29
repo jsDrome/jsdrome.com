@@ -37,7 +37,7 @@ or
 If you see the webpack output, it will show an index.html file being emitted along with the bundled js file. And if you check the dist folder, it will have a reference to the app.js
 
 
-![webpack dev output](/img/webpack-html-webpack-plugin-output.png "webpack dev output")
+![webpack dev output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-html-webpack-plugin-output.png?alt=media&token=6a8e173d-ec40-46e4-89a7-d9375fb9bae4 "webpack dev output")
 
 
 ## Adding root node

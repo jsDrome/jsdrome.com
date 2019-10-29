@@ -46,10 +46,10 @@ module.exports = {
     new BundleAnalyzerPlugin({
       openAnalyzer: false,
       analyzerMode: 'static',
-      reportFilename: './_dist/bundle.html',
+      reportFilename: 'bundle.html',
     }),
     new Visualizer({
-      filename: './visualizer.html',
+      filename: 'visualizer.html',
     }),
     new CleanWebpackPlugin(),
     new ManifestPlugin({

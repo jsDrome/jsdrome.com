@@ -20,4 +20,8 @@ export default theme => ({
     position: 'fixed',
     top: 65,
   },
+  payButton: {
+    width: 250,
+    marginBottom: 15,
+  },
 });

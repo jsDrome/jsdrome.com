@@ -97,4 +97,4 @@
 
 ## Output
 
-![karma console output](/img/karma-console-output.png "karma console output")
+![karma console output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fkarma-console-output.png?alt=media&token=78f0e475-122f-48de-bbd2-57908f56dbef "karma console output")

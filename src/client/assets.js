@@ -30,29 +30,9 @@ import '../../images/og/tech/web/vscode-preferences.jpg';
 import '../../images/og/tech/web/redux.jpg';
 import '../../images/og/tech/web/visualizer-output.jpg';
 import '../../images/og/tech/web/bundle-analysis-output.jpg';
-import '../../images/og/tech/web/webpack-code-splitting.jpg';
 import '../../images/og/tech/web/karma-html-output.jpg';
 
 import '../../images/og/tech/javascript/async-await.jpg';
 import '../../images/og/tech/javascript/callback-hell.jpg';
 import '../../images/og/tech/javascript/js.jpg';
 import '../../images/og/tech/javascript/promise.jpg';
-
-import '../../images/blog/webpack-dev-output.png';
-import '../../images/blog/webpack-dev-code.png';
-import '../../images/blog/webpack-html-webpack-plugin-output.png';
-import '../../images/blog/webpack-dev-server-compress-network.png';
-import '../../images/blog/webpack-dev-server-no-compress-header.png';
-import '../../images/blog/webpack-dev-server-no-compress-network.png';
-import '../../images/blog/webpack-dev-server-compress-header.png'
-import '../../images/blog/webpack-prod-output.png';
-import '../../images/blog/webpack-prod-code.png';
-import '../../images/blog/webpack-error.png';
-import '../../images/blog/webpack-sourcemap.png';
-import '../../images/blog/webpack-sourcemap-debugging.gif';
-import '../../images/blog/karma-console-output.png';
-import '../../images/blog/closures-case-1-after.png';
-import '../../images/blog/closures-case-1-before.png';
-import '../../images/blog/closures-case-2.png';
-import '../../images/blog/closures-case-3-after.png';
-import '../../images/blog/closures-case-3-before.png';

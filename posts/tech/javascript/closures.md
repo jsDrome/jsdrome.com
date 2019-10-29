@@ -10,7 +10,7 @@ This is an attempt to better explain the example at W3 Schools for the same topi
 
 Lets create a global variable called counter and a function which will increment it and return it.
 
-![closures-case-1-before](/img/closures-case-1-before.png "closures-case-1-before")
+![closures-case-1-before](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-1-before.png?alt=media&token=aceba2c9-4a8c-4eff-9d30-2a2304d18828 "closures-case-1-before")
 
     let counter = 0;
 
@@ -24,7 +24,7 @@ Lets create a global variable called counter and a function which will increment
 
 At this point, the value of the counter is 3 and it does serve our purpose. But, the problem here is that the variable is in the global lexical scope. It can be accessed by any function in the application. That can be a problem. How? Lets implement the down counter in a similar way. We'd create a global variable called counter and a function to decrement the value. It will obviously interfere with our up counter. Something like this:
 
-![closures-case-1-after](/img/closures-case-1-after.png "closures-case-1-after")
+![closures-case-1-after](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-1-after.png?alt=media&token=c4ad74c8-dffa-4f8e-a0c2-a5fc17edfb83 "closures-case-1-after")
 
 So, we need to make the counter variable lexically scoped, meaning it being accessible only to the function calling it. This ensures that both the up counter and the down counter both use their own counter variables which are independent of each other. Something like this:
 
@@ -33,7 +33,7 @@ So, we need to make the counter variable lexically scoped, meaning it being acce
 
 Lets change the lexical scope to move the counter variable inside the up counter.
 
-![closures-case-2](/img/closures-case-2.png "closures-case-2")
+![closures-case-2](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-2.png?alt=media&token=24a960d9-2cda-4964-86a4-a68e4d17104ag "closures-case-2")
 
     const add = () => {
       let counter = 0;
@@ -55,7 +55,7 @@ The way to do it is by creating closures. How do we do that?
 
 Lets write a function which will initiate a counter and return a function to increment the counter and return its value.
 
-![closures-case-3-before](/img/closures-case-3-before.png "closures-case-3-before")
+![closures-case-3-before](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-3-before.png?alt=media&token=8bc9247a-72e6-4b84-86d4-be0f2fefbd7e "closures-case-3-before")
 
     const add = () => {
       let counter = 0;
@@ -67,7 +67,7 @@ Lets write a function which will initiate a counter and return a function to inc
 
 Change it to a self invoking function so that the counter is initiated and add becomes a function the purpose of which is only to increment the counter.
 
-![closures-case-3-after](/img/closures-case-3-after.png "closures-case-3-after")
+![closures-case-3-after](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-3-after.png?alt=media&token=a49aeaf5-11e9-4ef0-98fe-3deb95fc57fa "closures-case-3-after")
 
     const add = (() => {
       let counter = 0;

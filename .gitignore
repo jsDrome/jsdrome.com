@@ -17,3 +17,4 @@ output
 src/server/index.js
 src/server/templates
 src/server/posts
+content.txt

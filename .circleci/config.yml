@@ -25,10 +25,10 @@ jobs:
           command: npm run build:client:prod && npm run build:server:prod
       - run:
           name: Stage Functions
-          command: npm run firebase:prod:functions
+          command: npm run firebase:server:prod
       - run:
           name: Stage Hosting
-          command: npm run firebase:stage:hosting
+          command: npm run firebase:client:test
 
   unit_test:
     working_directory: ~/repo
@@ -111,7 +111,7 @@ jobs:
             - ~/.cache
       - run:
           name: Production Hosting
-          command: npm run firebase:prod:hosting
+          command: npm run firebase:client:prod
 
 workflows:
   version: 2

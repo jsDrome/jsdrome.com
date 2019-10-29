@@ -1,4 +1,5 @@
 /* eslint-disable no-magic-numbers */
+
 import 'ignore-styles';
 import express from 'express';
 import React from 'react';
@@ -44,7 +45,6 @@ app.get('/data', (req, res) => {
   const { folder, subfolder, post } = req.query;
   var file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
   res.set('Content-type', 'text/plain');
-  // eslint-disable-next-line global-require
   res.send(file.toString());
 });
 
@@ -61,7 +61,6 @@ app.get('**', (req, res) => {
   );
 
   const css = sheets.toString().replace(/\n/g, " ");
-  // eslint-disable-next-line no-magic-numbers
   const reqPath = req.originalUrl.split('/').slice(2);
   const { title, ogTitle, description, ogDescription, ogUrl, ogImage } = getMetaTags(...reqPath);
   const content = renderFullPage(html, css, title, ogTitle, ogUrl, description, ogDescription, ogImage);

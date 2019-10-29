@@ -5,8 +5,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Fab from '@material-ui/core/Fab';
 import ShareIcon from '@material-ui/icons/Share';
 import classNames from 'classnames';
-
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import { Typography } from '@material-ui/core';
 import Navbar from '../Navbar/Navbar';
 import Content from '../Content/Content';
 import Sidebar from '../Sidebar/Sidebar';
@@ -15,8 +14,10 @@ import SidebarContent from '../SidebarContent/SidebarContent';
 import RightSidebarContent from '../SidebarContent/RightSidebarContent';
 import PayButton from '../PayButton/PayButton';
 import Toolbar from '../Toolbar/Toolbar';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 import styles from './styles';
+import CopyRight from '../CopyRight/CopyRight';
 
 const { TITLE, DESCRIPTION } = require('../../../../variables');
 
@@ -49,7 +50,6 @@ class App extends Component {
     const { drawerOpen } = this.state;
 
     return <div>
-      <noscript><ErrorMessage variant={'error'} message={"Please enable Javascript to continue."} /></noscript>
       <Navbar title={TITLE} description={DESCRIPTION} onNavbarMenuClick={this.handleDrawerToggle.bind(this)} onNavbarTitleClick={this.handleNavbarTitleClick.bind(this)} />
       <Sidebar drawerOpen={drawerOpen} handleDrawerToggle={this.handleDrawerToggle.bind(this)}>
         <SidebarContent onLinkClick={this.handleSidebarLinkClick.bind(this)} />
@@ -60,11 +60,14 @@ class App extends Component {
             <Grid item sm={9} className={classes.content}>
               <Toolbar />
               <Content>
+                <noscript><Typography style={{ textAlign: 'center' }} variant="h6">Please enable Javascript to continue.</Typography></noscript>
                 {children}
               </Content>
               <Hidden smUp>
                 <div style={{ margin: 10 }}>
                   <PayButton />
+                  <SocialLinks />
+                  <CopyRight />
                 </div>
               </Hidden>
             </Grid>

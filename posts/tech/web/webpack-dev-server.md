@@ -33,20 +33,20 @@ Webpack-dev-server opens an express server internally and serves at the specifie
 
 When compress is set to false, it sends the raw files across. If you look closely at the image below from the Chrome dev tools, you can see that there is no compression.
 
-![webpack-dev-server-no-compress-network](/img/webpack-dev-server-no-compress-network.png "webpack-dev-server-no-compress-network")
+![webpack-dev-server-no-compress-network](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-server-no-compress-network.png?alt=media&token=5aede7b6-4826-4fe5-9f7c-cc227597d122 "webpack-dev-server-no-compress-network")
 
 And the headers in the response is like below.
 
-![webpack-dev-server-no-compress-header](/img/webpack-dev-server-no-compress-header.png "webpack-dev-server-no-compress-header")
+![webpack-dev-server-no-compress-header](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-server-no-compress-header.png?alt=media&token=10acd047-7f92-4e7e-aa57-3b9467d324d0 "webpack-dev-server-no-compress-header")
 
 
 When its set to true, it gzip compresses the files and sends a `content-Encoding: gzip` header along with the responses.
 
-![webpack-dev-server-compress-network](/img/webpack-dev-server-compress-network.png "webpack-dev-server-compress-network")
+![webpack-dev-server-compress-network](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-server-compress-network.png?alt=media&token=f89dc725-509b-4a58-a2e0-227cbed99a22 "webpack-dev-server-compress-network")
 
 And the headers in the response is like below.
 
-![webpack-dev-server-compress-header](/img/webpack-dev-server-compress-header.png "webpack-dev-server-compress-header")
+![webpack-dev-server-compress-header](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-server-compress-header.png?alt=media&token=eee907eb-ebbf-4971-924f-690a1c18ef41 "webpack-dev-server-compress-header")
 
 ## Execute
 `npx webpack-dev-server --open --env=dev --config=webpack/webpack.config.js`

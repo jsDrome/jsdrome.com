@@ -1,4 +1,4 @@
-<img src='https://lh3.googleusercontent.com/m6ME4lelNY_cWIu7qJRKyBX09zOed1Pa-kS5WW0hadjAUyi99KMNacqtOR-Sa_Y8qKzyseNAySmIat5T7E8E0Gm692xvvaUb-hVKlllobdj_3YAyfoOa5VFLFgLXz7hhgJsMtZSB1c0=w3351-h1754-no' title='view from home' class='post-first-image img-portrait' />
+<img src='https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/IMG_0073.jpg?alt=media&token=6bd5a5d3-e928-463d-96a0-7dcaaa974cb1' title='view from home' class='post-first-image img-portrait' />
 
 # The view from my home balcony in Trivandrum
 

@@ -19,7 +19,7 @@ export default theme => ({
     minWidth: 300,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
-      // minWidth: '100%',
+      minWidth: '100%',
     },
   },
   fab: {
@@ -28,8 +28,8 @@ export default theme => ({
     right: 20,
     zIndex: 2002,
     [theme.breakpoints.down('xs')]: {
-      bottom: 70,
-      right: 0,
+      top: 60,
+      right: 10,
     },
   },
 });

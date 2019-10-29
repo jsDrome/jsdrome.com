@@ -38,9 +38,9 @@
           margin-right: -15px !important;
         }
         .img-portrait {
-          height: 400px !important;
+          max-height: 600px !important;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
           .img-portrait {
             width: auto !important;
           }
@@ -76,6 +76,16 @@
         }
         .clearfix {
           clear: both;
+        }
+        #iframe {
+          display: block;
+          margin: -15px 0 0 -15px;
+          width: calc(100% + 30px);
+        }
+        @media (max-width: 600px) {
+          #iframe {
+            margin-top: -65px;
+          }
         }
     </style>
     </head>

@@ -56,7 +56,7 @@ or
 
 The output will look like this. Notice the build time, asset name and the asset size. These are important.
 
-![webpack dev output](/img/webpack-dev-output.png "webpack dev output")
+![webpack dev output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-output.png?alt=media&token=4231d20b-5dc0-4170-bae3-5440ada7aaee "webpack dev output")
 
 &nbsp;
 
@@ -70,7 +70,7 @@ This is the entry file to tell webpack where to start the packaging from. In our
 
 This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/web/index.js` will be output as `dist/my-first-webpack-bundle.js`. If you look at the source code and the output code, they will look vastly different. The output will look like this given below.
 
-![webpack dev code](/img/webpack-dev-code.png "webpack dev code")
+![webpack dev code](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-code.png?alt=media&token=76d219da-429c-42bd-b2f6-7cca727add5f "webpack dev code")
 
 ### Module
 

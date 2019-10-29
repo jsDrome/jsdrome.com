@@ -20,7 +20,7 @@ Run webpack-dev-server.
 
 This will open the browser but you wont see anything. Open the console and you will see an error like below because our template doesnt have a div with id='root2'.
 
-![webpack error](/img/webpack-error.png "webpack error")
+![webpack error](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-error.png?alt=media&token=277b4ace-e8c2-4d45-ad80-cb306c377d00 "webpack error")
 
 If you look closely, the error doesn't say where it originates from. This is what we are going to solve using sourcemaps.
 
@@ -33,10 +33,10 @@ Modify `webpack.dev.js` to include the below code
 
 Run webpack-dev-server again. This time, the error looks a bit different like this:
 
-![webpack sourcemap](/img/webpack-sourcemap.png "webpack sourcemap")
+![webpack sourcemap](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-sourcemap.png?alt=media&token=06d97ea8-3ac3-41f5-92cc-546d2e16da43 "webpack sourcemap")
 
 Now if you look closely, the error tells where it originates from. Go to the sources tab and press `cmd+p`. Search for `index.js`. You will be able to see and debug your code which you wouldn't have been able to see without sourcemaps enabled. You can now spot the error and fix it.
 
-![webpack sourcemap debugging](/img/webpack-sourcemap-debugging.gif "webpack sourcemap debugging")
+![webpack sourcemap debugging](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-sourcemap-debugging.gif?alt=media&token=9eeaba0d-f420-49b2-962a-1162bafe7447 "webpack sourcemap debugging")
 
 Undo the error, commit and push.

@@ -1,10 +1,10 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import secondary from '@material-ui/core/colors/blue';
+import secondary from '@material-ui/core/colors/indigo';
 
 export default createMuiTheme({
   palette: {
     primary: {
-      main: '#37474f',
+      main: '#3a4e61',
     },
     secondary,
   },

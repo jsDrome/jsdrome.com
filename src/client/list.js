@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: 'Home',
-    keywords: [ 'sreeram', 'sreeram padmanabhan' ],
+    keywords: [ 'sreeram', 'sreeram padmanabhan', 'web of thoughts' ],
     links: [
       {
         title: 'Sreeram Padmanabhan - Home',
@@ -14,15 +14,23 @@ module.exports = [
     ],
   },
   {
-    title: 'My Photography',
+    title: 'Photography',
     keywords: [ 'iphone photography' ],
     links: [
+      {
+        title: 'View from my desk at work',
+        ogTitle: 'View from my desk at work - Sreeram Padmanabhan',
+        description: 'Captured using the iPhone 7 on 17 Jan 2019.',
+        ogDescription: 'Captured using the iPhone 7 on 17 Jan 2019.',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/IMG_4429.jpg?alt=media&token=112a5e93-2dc3-42a9-bfee-d067609cf1ee',
+        route: '/post/personal/photos/view-from-desk',
+      },
       {
         title: 'The best photo I\'ve ever taken',
         ogTitle: 'The best photo I\'ve ever taken - Sreeram Padmanabhan',
         description: 'I tried a bit of reflection photography in London.',
         ogDescription: 'I tried a bit of reflection photography in London.',
-        ogImage: 'https://lh3.googleusercontent.com/_PFiXnhrPQmwCtBRo3jjpP1AGdayBJdlYtoENULWiMincscmWhwPtnOuGn3LaCeqtYk88Z_33zJj1eCr_05mSEj_Wlqm3jS8sZ0zmYKyWLiR9_YDuH21Y1JMtjseutauoo91SvzwODE6UoVWnxt47VHmGQj9Osie77EtfM3ngKV7x5ThY4irFwLlLV5GjTVBYxPamVBhnXNvpSLy9RdKX2xmBP9uCNGYfiTr8PPTlfdAO6vfehgUsVKK7MNz1vlXHj5cXmRRcOOXegVtlbFr8yf3t1CxhSB-bQPXF-rt-LL9KPp-RM9ceCb94Gp0XqCJK43WlAO_EmD-xrMa72vz8AXg1njG5R7GXgK4YD31Wq82sCPg0gw2Wq-4nWlGW6mCyO2y2UyojEIvaUNgQ-ADU9Fe1dT-8kFRIDdR-5uWn_h5XeOSK-ap2sm6SuY6Ssf-DV6deaXbu7BxuVRoL43RCQiYew0-uW2D-Imcoo24C_OEINYsw6NG4vVVr0RZLoJfUwhYf7V0REvNyzp1HoPEtq-tdtw7qEA0ELtIgaaEwf2BwH3lQVy8d9ldRfQw3MAww7rXNZuPuJjBKRIEMT_KPknMldl-UK77oz4pFSzqKSyBQG9_LMbOq-PIARN1Bg5Jsw_uJbjErpXa0IrFsudRqa0KUF4hz9iLKpghXeAL0JNDpd1_wSqj2Ok=s1754-no',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/IMG_4054.JPG?alt=media&token=a332b9fb-0d8f-446d-aadb-c2b892345d10',
         route: '/post/personal/photos/london-eye-photo',
       },
       {
@@ -30,7 +38,7 @@ module.exports = [
         ogTitle: 'The viw from my home in Trivandrum - Sreeram Padmanabhan',
         description: 'The breathtaking greenery of Trivandrum',
         ogDescription: 'The breathtaking greenery of Trivandrum',
-        ogImage: 'https://lh3.googleusercontent.com/m6ME4lelNY_cWIu7qJRKyBX09zOed1Pa-kS5WW0hadjAUyi99KMNacqtOR-Sa_Y8qKzyseNAySmIat5T7E8E0Gm692xvvaUb-hVKlllobdj_3YAyfoOa5VFLFgLXz7hhgJsMtZSB1c0=w3351-h1754-no',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/IMG_0073.jpg?alt=media&token=6bd5a5d3-e928-463d-96a0-7dcaaa974cb1',
         route: '/post/personal/photos/view-from-home',
       },
       {
@@ -38,13 +46,13 @@ module.exports = [
         ogTitle: 'The coolest thing I\'ve seen from an Airplane - Sreeram Padmanabhan',
         description: 'A view of the snow covered mountains stretching as far as I could see..',
         ogDescription: 'A view of the snow covered mountains stretching as far as I could see..',
-        ogImage: 'https://qphs.fs.quoracdn.net/main-qimg-e7c3e6b75725d43e7355ca853d81ede8',
-        route: '/post/personal/photos/snow-mountains',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/main-qimg-e7c3e6b75725d43e7355ca853d81ede8.jpg?alt=media&token=d84dff5c-85c5-4c55-9eff-af5699ec1af9',
+        route: '/post/personal/photos/snow-capped-mountains',
       },
     ],
   },
   {
-    title: 'My life experiences',
+    title: 'Life experiences',
     keywords: [ 'life in uk', 'britain', 'germany', 'expat life', 'immigration', 'tax', 'indian' ],
     links: [
       {
@@ -400,7 +408,7 @@ module.exports = [
         ogTitle: 'Optimisation using Code Splitting - Sreeram Padmanabhan',
         description: 'Code splitting using Split chunks plugin in webpack.',
         ogDescription: 'Code splitting using Split chunks plugin in webpack.',
-        ogImage: '/img/webpack-code-splitting.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-code-splitting.png?alt=media&token=6ee856ca-c9d4-41c4-b4ab-c8ad94e9be0b',
         route: '/post/tech/web/optimisation-using-code-splitting',
       },
       {
@@ -462,8 +470,22 @@ module.exports = [
         ogTitle: 'What are closures in JavaScript? - Sreeram Padmanabhan',
         description: 'This is an attempt to better explain the example at W3 Schools for the same topic. Lets implement 2 counters. An up counter and a down counter. Lets look at the problems we face and their solutions.',
         ogDescription: 'This is an attempt to better explain the example at W3 Schools for the same topic. Lets implement 2 counters. An up counter and a down counter. Lets look at the problems we face and their solutions.',
-        ogImage: '/img/closures-case-3-after.png',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fclosures-case-3-after.png?alt=media&token=a49aeaf5-11e9-4ef0-98fe-3deb95fc57fa',
         route: '/post/tech/javascript/closures',
+      },
+    ],
+  },
+  {
+    title: 'My Web Apps',
+    keywords: [ 'z-axis', 'Mr. Z', 'online treasure hunt', 'z axis challenge' ],
+    links: [
+      {
+        title: 'The ZAxis Challenge',
+        ogTitle: 'The ZAxis Challenge - Sreeram Padmanabhan',
+        description: 'Do you think out of the box?',
+        ogDescription: 'Do you think out of the box?',
+        ogImage: 'https://z-axis.web.app/img/og_image.jpg',
+        route: '/post/tech/apps/z-axis',
       },
     ],
   },

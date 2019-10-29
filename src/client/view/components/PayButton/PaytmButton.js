@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import Button from '@material-ui/core/Button';
 import HourGlassIcon from '@material-ui/icons/HourglassFull';
-import FreeBreakfast from '@material-ui/icons/FreeBreakfast';
+import SponsorIcon from '@material-ui/icons/Favorite';
 // import AttachMoney from '@material-ui/icons/AttachMoney';
 // import MonetizationOnSharpIcon from '@material-ui/icons/MonetizationOnSharp';
 // import EuroTwoTone from '@material-ui/icons/EuroTwoTone';
@@ -41,10 +41,10 @@ class Paytmbutton extends Component {
         disabled={this.state.submit}
         onClick={this.onSubmit.bind(this)}
         variant="extended"
-        // size="small"
-        color="secondary"
+        size="large"
+        color="primary"
         style={{ width: '100%' }}>
-        {this.state.submit ? <HourGlassIcon /> : <React.Fragment><FreeBreakfast style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
+        {this.state.submit ? <HourGlassIcon /> : <React.Fragment><SponsorIcon style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
       </Fab>
       {/* <Button variant="contained" color="primary" disabled={this.state.submit} style={{ width: '100%', display: 'block' }} onClick={this.onSubmit.bind(this)}>
         {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })}`}

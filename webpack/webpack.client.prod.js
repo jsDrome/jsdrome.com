@@ -19,9 +19,9 @@ module.exports = merge(commonConfig, {
       precacheManifestFilename: 'wb-manifest.[manifestHash].js',
       templatedURLs: {
         '/': '/',
-        '/post/loading': '/post/loading',
+        '/post': '/',
       },
-      navigateFallback: '/post/loading',
+      navigateFallback: '/',
     }),
     new OptimizeCSSAssetsPlugin({
       assetNameRegExp: /\.css$/g,

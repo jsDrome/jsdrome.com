@@ -1,16 +1,16 @@
 {
   "projects": {
-    "default": "zaxisapp",
-    "test": "zaxisapp"
+    "default": "jsdrome",
+    "test": "jsdrome"
   },
   "targets": {
-    "zaxisapp": {
+    "jsdrome": {
       "hosting": {
         "prod": [
-          "sreeram"
+          "jsdrome"
         ],
         "test": [
-          "sreeram-test"
+          "jsdrome-test"
         ]
       }
     }

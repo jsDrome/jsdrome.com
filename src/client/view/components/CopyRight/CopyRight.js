@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
 import styles from './styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Link } from '@material-ui/core';
 import moment from 'moment';
 
 class Footer extends React.Component {
@@ -10,7 +10,7 @@ class Footer extends React.Component {
     const { classes } = this.props;
 
     return <div className={classes.root} >
-      <Typography variant="caption">Sreeram Padmanabhan &copy; {moment().format('YYYY')} | All rights reserved </Typography>
+      <Typography variant="caption">&copy; <Link color={"secondary"} href="https://github.com/jsDrome/jsdrome-2020">{"<jsDrome\\>"}</Link> {moment().format('YYYY')} | All rights reserved </Typography>
     </div>;
   }
 }

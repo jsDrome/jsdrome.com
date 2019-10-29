@@ -46,9 +46,7 @@ class Paytmbutton extends Component {
         style={{ width: '100%' }}>
         {this.state.submit ? <HourGlassIcon /> : <React.Fragment><SponsorIcon style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
       </Fab>
-      {/* <Button variant="contained" color="primary" disabled={this.state.submit} style={{ width: '100%', display: 'block' }} onClick={this.onSubmit.bind(this)}>
-        {this.state.submit ? <HourGlassIcon /> : `${text} ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })}`}
-      </Button> */}
+      <img src="/img/partners.jpg" style={{ width: 230, margin: 10, marginBottom: 0 }} />
       {/* ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })} */}
     </form>;
   }

@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "jsdrome",
+    "test": "jsdrome"
+  },
+  "targets": {
+    "jsdrome": {
+      "hosting": {
+        "prod": [
+          "jsdrome"
+        ],
+        "test": [
+          "jsdrome-test"
+        ]
+      }
+    }
+  }
+}

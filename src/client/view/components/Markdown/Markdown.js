@@ -5,12 +5,14 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from '@material-ui/core/Link';
 
+import Adsense from '../Adsense/Adsense';
+
 const styles = theme => ({
   listItem: {
     marginTop: theme.spacing(1),
   },
   paragraph: {
-      fontWeight: theme.typography.fontWeightLight,
+    fontWeight: theme.typography.fontWeightLight,
     textAlign: 'justify',
   },
 });
@@ -28,4 +30,11 @@ const options = {
   },
 };
 
-export default props => <ReactMarkdown options={options} {...props} />;
+export default props => <React.Fragment>
+  <ReactMarkdown options={options} {...props} />
+  <Adsense
+    adFormat="fluid"
+    adClient="ca-pub-6831276331714408"
+    adSlot="8343723799"
+    layoutKey="-h4-l+d-4g+dw" />
+</React.Fragment>;

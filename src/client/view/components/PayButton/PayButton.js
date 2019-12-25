@@ -41,7 +41,7 @@ class Pay extends Component {
       checksum={checksum}
       callbackUrl={callbackUrl}
       url={url}
-      text={"Sponsor "}/>;
+      text={"Buy me a Lunch"}/>;
   }
 }
 

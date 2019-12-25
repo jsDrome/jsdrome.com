@@ -4,7 +4,7 @@ module.exports = [
     keywords: [],
     links: [
       {
-        title: '<jsDrome />',
+        title: 'jsDrome',
         ogTitle: 'Open Graph Title',
         description: 'description',
         ogDescription: 'Open Graph Description',

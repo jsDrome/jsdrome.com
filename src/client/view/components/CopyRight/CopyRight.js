@@ -10,7 +10,7 @@ class Footer extends React.Component {
     const { classes } = this.props;
 
     return <div className={classes.root} >
-      <Typography variant="caption">&copy; <Link color={"secondary"} href="https://github.com/jsDrome/jsdrome-2020">{"<jsDrome\\>"}</Link> {moment().format('YYYY')} | All rights reserved </Typography>
+      <Typography variant="caption">&copy; <Link color={"secondary"} href="https://github.com/jsDrome/jsdrome-2020">jsDrome</Link> {moment().format('YYYY')} | All rights reserved </Typography>
     </div>;
   }
 }

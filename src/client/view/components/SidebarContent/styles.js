@@ -22,6 +22,7 @@ export default theme => ({
   },
   payButton: {
     width: 250,
+    marginTop: 15,
     marginBottom: 15,
   },
 });

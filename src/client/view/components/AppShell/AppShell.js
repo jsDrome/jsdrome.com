@@ -15,6 +15,7 @@ import RightSidebarContent from '../SidebarContent/RightSidebarContent';
 import PayButton from '../PayButton/PayButton';
 import Toolbar from '../Toolbar/Toolbar';
 import SocialLinks from '../SocialLinks/SocialLinks';
+import FBChat from '../FBChat/FBChat';
 
 import styles from './styles';
 import CopyRight from '../CopyRight/CopyRight';
@@ -86,6 +87,7 @@ class App extends Component {
         <span className="hidden-accessiiblity">Share</span>
         <ShareIcon />
       </Fab>
+      <FBChat pageId={"102642487897333"} />
     </div>;
   }
 }

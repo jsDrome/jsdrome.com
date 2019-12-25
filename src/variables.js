@@ -1,8 +1,8 @@
 const list = require('./client/list');
 
 const TIMESTAMP = new Date().getTime();
-const SHORT_NAME = '<jsDrome />';
-const TITLE = '<jsDrome />';
+const SHORT_NAME = 'jsDrome';
+const TITLE = 'jsDrome';
 const AUTHOR = 'Sreeram Padmanabhan';
 const DESCRIPTION = 'Isomorphic PWA Boilerplate for Firebase';
 const SHORT_DESCRIPTION = 'IPWFA';

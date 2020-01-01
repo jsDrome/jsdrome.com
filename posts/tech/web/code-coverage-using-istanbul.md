@@ -26,4 +26,4 @@ Run `npm run test`. It will generate the test coverage report on the console as 
 
 ## Output
 
-![karma html output](/img/karma-html-output.jpg "karma html output")
+![karma html output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/karma-html-output.jpg?alt=media&token=4d3231c9-bfe1-46b0-80af-5b97646ccaea "karma html output")

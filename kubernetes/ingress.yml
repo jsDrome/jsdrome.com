@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1 # for versions before 1.14 use extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jsdrome2020-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: jsdrome.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jsdrome2020-service
+          servicePort: 5000

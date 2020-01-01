@@ -54,7 +54,7 @@ Create a file called `_webpack/webpack.config.js` and `_webpack/webpack.dev.js` 
 
 The output will look like this. Notice the build time, asset name and the asset size. These are important.
 
-![webpack dev output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-output.png?alt=media&token=4231d20b-5dc0-4170-bae3-5440ada7aaee "webpack dev output")
+![webpack dev output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-output.png?alt=media&token=b3f3324c-f38c-4a79-ad12-9fedf333c6e1 "webpack dev output")
 
 &nbsp;
 
@@ -68,7 +68,7 @@ This is the entry file to tell webpack where to start the packaging from. In our
 
 This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `_dist/my-first-webpack-bundle.js`. If you look at the source code and the output code, they will look vastly different. The output will look like this given below.
 
-![webpack dev code](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-dev-code.png?alt=media&token=76d219da-429c-42bd-b2f6-7cca727add5f "webpack dev code")
+![webpack dev code](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-code.png?alt=media&token=f9b34569-f743-4421-a2ec-0510e3a9ff2d "webpack dev code")
 
 ### Module
 

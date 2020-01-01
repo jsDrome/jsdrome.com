@@ -62,7 +62,7 @@ module.exports = [
         ogTitle: 'Webpack Dev Config - Web of Thoughts - Sreeram Padmanabhan',
         description: 'How to configure webpack to build for developement.',
         ogDescription: 'How to configure webpack to build for developement.',
-        ogImage: '/img/og_image.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-output.png?alt=media&token=b3f3324c-f38c-4a79-ad12-9fedf333c6e1',
         route: '/post/tech/web/webpack-dev-setup',
       },
       {
@@ -70,7 +70,7 @@ module.exports = [
         ogTitle: 'Webpack Prod config - Web of Thoughts - Sreeram Padmanabhan',
         description: 'Setting up Webpack for Production environments.',
         ogDescription: 'Setting up Webpack for Production environments.',
-        ogImage: '/img/og_image.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-prod-code.png?alt=media&token=44933bef-b96a-494b-804f-c79eba574906',
         route: '/post/tech/web/webpack-prod-setup',
       },
       {
@@ -78,7 +78,7 @@ module.exports = [
         ogTitle: 'htmlWebpackPlugin - Web of Thoughts - Sreeram Padmanabhan',
         description: 'How to create index.html using HTMLWebpack Plugin.',
         ogDescription: 'How to create index.html using HTMLWebpack Plugin.',
-        ogImage: '/img/og_image.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-output.png?alt=media&token=b3f3324c-f38c-4a79-ad12-9fedf333c6e1',
         route: '/post/tech/web/webpack-html-webpack-plugin',
       },
       {
@@ -94,7 +94,7 @@ module.exports = [
         ogTitle: 'WebpackDevServer - Web of Thoughts - Sreeram Padmanabhan',
         description: 'How to configure webpack dev server for local builds.',
         ogDescription: 'How to configure webpack dev server for local builds.',
-        ogImage: '/img/og_image.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-server-compress-header.png?alt=media&token=c6519250-9015-44d2-88ab-3f11a7078f14',
         route: '/post/tech/web/webpack-dev-server',
       },
       {
@@ -102,7 +102,7 @@ module.exports = [
         ogTitle: 'Hosting your site in Firebase - Web of Thoughts - Sreeram Padmanabhan',
         description: 'How to host your static website in Firebase.',
         ogDescription: 'How to host your static website in Firebase.',
-        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Ffirebase_head-750x354.png?alt=media&token=14d23c8e-2e2a-4f87-af1b-397b9a9be35e',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/firebase_head-750x354.png?alt=media&token=c461a29c-7716-42ec-8d9d-20a55503404f',
         route: '/post/tech/web/firebase-hosting',
       },
       {
@@ -110,7 +110,7 @@ module.exports = [
         ogTitle: 'Integrating your codebase with Circle CI - Web of Thoughts - Sreeram Padmanabhan',
         description: 'How to configure Circle CI to build your code automatically.',
         ogDescription: 'How to configure Circle CI to build your code automatically.',
-        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fundraw_following_q0cr.svg?alt=media&token=dace89b1-505d-4d83-9599-b1c05b1c8faa',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/undraw_following_q0cr.svg?alt=media&token=4a95ba13-c23f-4a1b-b4d0-7993694b4756',
         route: '/post/tech/web/circle-ci-setup',
       },
       {
@@ -134,7 +134,7 @@ module.exports = [
         ogTitle: 'Enabling Sourcemaps - Web of Thoughts - Sreeram Padmanabhan',
         // description: '',
         // ogDescription: '',
-        ogImage: '/img/og_image.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-sourcemap.png?alt=media&token=6b0ec3f2-4e10-4663-a22e-bdbbcb90567f',
         route: '/post/tech/web/sourcemaps',
       },
       {
@@ -174,7 +174,7 @@ module.exports = [
         ogTitle: 'How does redux work under the hood? - Sreeram Padmanabhan',
         description: 'How do the view layer and the data layer work in conjunction?',
         ogDescription: 'How do the view layer and the data layer work in conjunction?',
-        ogImage: '/img/redux.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/redux.jpg?alt=media&token=f8872557-636b-456f-97c1-8d6d60207a13',
         route: '/post/tech/web/how-redux-works',
       },
       {
@@ -182,7 +182,7 @@ module.exports = [
         ogTitle: 'Analysing Webpack\'s output bundle - Sreeram Padmanabhan',
         description: 'Analysing Webpack\'s output bundle using webpack-bundle-analyser plugin and webpack-visualizer plugins.',
         ogDescription: 'Analysing Webpack\'s output bundle using webpack-bundle-analyser plugin and webpack-visualizer plugins.',
-        ogImage: '/img/visualizer-output.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/visualizer-output.jpg?alt=media&token=66b4096f-c48c-41f5-bbb5-d28f02d71e3d',
         route: '/post/tech/web/webpack-bundle-analysis',
       },
       {
@@ -190,7 +190,7 @@ module.exports = [
         ogTitle: 'Optimisation using Code Splitting - Sreeram Padmanabhan',
         description: 'Code splitting using Split chunks plugin in webpack.',
         ogDescription: 'Code splitting using Split chunks plugin in webpack.',
-        ogImage: 'https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-code-splitting.png?alt=media&token=6ee856ca-c9d4-41c4-b4ab-c8ad94e9be0b',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-code-splitting.jpg?alt=media&token=68520d7a-06da-4feb-ae53-870b76c8cda8',
         route: '/post/tech/web/optimisation-using-code-splitting',
       },
       {
@@ -198,7 +198,7 @@ module.exports = [
         ogTitle: 'Karma, Jasmine, Enzyme Configuration - Sreeram Padmanabhan',
         description: 'Configuring unit tests in frontend projects.',
         ogDescription: 'Configuring unit tests in frontend projects.',
-        ogImage: '/img/karma-html-output.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/karma-console-output.png?alt=media&token=a85ea5e2-c31f-4c96-a309-95c4d2236396',
         route: '/post/tech/web/unit-testing-using-karma-jasmine-enzyme',
       },
       {
@@ -206,47 +206,47 @@ module.exports = [
         ogTitle: 'Code coverage using Istanbul - Sreeram Padmanabhan',
         description: 'Calculating code coverage in frontend projects.',
         ogDescription: 'Calculating code coverage in frontend projects.',
-        ogImage: '/img/karma-html-output.jpg',
+        ogImage: 'https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/karma-html-output.jpg?alt=media&token=4d3231c9-bfe1-46b0-80af-5b97646ccaea',
         route: '/post/tech/web/code-coverage-using-istanbul',
       },
     ],
   },
-  {
-    title: 'jsDrome Boilerplate',
-    keywords: [],
-    links: [
-      {
-        title: 'Features',
-        route: '/post/setup/tutorials/features',
-      },
-      {
-        title: 'Short cut way to setup',
-        route: '/post/setup/tutorials/short-cut',
-      },
-      {
-        title: 'Comprehensive way to setup',
-        route: '/post/setup/tutorials/long-cut',
-      },
-      {
-        title: 'Folder structure',
-        route: '/post/setup/tutorials/folder-structure',
-      },
-      {
-        title: 'Environment variables',
-        route: '/post/setup/tutorials/environment-variables',
-      },
-      {
-        title: 'Npm scripts',
-        route: '/post/setup/tutorials/npm-scripts',
-      },
-      {
-        title: 'Running App locally',
-        route: '/post/setup/tutorials/running-app-locally',
-      },
-      {
-        title: 'Creating a blog post',
-        route: '/post/setup/tutorials/new-blog-post',
-      },
-    ],
-  },
+  // {
+  //   title: 'jsDrome Boilerplate',
+  //   keywords: [],
+  //   links: [
+  //     {
+  //       title: 'Features',
+  //       route: '/post/setup/tutorials/features',
+  //     },
+  //     {
+  //       title: 'Short cut way to setup',
+  //       route: '/post/setup/tutorials/short-cut',
+  //     },
+  //     {
+  //       title: 'Comprehensive way to setup',
+  //       route: '/post/setup/tutorials/long-cut',
+  //     },
+  //     {
+  //       title: 'Folder structure',
+  //       route: '/post/setup/tutorials/folder-structure',
+  //     },
+  //     {
+  //       title: 'Environment variables',
+  //       route: '/post/setup/tutorials/environment-variables',
+  //     },
+  //     {
+  //       title: 'Npm scripts',
+  //       route: '/post/setup/tutorials/npm-scripts',
+  //     },
+  //     {
+  //       title: 'Running App locally',
+  //       route: '/post/setup/tutorials/running-app-locally',
+  //     },
+  //     {
+  //       title: 'Creating a blog post',
+  //       route: '/post/setup/tutorials/new-blog-post',
+  //     },
+  //   ],
+  // },
 ];

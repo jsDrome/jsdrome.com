@@ -5,10 +5,10 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    index: ['./src/server/dev.js'],
+    index: ['./src/server/prod.js'],
   },
   output: {
-    path: path.resolve(__dirname, '../_dist'),
+    path: path.resolve(__dirname, '../functions'),
     libraryTarget: 'commonjs2',
   },
   module: {
@@ -34,7 +34,7 @@ module.exports = {
       'process.env': {
         KEY: JSON.stringify(process.env.PAYTM_KEY || "abcdefghijklmnop"),
         NODE_ENV: JSON.stringify('production'),
-        PORT: JSON.stringify(process.env.PORT || 5000),
+        FIREBASE: JSON.stringify('true'),
       },
     }),
   ],

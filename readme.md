@@ -286,3 +286,74 @@ Create a `.md` file at the mentioned route in the list file.
 
 Once commited and pushed, the master branch will be deployed to production, all other branches will only be pushed to test env.
 
+
+## Some other commands
+
+// minikube
+minikube status
+minikube start --vm-driver=virtualbox
+minikube dashboard
+minikube service jsdrome2020-service --url
+minikube stop
+
+// kubectl create
+
+kubectl create -f kubernetes/deployment.yml
+kubectl create -f kubernetes/services.yml
+kubectl create -f kubernetes/ingress.yml
+
+or
+
+kubectl create deployment jsdrome2020-deployment --image=jsdrome/jsdrome2020
+kubectl expose deployment jsdrome2020-deployment --type=LoadBalancer --port=5000
+
+// kubectl get
+
+kubectl get deployments
+kubectl get pods
+kubectl get services
+kubectl get secrets
+kubectl get ingress
+
+// kubectl delete
+
+kubectl delete services jsdrome2020-service
+kubectl delete deployment jsdrome2020-deployment
+kubectl delete pod jsdrome2020-pod
+kubectl delete ingress jsdrome2020-ingress
+
+kubectl delete --all deployments
+kubectl delete --all pods
+kubectl delete --all services
+kubectl delete --all ingress
+
+// kubectl scale
+
+kubectl scale -n default deployment jsdrome2020-deployment --replicas=4
+
+// kubectl secret
+kubectl create secret generic jsdrome2020-secrets --from-literal=PAYTM_KEY=qWzN4AATjzd8pRPC
+
+// kubectl describe
+kubectl describe deployments
+kubectl describe secrets/jsdrome2020-secrets
+
+// docker
+docker ps -a
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker images
+docker pull jsdrome/jsdrome2020
+docker build
+docker run -p 9000:5000 jsdrome/jsdrome2020
+docker push
+
+// docker-compose
+docker-compose up --build
+docker-compose -f docker-compose.yml up --build
+docker-compose push
+
+// Heroku
+
+heroku container:push web
+heroku container:release web

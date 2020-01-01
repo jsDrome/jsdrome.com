@@ -1,4 +1,4 @@
-<img src="https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fundraw_following_q0cr.svg?alt=media&token=dace89b1-505d-4d83-9599-b1c05b1c8faa" title="browser-extensions" class="post-first-image" />
+<img src="https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/undraw_following_q0cr.svg?alt=media&token=4a95ba13-c23f-4a1b-b4d0-7993694b4756" title="browser-extensions" class="post-first-image" />
 
 # How to integrate your code with Circle CI
 

@@ -1,5 +1,3 @@
-<img src='https://github.com/jsDrome/jsdrome-2020/blob/master/images/site/og_image.jpg?raw=true' title='jsdrome lighthouse' class='post-first-image' />
-
 # Features
 
 &nbsp;

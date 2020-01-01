@@ -1,4 +1,4 @@
-<img src="https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Ffirebase_head-750x354.png?alt=media&token=14d23c8e-2e2a-4f87-af1b-397b9a9be35e" title="firebase hosting" class="post-first-image" />
+<img src="https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/firebase_head-750x354.png?alt=media&token=c461a29c-7716-42ec-8d9d-20a55503404f" title="firebase hosting" class="post-first-image" />
 
 ## Setup
 

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jsdrome2020-deployment
+  labels:
+    app: jsdrome2020-deployment-label
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jsdrome2020-app
+  template:
+    metadata:
+      labels:
+        app: jsdrome2020-app
+        tier: frontend
+    spec:
+      containers:
+      - name: jsdrome2020-container
+        image: jsdrome/jsdrome2020
+        imagePullPolicy: Always
+        ports:
+        - name: http-server
+          containerPort: 5000
+        env:
+          - name: PAYTM_KEY
+            valueFrom:
+              secretKeyRef:
+                name: jsdrome2020-secrets
+                key: PAYTM_KEY

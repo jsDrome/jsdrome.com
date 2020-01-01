@@ -33,7 +33,7 @@ Add the following lines of code to the plugins section in both `webpack.dev.js` 
 If you see the webpack output, it will show an index.html file being emitted along with the bundled js file. And if you check the dist folder, it will have a reference to the app.js
 
 
-![webpack dev output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-html-webpack-plugin-output.png?alt=media&token=6a8e173d-ec40-46e4-89a7-d9375fb9bae4 "webpack dev output")
+![webpack dev output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-output.png?alt=media&token=b3f3324c-f38c-4a79-ad12-9fedf333c6e1 "webpack dev output")
 
 
 ## Adding root node

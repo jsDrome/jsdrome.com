@@ -1,4 +1,4 @@
-<img src="/img/redux.jpg" title="redux" class="post-first-image" />
+<img src="https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/redux.jpg?alt=media&token=f8872557-636b-456f-97c1-8d6d60207a13" title="redux" class="post-first-image" />
 
 # Redux in a nutshell - How does it work?
 

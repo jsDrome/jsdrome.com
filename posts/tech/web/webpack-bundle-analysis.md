@@ -36,7 +36,7 @@ or
 
 You can see a file called `bundle.html` in the dist folder once the prod build has been successfully completed. Open it to understand which packages take up the most space. It will look something like this below.
 
-![bundle analysis output](/img/bundle-analysis-output.jpg "bundle analysis output")
+![bundle analysis output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/bundle-analysis-output.jpg?alt=media&token=133f578e-e1ec-455a-a359-469131e745d1 "bundle analysis output")
 
 Commit and push.
 
@@ -76,6 +76,6 @@ or
 
 You can see a file called `visualizer.html` in the dist folder once the prod build has been successfully completed. Open it to understand which packages take up the most space. It will look something like this below.
 
-![visualizer output](/img/visualizer-output.jpg "visualizer output")
+![visualizer output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/visualizer-output.jpg?alt=media&token=66b4096f-c48c-41f5-bbb5-d28f02d71e3d "visualizer output")
 
 Commit and push.

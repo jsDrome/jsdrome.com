@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors);
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.FIREBASE !== 'true') {
   app.use(express.static('_dist'));
 }
 

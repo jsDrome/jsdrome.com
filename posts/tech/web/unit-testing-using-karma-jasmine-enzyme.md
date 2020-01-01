@@ -97,4 +97,4 @@
 
 ## Output
 
-![karma console output](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fkarma-console-output.png?alt=media&token=78f0e475-122f-48de-bbd2-57908f56dbef "karma console output")
+![karma console output](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/karma-console-output.png?alt=media&token=a85ea5e2-c31f-4c96-a309-95c4d2236396 "karma console output")

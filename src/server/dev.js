@@ -3,7 +3,7 @@
 
 import app from './app';
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 app.listen(port);
 console.log(`SERVER: Listening on port ${port}`);

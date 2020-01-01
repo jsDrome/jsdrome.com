@@ -42,7 +42,7 @@ Create a file called `_webpack_/webpack.prod.js` at the root with the following 
 
 The output will look like this. Notice the build time, asset name and the asset size. Also notice the vast savings in the size of the bundled files.
 
-<img class="post-img" title="webpack prod output" src="https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-prod-output.png?alt=media&token=70cbb263-f229-4c1e-8e60-310918bb19a6">
+<img class="post-img" title="webpack prod output" src="https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-prod-code.png?alt=media&token=44933bef-b96a-494b-804f-c79eba574906">
 
 &nbsp;
 
@@ -56,7 +56,7 @@ This is the entry file to tell webpack where to start the packaging from. In our
 
 This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `dist/bundle.js`. If you look at both the codes, they will look vastly different. It will look something like this given below. Moreover, it will look vastly different from the dev output. This is because, when we specified `mode: production`, webpack packaged the minified version of packages.
 
-![webpack prod code](https://firebasestorage.googleapis.com/v0/b/zaxisapp.appspot.com/o/blog%2Fwebpack-prod-code.png?alt=media&token=b70136dc-5ac5-46fe-99be-23a33b5d1519 "webpack prod code")
+![webpack prod code](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-prod-output.png?alt=media&token=c4f0df1a-bf3c-47c9-b9ab-5ca39d9e0e8a "webpack prod code")
 
 ### Module
 

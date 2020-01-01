@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: jsdrome/jsdrome2020
+    ports:
+    - 9000:5000
+    environment:
+      - PAYTM_KEY=${PAYTM_KEY}

@@ -357,4 +357,20 @@ docker-compose push
 
 heroku container:push web
 heroku container:release web
---
+
+// Helm
+
+helm ls
+helm install jsdrome .
+helm uninstall jsdrome
+helm get manifests jsdrome
+helm upgrade jsdrome . --set replicaCount=5
+helm upgrade jsdrome . --set containerName=sreeram/sreeram2020
+helm rollback jsdrome 1
+
+
+// Terraform
+
+terraform plan -out myplan
+terraform apply "myplan"
+terraform destroy

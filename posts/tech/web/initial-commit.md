@@ -3,7 +3,7 @@
 &nbsp;
 
 ## Summary
-In the previous chapter, we setup the Development Environment. In this chapter, we will make our first commit to the repo.
+In the previous chapter, we setup the development environment. In this chapter, we will make our first commit to the repo.
 
 Tools like editorconfig and eslint ensure good coding practices is followed by all in the team. We will see how to integrate them into our application.
 

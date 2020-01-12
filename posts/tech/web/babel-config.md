@@ -34,9 +34,6 @@ Create a file called `.babelrc` at the root with the following code.
         "istanbul",
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-syntax-dynamic-import",
-        ["@babel/plugin-transform-runtime", {
-          "regenerator": true
-        }]
       ]
     }
 

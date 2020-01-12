@@ -13,34 +13,14 @@ In this post, we will see how we can enforce ourselves and others working on the
 
 The next step is to install husky to lint commits before they are created.  You can use Husky's 'commit-msg' hook:
 
-    {
       "husky": {
         "hooks": {
           "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
       }
-    }
 
 With this, any commit messages will be checked for lint errors.
 
 Also, create a file called `commitlint.config.js` with the following content:
 
     module.exports = { extends: [ '@commitlint/config-conventional' ] };
-
-## How I do it in my projects
-
-In my projects, during a commit, I show a desktop notification 'Are you being a resposible commitizen?' Which is followed by another notification indicating if it passed or failed. I use the `notify` npm package to achieve this and below is my husky configuration.
-
-    "husky": {
-      "hooks": {
-        "pre-commit": "./node_modules/.bin/notify -t 'Notification' -m 'Are you being a responsible commitizen?'",
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "post-commit": "./node_modules/.bin/notify -t 'Notification' -m 'Commit Successful' -s Glass"
-      }
-    },
-
-## Extra
-
-Add a badge to your repo like: [![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
-    [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)

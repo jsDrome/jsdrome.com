@@ -36,7 +36,7 @@ const OG_IMAGE_ALT = TITLE;
 const OG_TYPE = 'website';
 const OG_FB_APP_ID = '297023651089707'; // Your facebook app id for facebook likes etc.
 const PAYTM_TEST = {
-  amount: 100,
+  amount: 999,
   merchantId: 'lfBFyS02396274370168', // Your paytm merchant test id
   website: "WEBSTAGING",
   orderId: TIMESTAMP,
@@ -49,7 +49,7 @@ const PAYTM_TEST = {
   url: `https://securegw-stage.paytm.in/theia/processTransaction?ORDER_ID=${TIMESTAMP}`,
 };
 const PAYTM_PROD = {
-  amount: 100,
+  amount: 999,
   merchantId: 'lzSXOq48634307639622', // your paytm prod test id
   website: "DEFAULT",
   orderId: TIMESTAMP,
@@ -101,10 +101,10 @@ module.exports = {
   KEYWORDS,
   PATHS,
   THEME_COLOR,
-  INSTAGRAMLINK: 'https://instagram.com/sreeramofficial',
-  FACEBOOKLINK: 'https://facebook.com/sreeram.io',
-  LINKEDINLINK: 'https://www.linkedin.com/in/sreeramofficial/',
+  INSTAGRAMLINK: 'https://instagram.com/jsdrome',
+  FACEBOOKLINK: 'https://facebook.com/jsdrome',
+  LINKEDINLINK: 'https://www.linkedin.com/company/jsdrome/',
   YOUTUBELINK: 'https://www.youtube.com/channel/UCBi39XFUKrqJtuN3DoKLDlg?view_as=subscriber',
-  TWITTERLINK: 'https://twitter.com/in/sreeramofficial',
-  EMAIL: 'me@sreeram.app',
+  TWITTERLINK: 'https://twitter.com/in/jsdrome',
+  EMAIL: 'hi@jsdrome.com',
 };

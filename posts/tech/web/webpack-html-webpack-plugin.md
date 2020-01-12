@@ -14,7 +14,7 @@ So we have come a long way. We setup the codebase, introduced React, we built th
 
 Add the following lines of code to the plugins section in both `webpack.dev.js` and `webpack.prod.js`. Note that we are duplicating the code in two different files. We will resolve this code duplication issue by creating a common file for both dev and prod builds in the next chapter.
 
-## Code for webpack.dev.js and webpack.prod.js
+## Code for webpack.common.js
 
     const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -44,11 +44,11 @@ If you notice the entry point file, we ask react to render the app in a div with
     plugins: [
       new HtmlWebpackPlugin({
         title: 'My website',
-        template: path.resolve(__dirname, 'template/template.html'),
+        template: path.resolve(__dirname, '_template/client.html'),
       }),
     ],
 
-Create a file at this path -`templates/template.ejs` with the following code.
+Create a file at this path -`_templates/client.html` with the following code.
 
     <!DOCTYPE html>
     <html>

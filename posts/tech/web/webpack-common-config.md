@@ -16,7 +16,6 @@ Create a file called `_webpack/webpack.common.js` at the root and move any commo
 ## Code - webpack.common.js
 
     const path = require('path');
-    const HtmlWebpackPlugin = require('html-webpack-plugin');
 
     module.exports = {
       entry: {
@@ -25,7 +24,6 @@ Create a file called `_webpack/webpack.common.js` at the root and move any commo
       output: {
         path: path.resolve(__dirname, '../_dist'),
         filename: '[name].bundle.js',
-        publicPath: '/',
       },
       module: {
         rules: [
@@ -38,12 +36,6 @@ Create a file called `_webpack/webpack.common.js` at the root and move any commo
           },
         ],
       },
-      plugins: [
-        new HtmlWebpackPlugin({
-          title: 'My Website',
-          template: path.resolve(__dirname, 'template/template.html'),
-        }),
-      ],
     };
 
 ## Code - webpack.dev.js
@@ -67,6 +59,5 @@ Create a file called `_webpack/webpack.common.js` at the root and move any commo
 ## Execute
 
 `npx webpack --env=prod --config=_webpack/webpack.config.js`
-
 
 Commit and push.

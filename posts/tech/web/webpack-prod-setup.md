@@ -20,7 +20,7 @@ Create a file called `_webpack_/webpack.prod.js` at the root with the following 
       },
       output: {
         path: path.resolve(__dirname, '../_dist'),
-        filename: 'bundle.js',
+        filename: 'app.bundle.js',
       },
       module: {
         rules: [
@@ -38,7 +38,7 @@ Create a file called `_webpack_/webpack.prod.js` at the root with the following 
 
 ## Execute
 
-`npx webpack --env=prod --config=webpack/webpack.config.js`
+`npx webpack --env=prod --config=_webpack/webpack.config.js`
 
 The output will look like this. Notice the build time, asset name and the asset size. Also notice the vast savings in the size of the bundled files.
 
@@ -50,11 +50,11 @@ The output will look like this. Notice the build time, asset name and the asset 
 
 ### Entry
 
-This is the entry file to tell webpack where to start the packaging from. In our case, its `src/web/index.js`. I have also set react as another entry point. More on this later.
+This is the entry file to tell webpack where to start the packaging from. In our case, its `src/client/index.js`. I have also set react as another entry point. More on this later.
 
 ### Output
 
-This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `dist/bundle.js`. If you look at both the codes, they will look vastly different. It will look something like this given below. Moreover, it will look vastly different from the dev output. This is because, when we specified `mode: production`, webpack packaged the minified version of packages.
+This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `_dist/app.bundle.js`. If you look at both the codes, they will look vastly different. It will look something like this given below. Moreover, it will look vastly different from the dev output. This is because, when we specified `mode: production`, webpack packaged the minified version of packages.
 
 ![webpack prod code](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-prod-output.png?alt=media&token=c4f0df1a-bf3c-47c9-b9ab-5ca39d9e0e8a "webpack prod code")
 

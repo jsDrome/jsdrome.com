@@ -25,4 +25,9 @@ export default theme => ({
     marginTop: 15,
     marginBottom: 15,
   },
+  text: { display: 'block', width: 250, textAlign: 'center', margin: 10 },
+  avatar: {
+    display: 'inline-block',
+    margin: 5,
+  },
 });

@@ -32,7 +32,7 @@ Create a file called `_webpack/webpack.config.js` and `_webpack/webpack.dev.js` 
       },
       output: {
         path: path.resolve(__dirname, '../_dist'),
-        filename: 'my-first-webpack.bundle.js',
+        filename: 'app.bundle.js',
       },
       module: {
         rules: [
@@ -50,7 +50,7 @@ Create a file called `_webpack/webpack.config.js` and `_webpack/webpack.dev.js` 
 
 ## Execute
 
-`npx webpack --env=dev --config=webpack/webpack.config.js`
+`npx webpack --env=dev --config=_webpack/webpack.config.js`
 
 The output will look like this. Notice the build time, asset name and the asset size. These are important.
 
@@ -66,7 +66,7 @@ This is the entry file to tell webpack where to start the packaging from. In our
 
 ### Output
 
-This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `_dist/my-first-webpack-bundle.js`. If you look at the source code and the output code, they will look vastly different. The output will look like this given below.
+This tells webpack where to output the end product. Also specified is the name of the file to be output as. So, all the code in our `src/client/index.js` will be output as `_dist/app.bundle.js`. If you look at the source code and the output code, they will look vastly different. The output will look like this given below.
 
 ![webpack dev code](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-code.png?alt=media&token=f9b34569-f743-4421-a2ec-0510e3a9ff2d "webpack dev code")
 

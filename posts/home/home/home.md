@@ -12,34 +12,44 @@ How to create a full fledged web application using the latest technologies.
 
 ## How long will this take
 
-The classes are of 1 hour sessions on an alternate day basis and runs for a month (sometimes 2). You will be put in a batch with up to 10 other people. The classes will be practical and so you will need a computer.
+The classes are of 1 hour sessions on an alternate day basis and runs for a month (sometimes 2). You will be put in a batch with up to 10 other people. The classes will be practical and so you will need a computer and a good internet connection.
 
 ## What you will need
- - Good internet connection
- - Computer with an OS preferably linux based.
- - ​A Github account
- - Install Node JS, Slack and VS Code in your machine.
- - Install Git bash if you're using Windows.
+- Computer with an OS preferably linux based.
+- Good internet connection
+​- Github account
+- Node JS,
+- VS Code.
+- Git bash (only for Windows).
+
 
 ## What will be expected of you
 
-Just be regular. Ask any questions you might have. No excuses please.
+ - Be regular.
+ - Ask any questions you might have.
+ - No excuses.
 
 ## What's in it for you
 
-Every student has his own take aways. Some for new skills, some for career shift, some for moving abroad.
+Every student has his own take away from this. Some for new skills, some for career shift, some for moving abroad.
 
-## How do you join?
-
-Get in touch with me over the chatbox.
-
-## Typical excuses you need to avoid
+## Excuses you need to avoid
 
  - Can I join using my mobile?
  - Sorry I dozed off.
  - I had to take care of my children.
  - I'm outside and hence couldn't join.
 
-Because free doesn't mean easy. Good luck.
+## Plans
 
-&nbsp;
+### Free Plan (~15 - 20 classes)
+ - Isomorphic, Progressive Single Page Web Apps
+ - Frontend, Backend, DevOps, Testing
+ - Deploying your web app to Google Firebase
+
+### Advanced Plan (~30 - 40 classes, ₹15k)
+ - Free Plan +
+ - Containerisation, Kubernetes Clusters, Terraform
+ - Native app development using React Native
+ - Deploying your Android app to Google Play Store
+ - PayTM Payment Gateway Integration

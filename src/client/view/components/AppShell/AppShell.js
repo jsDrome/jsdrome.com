@@ -83,7 +83,7 @@ class App extends Component {
           </Grid>
         </div>
       </div>
-      <Fab className={classNames(classes.fab)} color={'primary'} onClick={this.handleShareClick} aria-label="share" name="share">
+      <Fab className={classNames(classes.fab)} color={'secondary'} onClick={this.handleShareClick} aria-label="share" name="share">
         <span className="hidden-accessiiblity">Share</span>
         <ShareIcon />
       </Fab>

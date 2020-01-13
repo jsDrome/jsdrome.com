@@ -6,6 +6,9 @@ export default theme => ({
       marginTop: -15,
     },
   },
+  box: {
+    width: 250,
+  },
   nestedListItem: {
     paddingLeft: 30,
     padding: 3,
@@ -28,6 +31,6 @@ export default theme => ({
   text: { display: 'block', width: 250, textAlign: 'center', margin: 10 },
   avatar: {
     display: 'inline-block',
-    margin: 5,
+    margin: 0,
   },
 });

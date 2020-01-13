@@ -53,3 +53,58 @@ Every student has his own take away from this. Some for new skills, some for car
  - Native app development using React Native
  - Deploying your Android app to Google Play Store
  - PayTM Payment Gateway Integration
+
+### Topics
+
+- Initiate NodeJS project
+- Git
+- Editorconfig and Eslint
+- Commit linting
+- React
+- Babel
+- Webpack
+    - Webpack dev
+    - Webpack prod
+    - Webpack common
+    - Webpack Dev Server
+- Webpack Plugins
+    - HtmlWebpackPlugin
+    - CleanWebpackPlugin
+    - WebpackBundleAnalyzer
+    - Webpack Visualizer Plugin
+- Hot Module Replacement
+- Sourcemaps
+- JSDocs
+- Unit testing using Karma, Jasmine, Enzyme
+- Snapshot testing using Jest
+- Code coverage using Istanbul
+- Firebase hosting
+- Circle CI
+- E2E Testing using Cypress
+- PWA
+- Express server
+- IPWA
+- Cloud Functions
+- BrowserStack
+- React router
+- Redux
+- Containerisation using Docker
+- Deploying to Heroku
+- Orchestration using Kubernetes
+- Terraform
+- Helm Charts
+- Deploying to GCP
+- React Native
+- Expo
+- Deploying to Google Play Store
+- Payment Gateway Integration using PayTM
+- Performance testing using Puppeteer
+- Google Analytics
+- Google Tag Manager
+- LogRocket
+- Airbrake
+- SEO
+- Programming in JavaScript
+    - DataStructures
+    - Algorithms
+    - Javascript concepts

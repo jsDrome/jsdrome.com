@@ -25,6 +25,8 @@ class RightSidebarContent extends Component {
       <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
       <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
       <Avatar className={classes.avatar} alt="Priya Porwal" src="https://avatars1.githubusercontent.com/u/17856723?s=460&v=4" />
+      <Avatar className={classes.avatar} alt="Raamprasadh Natarajan" src="https://avatars0.githubusercontent.com/u/19321540?s=60&v=4" />
+
       {/* <Typography variant="body2" className={classes.text}>Contributors</Typography>
       <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
       <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars3.githubusercontent.com/u/8121176?s=60&v=4" />

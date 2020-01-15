@@ -12,13 +12,14 @@ So we have come a long way. We setup the codebase, introduced React, we built th
 
 ## Configure
 
-Add the following lines of code to the plugins section in both `webpack.dev.js` and `webpack.prod.js`. Note that we are duplicating the code in two different files. We will resolve this code duplication issue by creating a common file for both dev and prod builds in the next chapter.
+Add the following lines of code to the plugins section in `webpack.common.js`. Note that we are duplicating the code in two different files. We will resolve this code duplication issue by creating a common file for both dev and prod builds in the next chapter.
 
 ## Code for webpack.common.js
 
+    // line 1
     const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-    ...
+    // after the module rules
     plugins: [
       new HtmlWebpackPlugin({
         title: 'My website',
@@ -40,11 +41,10 @@ If you see the webpack output, it will show an index.html file being emitted alo
 
 If you notice the entry point file, we ask react to render the app in a div with id 'root'.  We will need it in the html file. For this, we can specify a template to HTMLWebpackPlugin. Modify the above code to the below:
 
-    ...
     plugins: [
       new HtmlWebpackPlugin({
         title: 'My website',
-        template: path.resolve(__dirname, '_template/client.html'),
+        template: path.resolve(__dirname, '../_templates/client.html'),
       }),
     ],
 

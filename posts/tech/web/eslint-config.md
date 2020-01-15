@@ -70,12 +70,10 @@ Create a file called `.eslintrc.js` at the root of the project with the followin
 
 ## Execute
 
-Add the following as an npm script
+Add the following as an npm script in the scrips section in package.json
 
-    {
-      ...
-      lint: eslint .`
-    }
+
+    "lint": "eslint ."
 
 Run it.
 

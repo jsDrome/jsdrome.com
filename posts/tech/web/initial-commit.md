@@ -23,7 +23,7 @@ Go to www.github.com
 Login and create a new project. Give it a name of your choice.
 
 
-## Generating ssh key
+## Generating a new ssh key (One time only)
 
 Execute the following command in the terminal
 

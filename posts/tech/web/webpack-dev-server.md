@@ -49,7 +49,7 @@ And the headers in the response is like below.
 ![webpack-dev-server-compress-header](https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/webpack-dev-server-compress-header.png?alt=media&token=c6519250-9015-44d2-88ab-3f11a7078f14 "webpack-dev-server-compress-header")
 
 ## Execute
-`npx webpack-dev-server --open --env=dev --config=webpack/webpack.config.js`
+`npx webpack-dev-server --open --env=dev --config=_webpack/webpack.config.js`
 
 And now, it spawns up the browser and we see the output. Phew!.
 

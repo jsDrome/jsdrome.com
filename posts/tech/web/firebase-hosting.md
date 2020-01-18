@@ -47,4 +47,4 @@ Make sure to change values according to your setup
 
 ## Deploy
 
-`firebase deploy --hosting`
+`firebase deploy`

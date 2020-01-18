@@ -29,7 +29,7 @@ Add the following lines of code to the plugins section in `webpack.common.js`. N
 
 ## Execute
 
-`npx webpack --env=dev --config=webpack/webpack.config.js`
+`npx webpack --env=dev --config=_webpack/webpack.config.js`
 
 If you see the webpack output, it will show an index.html file being emitted along with the bundled js file. And if you check the dist folder, it will have a reference to the app.js
 

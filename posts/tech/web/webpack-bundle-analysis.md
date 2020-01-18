@@ -28,11 +28,11 @@ Add these lines to your `webpack.prod.js` in the `plugins` section.
     ]
 
 ## Execute
-`./node_modules/.bin/webpack --env=prod --config=webpack/webpack.config.js`
+`./node_modules/.bin/webpack --env=prod --config=_webpack/webpack.config.js`
 
 or
 
-`npx webpack --env=prod --config=webpack/webpack.config.js`
+`npx webpack --env=prod --config=_webpack/webpack.config.js`
 
 You can see a file called `bundle.html` in the dist folder once the prod build has been successfully completed. Open it to understand which packages take up the most space. It will look something like this below.
 
@@ -68,11 +68,11 @@ Add these lines to your `webpack.prod.js` in the `plugins` section.
     ]
 
 ## Execute
-`./node_modules/.bin/webpack --env=prod --config=webpack/webpack.config.js`
+`./node_modules/.bin/webpack --env=prod --config=_webpack/webpack.config.js`
 
 or
 
-`npx webpack --env=prod --config=webpack/webpack.config.js`
+`npx webpack --env=prod --config=_webpack/webpack.config.js`
 
 You can see a file called `visualizer.html` in the dist folder once the prod build has been successfully completed. Open it to understand which packages take up the most space. It will look something like this below.
 

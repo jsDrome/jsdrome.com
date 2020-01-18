@@ -16,7 +16,7 @@ Introduce an error in the code like this. Modify the entry point `src/index.js`.
 
 Run webpack-dev-server.
 
-`npx webpack-dev-server --open --env=dev --config=webpack/webpack.config.js`
+`npx webpack-dev-server --open --env=dev --config=_webpack/webpack.config.js`
 
 This will open the browser but you wont see anything. Open the console and you will see an error like below because our template doesnt have a div with id='root2'.
 

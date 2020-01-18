@@ -29,6 +29,26 @@ Execute the following command in the terminal
 
 `ssh-keygen`
 
+## Cloning the git project in local system
+
+1. Go to the project in Github, choose ssh (There will be HTTPS and ssh) and copy the ssh path
+
+2. Give the following command in git bash in your system-
+
+git clone git@github.com:seomun19/jsDrome.git
+
+3. Give pwd to know the location of the cloned folder
+
+4. In the latest vscode it comes with built in terminal
+
+## Opening the cloned git folder in vs code
+
+1. In vscode goto File menu, open folder and open the folder where you cloned the repository (Earlier pwd would have told you the path in step-3 above)
+
+2. Open a new terminal in vscode- In terminal "Select default shell" and choose git bash
+
+3. Close terminal and open it again
+
 Copy the public key from the .pub file. if the path has spaces then it needs to be given within quotes.
 
 `cat <path to .pub file here>`

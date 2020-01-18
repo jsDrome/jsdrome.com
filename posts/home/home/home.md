@@ -2,8 +2,6 @@
 
 # Welcome to jsDrome
 
-&nbsp;
-
 Thank you for your interest in jsDrome.
 
 ## What you will be learning

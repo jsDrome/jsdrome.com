@@ -25,7 +25,7 @@ Create a file called `.babelrc` at the root with the following code.
           {
             "targets": {
               "chrome": "41",
-              "ie": "10",
+              "ie": "10"
             }
           }
         ]
@@ -33,7 +33,7 @@ Create a file called `.babelrc` at the root with the following code.
       "plugins": [
         "istanbul",
         "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-syntax-dynamic-import"
       ]
     }
 

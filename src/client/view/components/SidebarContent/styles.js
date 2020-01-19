@@ -7,7 +7,8 @@ export default theme => ({
     },
   },
   box: {
-    width: 250,
+    width: 300,
+    textAlign: 'center',
   },
   nestedListItem: {
     paddingLeft: 30,
@@ -24,11 +25,11 @@ export default theme => ({
     top: 65,
   },
   payButton: {
-    width: 250,
+    width: '100%',
     marginTop: 15,
     marginBottom: 15,
   },
-  text: { display: 'block', width: 250, textAlign: 'center', margin: 10 },
+  text: { display: 'block', width: '100%', textAlign: 'center', margin: 10 },
   avatar: {
     display: 'inline-block',
     margin: 0,

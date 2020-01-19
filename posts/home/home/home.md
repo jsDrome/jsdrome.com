@@ -2,6 +2,8 @@
 
 # Welcome to jsDrome
 
+&nbsp;
+
 Thank you for your interest in jsDrome.
 
 ## What you will be learning
@@ -10,16 +12,15 @@ How to create a full fledged web application using the latest technologies.
 
 ## How long will this take
 
-The classes are of 1 hour sessions on an alternate day basis and runs for a month (sometimes 2). You will be put in a batch with up to 10 other people. The classes will be practical and so you will need a computer and a good internet connection.
+The classes are of 1 hour sessions which run on all weekdays for a month. You will be put in a batch with up to 10-20 other people. The classes will be practical.
 
 ## What you will need
 - Computer with an OS preferably linux based.
 - Good internet connection
-​- Github account
-- Node JS,
+- Github account
+- Node JS.
 - VS Code.
 - Git bash (only for Windows).
-
 
 ## What will be expected of you
 
@@ -34,28 +35,35 @@ Every student has his own take away from this. Some for new skills, some for car
 ## Excuses you need to avoid
 
  - Can I join using my mobile?
- - Sorry I dozed off.
+ - I dozed off.
  - I had to take care of my children.
  - I'm outside and hence couldn't join.
+ - My laptop/keyboard/mouse stopped working.
 
 ## Plans
 
-### Free Plan (~15 - 20 classes)
- - Isomorphic, Progressive Single Page Web Apps
- - Frontend, Backend, DevOps, Testing
- - Deploying your web app to Google Firebase
+### Basic Plan
+ - ~15 - 20 classes
+ - Cost
+    - India: Free
+    - Others: 50 EUR
+ - 1 hour (Mon - Fri)
 
-### Advanced Plan (~30 - 40 classes, ₹15k)
- - Free Plan +
- - Containerisation, Kubernetes Clusters, Terraform
- - Native app development using React Native
- - Deploying your Android app to Google Play Store
- - PayTM Payment Gateway Integration
+### Advanced Plan
+ - ~30 - 40 classes
+ - Cost
+    - India: ₹10K
+    - Others: 125 EUR
+ - 1 hour (Mon - Fri)
 
-### Topics
+## Topics in detail (Basics)
 
-- Initiate NodeJS project
-- Git
+- Setting up development environment
+- Web Programming basics: HTML, CSS, Javascript
+- Python, Ruby, Node JS programming
+- Linux basics
+- Initiating a NodeJS project
+- Git/Github
 - Editorconfig and Eslint
 - Commit linting
 - React
@@ -73,16 +81,21 @@ Every student has his own take away from this. Some for new skills, some for car
 - Hot Module Replacement
 - Sourcemaps
 - JSDocs
-- Unit testing using Karma, Jasmine, Enzyme
-- Snapshot testing using Jest
-- Code coverage using Istanbul
 - Firebase hosting
 - Circle CI
+- Unit testing using Jest
+- Snapshot testing using Jest
+- Code coverage
+- Manual Testing
+
+## Topics in detail (Advanced)
+
+- All of the above
 - E2E Testing using Cypress
-- PWA
+- Progressive Web Apps
 - Express server
-- IPWA
-- Cloud Functions
+- Isomorphic Web Apps
+- Google Cloud Functions
 - BrowserStack
 - React router
 - Redux
@@ -102,7 +115,11 @@ Every student has his own take away from this. Some for new skills, some for car
 - LogRocket
 - Airbrake
 - SEO
-- Programming in JavaScript
+- Programming concepts
     - DataStructures
     - Algorithms
-    - Javascript concepts
+    - Javascript in depth
+
+## How do you register?
+
+Drop a mail to hi@jsdrome.com with subject as:  **"Registration"**

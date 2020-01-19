@@ -36,7 +36,7 @@ class RightSidebarContent extends Component {
       {/* <iframe title="facebook-page" src={"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsreeramslife%2F&tabs=timeline&width=250&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=297023651089707"} style={{ border: 'none', overflow: 'hidden', width: 250, height: 130 }} scrolling="no" frameBorder="0" allow="encrypted-media"></iframe> */}
       {/* <Typography variant="caption" className={classes.text}>Become a financial contributor and help us sustain our community.</Typography> */}
       <div className={classes.payButton}><PayButton /></div>
-
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=277326689897549" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
       <SocialLinks />
       <CopyRight />
     </div>;

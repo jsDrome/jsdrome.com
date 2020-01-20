@@ -105,6 +105,6 @@ module.exports = {
   FACEBOOKLINK: 'https://facebook.com/jsdrome',
   LINKEDINLINK: 'https://www.linkedin.com/company/jsdrome/',
   YOUTUBELINK: 'https://www.youtube.com/channel/UCBi39XFUKrqJtuN3DoKLDlg?view_as=subscriber',
-  TWITTERLINK: 'https://twitter.com/in/jsdrome',
+  TWITTERLINK: 'https://twitter.com/jsdrome',
   EMAIL: 'hi@jsdrome.com',
 };

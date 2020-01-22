@@ -7,16 +7,16 @@ Sign up to Firebase and create a new project.
 
 ## Install
 
-`npm i -g firebase-tools`
+`npm i -D firebase-tools`
 
 
 ## Login
 
-`firebase login`
+`npx firebase login`
 
 ## Initialise firebase in your project
 
-`firebase init`
+`npx firebase init`
 
 It asks you a few setup questions and creates 2 files with the following content: firebase.json and .firebaserc
 
@@ -47,4 +47,4 @@ Make sure to change values according to your setup
 
 ## Deploy
 
-`firebase deploy`
+`npx firebase deploy`

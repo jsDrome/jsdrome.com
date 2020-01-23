@@ -1,4 +1,4 @@
-<img src='https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/og_image.png?alt=media&token=ab2523cb-2f08-420b-a2a9-fb6a0d0d6f70' title='js-drome' class='post-first-image' />
+<img src='https://firebasestorage.googleapis.com/v0/b/jsdrome.appspot.com/o/og_image.png?alt=media&token=7b2f1a0a-a7a8-4b4f-b922-6e8ea5570113' title='js-drome' class='post-first-image' />
 
 # Hello, World!
 

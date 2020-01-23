@@ -32,6 +32,7 @@ module.exports = merge(commonConfig, {
     new CopyWebpackPlugin([
       { from: 'templates/privacy.html' },
       { from: 'templates/ads.txt' },
+      { from: 'templates/keybase.txt' },
     ]),
   ]
 });

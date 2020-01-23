@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jsdrome
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jsdrome.com
+  * I am jsdrome (https://keybase.io/jsdrome) on keybase.
+  * I have a public key ASBkASdZPNf54K8cdnSNanFxOxNCpj056fKTTdSN7PUDfgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120640127593cd7f9e0af1c76748d6a71713b1342a63d39e9f2934dd48decf5037e0a",
+      "host": "keybase.io",
+      "kid": "0120640127593cd7f9e0af1c76748d6a71713b1342a63d39e9f2934dd48decf5037e0a",
+      "uid": "2aa0065b0ebc34e72d3fa912e5f09b19",
+      "username": "jsdrome"
+    },
+    "merkle_root": {
+      "ctime": 1579746677,
+      "hash": "60c1fc621d679212cccf7e672095204b399ff42e8afd97e41fb965f3adde3a51a95f31be517146567fb53deddcc827ae4e8b5fce1157725cb5843369d07f0bdd",
+      "hash_meta": "e4663c755f10a9590806c92e156a47ed40e81646bb8101af7c3e090606413a98",
+      "seqno": 14331178
+    },
+    "service": {
+      "entropy": "YphTeXRNifheWMijI7GuCExI",
+      "hostname": "jsdrome.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579746685,
+  "expire_in": 504576000,
+  "prev": "3162140fa42a80c616be37fc2c6ec1c3129f1964f4690f2c3714834599eb1523",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZAEnWTzX+eCvHHZ0jWpxcTsTQqY9Oenyk03Ujez1A34Kp3BheWxvYWTESpcCCsQgMWIUD6QqgMYWvjf8LG7BwxKfGWT0aQ8sNxSDRZnrFSPEIPTOWrJDt2QxOVINvM4ETWmll98z7CYVmPQ4isligO0fAgHCo3NpZ8RAD2SaxVOWor+GrCQlBkOB2P/qu4BJ+7rxZSsVVY6TbgU7cFqeX/Hn5ydTarhWRNJWyL0TniZ6kuvs4hDizNtbDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAh267aOtYWQgqg8J+Nxc4FFOOU6bu/bRernuWWordr7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jsdrome
+
+==================================================================

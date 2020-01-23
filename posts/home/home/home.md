@@ -40,9 +40,9 @@ Every student has his own take away from this. Some for new skills, some for car
 ## Topics in detail (Basic Plan)
 
     - Setting up development environment
+    - Linux basics
     - Web Programming basics: HTML, CSS, Javascript
     - Python, Ruby, Node JS programming
-    - Linux basics
     - Initiating a NodeJS project
     - Git/Github
     - Editorconfig and Eslint
@@ -68,6 +68,7 @@ Every student has his own take away from this. Some for new skills, some for car
     - Snapshot testing using Jest
     - Code coverage
     - Manual Testing
+    - Selenium Testing
 
 ## Topics in detail (Advanced)
 
@@ -92,8 +93,7 @@ Every student has his own take away from this. Some for new skills, some for car
     - React Native
     - Expo
     - Deploying to Google Play Store
-    - Payment Gateway Integration using PayTM
-    - Performance testing using Puppeteer
+    - Puppeteer
     - Google Analytics
     - Google Tag Manager
     - LogRocket
@@ -108,20 +108,23 @@ Every student has his own take away from this. Some for new skills, some for car
 ## Plans
 
 ## Basic Plan
-- ~15 - 20 classes, 1 hour (Mon - Fri)
-- India: Free
-- Others: 50 EUR
+
+- ~20 classes, 1 hour (Mon - Fri)
+- India (students): Free
+- Others: 50 EUR (4000INR)
 
 ## Advanced Plan
+
 - ~30 - 40 classes, 1 hour (Mon - Fri)
 - India: ₹10K
 - Others: 125 EUR
 
 ## Super Advanced
+
 - Get in touch.
 
 ## The mentors
 
 The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya Porwal** from Bangalore.
 
-Other industry experts are soon joining us.
+Other mentors are soon joining us.

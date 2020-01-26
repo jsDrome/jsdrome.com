@@ -36,7 +36,7 @@ const OG_IMAGE_ALT = TITLE;
 const OG_TYPE = 'website';
 const OG_FB_APP_ID = '297023651089707'; // Your facebook app id for facebook likes etc.
 const PAYTM_TEST = {
-  amount: 99,
+  amount: 4000,
   merchantId: 'lfBFyS02396274370168', // Your paytm merchant test id
   website: "WEBSTAGING",
   orderId: TIMESTAMP,
@@ -49,7 +49,7 @@ const PAYTM_TEST = {
   url: `https://securegw-stage.paytm.in/theia/processTransaction?ORDER_ID=${TIMESTAMP}`,
 };
 const PAYTM_PROD = {
-  amount: 99,
+  amount: 4000,
   merchantId: 'lzSXOq48634307639622', // your paytm prod test id
   website: "DEFAULT",
   orderId: TIMESTAMP,

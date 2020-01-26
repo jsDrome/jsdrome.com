@@ -24,8 +24,8 @@ export default theme => ({
   },
   fab: {
     position: 'fixed',
-    bottom: 35,
-    right: 100,
+    bottom: 100,
+    right: 26,
     zIndex: 2002,
     background: theme.palette.tertiary,
     [theme.breakpoints.down('xs')]: {

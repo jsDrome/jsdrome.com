@@ -2,129 +2,94 @@
 
 # Hello, World!
 
-jsDrome is a mentor-driven digital transformation open-source community of engineers for engineers.
+jsDrome is a mentor-driven open source transformation community of engineers for engineers.
 
 As part of your inception, we provide you with a bootcamp.
 
-## What you will be learning
 
-How to create a full fledged web application using the latest technologies.
+## 1. What you will be learning
 
-## Register for the bootcamp
+Web Software Engineering (Frontend, Backend, DevOps, Testing). After the course, you will be inducted into the community.
 
-Drop a mail to hi@jsdrome.com with subject:  **Registration**
+## 2. How long will it take
 
-## Duration of bootcamp
+The classes are of 1 hour sessions on an a daily basis. It will be over hangout meet and the time will be communicated to you. You will be put in a batch with up to 20 other people. The classes will be practical and so you will need a computer. There will be a mentor who will teach in the first half an hour and you will practice in the other half.
 
-The classes are of 1 hour sessions which run on all weekdays for a month. You will be put in a batch with up to 10-20 other people. The classes will be practical in nature.
-
-## What you will need
+## 3. What you will need
 
     - Computer with an OS preferably linux based.
     - Good internet connection
     - Github account
-    - Node JS.
-    - VS Code.
+    - Node JS
+    - VS Code
     - Git bash (only for Windows).
 
-## What will be expected of you
+## 4. What will be expected of you
 
     - Be regular.
     - Ask any questions you might have.
     - Avoid excuses.
 
-## What's in it for you
+## 5. What's in it for you
 
 Every student has his own take away from this. Some for new skills, some for career shift, some for moving abroad.
 
-## Topics in detail (Basic Plan)
+## 6. Topics covered in Basic Plan
 
-    - Setting up development environment
-    - Linux basics
-    - Web Programming basics: HTML, CSS, Javascript
-    - Python, Ruby, Node JS programming
-    - Initiating a NodeJS project
+    - Development Envionment
+    - Linux
+    - Programming (HTML, CSS, JavaScript, Node JS, Python, Ruby, C, Java)
     - Git/Github
-    - Editorconfig and Eslint
-    - Commit linting
-    - React
-    - Babel
-    - Webpack
-        - Webpack dev
-        - Webpack prod
-        - Webpack common
-        - Webpack Dev Server
-    - Webpack Plugins
-        - HtmlWebpackPlugin
-        - CleanWebpackPlugin
-        - WebpackBundleAnalyzer
-        - Webpack Visualizer Plugin
-    - Hot Module Replacement
-    - Sourcemaps
-    - JSDocs
-    - Firebase hosting
-    - Circle CI
-    - Unit testing using Jest
-    - Snapshot testing using Jest
-    - Code coverage
-    - Manual Testing
-    - Selenium Testing
+    - Tooling
+    - Frontend
+    - Backend
+    - Debugging
+    - CI/CD
+    - Deployment
+    - Unit testing
+    - Automation Testing
 
-## Topics in detail (Advanced)
+## 7. Topics covered in Advanced Plan
 
     - All of the above
-    - E2E Testing using Cypress
     - Progressive Web Apps
-    - Express server
     - Isomorphic Web Apps
-    - Google Cloud Functions
-    - BrowserStack
-    - React router
-    - Redux
-    - Containerisation using Docker
-    - Deploying to Heroku
-    - Orchestration using Kubernetes
-    - Terraform
-    - Helm Charts
     - Google Cloud Platform
+    - Containerisation (Docker)
+    - Heroku
+    - Kubernetes
 
-## Super Advanced Course
+## 8. Topics covered in Super Advanced Plan
 
-    - React Native
-    - Expo
+    - All of the above
+    - Native app development
     - Deploying to Google Play Store
-    - Puppeteer
-    - Google Analytics
-    - Google Tag Manager
-    - LogRocket
-    - Airbrake
+    - Marketing
     - SEO
-    - Open Source Contribution
-    - Programming concepts
+    - Programming in depth
         - DataStructures
         - Algorithms
-        - Javascript in depth
 
-## Plans
+## 9. Cost
 
-## Basic Plan
+ - Basic Plan (~20 classes, Rs 4,000. Students go free.)
+ - Advanced Plan (~40 classes, Rs 10,000)
+ - Super Advanced Plan (~60 classes, Rs 25,000)
 
-- ~20 classes, 1 hour (Mon - Fri)
-- India (students): Free
-- Others: 50 EUR (4000INR)
+## 10. The mentors
 
-## Advanced Plan
+The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya Porwal** from Bangalore all Senior Software Engineers. Other mentors are soon joining us.
 
-- ~30 - 40 classes, 1 hour (Mon - Fri)
-- India: ₹10K
-- Others: 125 EUR
+## 11. Register
 
-## Super Advanced
+Drop a mail to hi@jsdrome.com with subject: **Registration**
 
-- Get in touch.
+## 12. How to pay
 
-## The mentors
+ - India: Google Pay to +91 9496368177
+ - Germany: IBAN: GB53 REVO 0099 7096 4381 71 BIC: REVOGB21
+ - UK: Sort Code: 040075 A/C No.: 12480363
 
-The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya Porwal** from Bangalore.
+## Read/Submit a feedback
 
-Other mentors are soon joining us.
+Head over to our facebook page.

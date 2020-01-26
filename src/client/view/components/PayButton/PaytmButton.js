@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import Button from '@material-ui/core/Button';
 import HourGlassIcon from '@material-ui/icons/HourglassFull';
-import SponsorIcon from '@material-ui/icons/Favorite';
+import SponsorIcon from '@material-ui/icons/HowToReg';
 // import AttachMoney from '@material-ui/icons/AttachMoney';
 // import MonetizationOnSharpIcon from '@material-ui/icons/MonetizationOnSharp';
 // import EuroTwoTone from '@material-ui/icons/EuroTwoTone';
@@ -32,8 +32,8 @@ class Paytmbutton extends Component {
       <input type="hidden" name="TXN_AMOUNT" value={amount} />
       <input type="hidden" name="MOBILE_NO" value={phone} />
       <input type="hidden" name="PAYMENT_MODE_ONLY" value="yes" />
-      <input type="hidden" name="AUTH_MODE" value="3D" />
-      <input type="hidden" name="PAYMENT_TYPE_ID" value="DC" />
+      <input type="hidden" name="AUTH_MODE" value="USRPWD" />
+      <input type="hidden" name="PAYMENT_TYPE_ID" value="PPI" />
       <input type="hidden" name="EMAIL" value={email} />
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />
@@ -47,7 +47,7 @@ class Paytmbutton extends Component {
         style={{ width: '100%' }}>
         {this.state.submit ? <HourGlassIcon /> : <React.Fragment><SponsorIcon style={{ marginRight: 10 }} /> <span>{text}</span></React.Fragment> }
       </Fab>
-      {/* <img src="/img/partners.jpg" style={{ width: 230, margin: '10px auto', display: 'block' }} /> */}
+      <img src="/img/partners.jpg" style={{ width: '100%', margin: '10px auto', display: 'block' }} />
       {/* ${(1).toLocaleString('en-GB', { style: 'currency', currency: 'EUR' })} */}
     </form>;
   }

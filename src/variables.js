@@ -4,12 +4,12 @@ const TIMESTAMP = new Date().getTime();
 const SHORT_NAME = 'jsDrome';
 const TITLE = 'jsDrome';
 const AUTHOR = 'Sreeram Padmanabhan';
-const DESCRIPTION = 'Mentor driven open source transformation.';
-const SHORT_DESCRIPTION = 'Digital Transformation';
+const DESCRIPTION = 'Mentor driven open source transformation';
+const SHORT_DESCRIPTION = 'Open Source Transformation';
 const DOMAIN = "https://jsdrome.com"; // (without trailing slash)
 const URL = DOMAIN;
 const STAGE_URL = 'https://jsdrome-test.web.app'; // (without trailing slash)
-const THEME_COLOR = '#ffffff';
+const THEME_COLOR = '#0077e6';
 
 const MANIFEST_SEED = {
   'short_name': SHORT_NAME,

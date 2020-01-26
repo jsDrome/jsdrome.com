@@ -6,8 +6,8 @@ module.exports = [
       {
         title: 'jsDrome',
         ogTitle: 'jsDrome',
-        description: 'Mentor driven digital transformation bootcamp.',
-        ogDescription: 'Mentor driven digital transformation bootcamp.',
+        description: 'Mentor driven open source transformation',
+        ogDescription: 'Mentor driven open source transformation',
         ogImage: '/img/og_image.jpg',
         route: '/post/home/home/home',
       },

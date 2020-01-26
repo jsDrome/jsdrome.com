@@ -32,8 +32,8 @@ class Paytmbutton extends Component {
       <input type="hidden" name="TXN_AMOUNT" value={amount} />
       <input type="hidden" name="MOBILE_NO" value={phone} />
       <input type="hidden" name="PAYMENT_MODE_ONLY" value="yes" />
-      <input type="hidden" name="AUTH_MODE" value="USRPWD" />
-      <input type="hidden" name="PAYMENT_TYPE_ID" value="PPI" />
+      <input type="hidden" name="AUTH_MODE" value="3D" />
+      <input type="hidden" name="PAYMENT_TYPE_ID" value="DC" />
       <input type="hidden" name="EMAIL" value={email} />
       <input type="hidden" name="CALLBACK_URL" size="64" value={callbackUrl} />
       <input type="hidden" name="CHECKSUMHASH" value={checksum} />

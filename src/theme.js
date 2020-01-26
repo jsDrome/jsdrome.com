@@ -20,4 +20,11 @@ export default createMuiTheme({
     fontWeightMedium: 500,
     useNextVariants: true,
   },
+  overrides: {
+    MuiLink: {
+      root: {
+        color: '#365899',
+      },
+    },
+  },
 });

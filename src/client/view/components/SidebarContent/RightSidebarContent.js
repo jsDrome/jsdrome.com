@@ -15,7 +15,7 @@ class RightSidebarContent extends Component {
     return <div className={classnames(classes.box, classes.fixed)}>
       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&width=300&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=277326689897549" width="300" style={{ border:'none', overflow:'hidden' }} scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
 
-      <Typography variant="body2" className={classes.text}>Our growing team</Typography>
+      <Typography variant="body2" className={classes.text}>Mentors</Typography>
       <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
       <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
       <Avatar className={classes.avatar} alt="Priya Porwal" src="https://avatars1.githubusercontent.com/u/17856723?s=460&v=4" />

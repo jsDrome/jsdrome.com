@@ -7,7 +7,7 @@ export default theme => ({
     },
   },
   box: {
-    width: 300,
+    width: 250,
     textAlign: 'center',
   },
   nestedListItem: {

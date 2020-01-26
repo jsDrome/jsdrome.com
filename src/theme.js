@@ -6,7 +6,7 @@ export default createMuiTheme({
       main: '#fff',
     },
     secondary: {
-      main: '#0084ff',
+      main: '#0077e6',
     },
   },
   background: {
@@ -23,7 +23,7 @@ export default createMuiTheme({
   overrides: {
     MuiLink: {
       root: {
-        color: '#365899',
+        color: '#0077e6',
       },
     },
   },

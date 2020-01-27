@@ -35,6 +35,7 @@ module.exports = {
         KEY: JSON.stringify(process.env.PAYTM_KEY || "abcdefghijklmnop"),
         NODE_ENV: JSON.stringify('production'),
         FIREBASE: JSON.stringify('true'),
+        LINKEDIN_CLIENT_SECRET: JSON.stringify(process.env.LINKEDIN_CLIENT_SECRET),
       },
     }),
   ],

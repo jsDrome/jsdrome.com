@@ -56,9 +56,9 @@ app.get('/data', (req, res) => {
   return res.send(file.toString());
 });
 
-const isUserLoggedIn = req => {
-  return !!req.cookies.__session;
-};
+// const isUserLoggedIn = req => {
+//   return !!req.cookies.__session;
+// };
 
 app.get('/login', (req, res) => {
   const { code } = req.query;

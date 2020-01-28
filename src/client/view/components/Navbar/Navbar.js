@@ -5,11 +5,20 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Fab from '@material-ui/core/Fab';
+import Button from '@material-ui/core/Button';
+import Hidden from '@material-ui/core/Hidden';
 
 import styles from './styles';
 
 class Navbar extends React.Component {
+  state = {
+    isUserLoggedIn: false,
+  }
+  componentDidMount() {
+    this.setState({
+      isUserLoggedIn: !!document.cookie.match(/^(.*;)?\s*__session\s*=\s*[^;]+(.*)?$/),
+    });
+  }
   render() {
     const { classes, title = '', description = '', onNavbarMenuClick, onNavbarTitleClick } = this.props;
 
@@ -26,14 +35,16 @@ class Navbar extends React.Component {
           <img alt="logo" src="/img/logo-56.png" className={classes.logoIcon} />
           <div className={classes.flex} onClick={onNavbarTitleClick}>
             <Typography variant="h6" className={classes.title} noWrap>{title}</Typography>
-            <Typography variant="caption" color="inherit" className={classes.description} noWrap>{description}</Typography>
+            <Hidden xsDown>
+              <Typography variant="caption" color="inherit" className={classes.description} noWrap>{description}</Typography>
+            </Hidden>
           </div>
-          <Fab
-            id="linkedin-login-btn"
-            href={'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=78xv8akga6j22q&redirect_uri=https://jsdrome.com/login&scope=r_liteprofile%20r_emailaddress%20w_member_social'}
-            variant="extended"
-            size="large"
-            color="secondary">Login with LinkedIn</Fab>
+          {!this.state.isUserLoggedIn && <Button
+            color="secondary"
+            href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=78xv8akga6j22q&redirect_uri=https://jsdrome.com/login&scope=r_liteprofile%20r_emailaddress%20w_member_social">Login / Register</Button>}
+          {this.state.isUserLoggedIn && <Button
+            color="secondary"
+            href="/logout">Logout</Button>}
         </Toolbar>
       </AppBar>
     );

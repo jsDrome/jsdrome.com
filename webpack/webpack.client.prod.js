@@ -17,11 +17,11 @@ module.exports = merge(commonConfig, {
       clientsClaim: true,
       skipWaiting: true,
       precacheManifestFilename: 'wb-manifest.[manifestHash].js',
-      templatedURLs: {
-        '/': '/',
-        '/post': '/',
-      },
-      navigateFallback: '/',
+      // templatedURLs: {
+      //   '/': '/',
+      //   '/post': '/',
+      // },
+      // navigateFallback: '/',
     }),
     new OptimizeCSSAssetsPlugin({
       assetNameRegExp: /\.css$/g,

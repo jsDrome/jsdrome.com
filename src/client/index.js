@@ -31,8 +31,9 @@ function Main() {
   );
 }
 
-render(<Main />, document.querySelector('#root'));
-
+if (typeof window !== 'undefined') {
+  render(<Main />, document.querySelector('#root'));
+}
 if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
   /* eslint-disable no-console */
   window.addEventListener('load', () => {

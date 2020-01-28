@@ -17,6 +17,8 @@ module.exports = merge(commonConfig, {
       '/data': 'http://localhost:5000',
       '/paymentprocess': 'http://localhost:5000',
       '/login': 'http://localhost:5000',
+      '/logout': 'http://localhost:5000',
+      '/userData': 'http://localhost:5000',
     },
   },
   devtool: 'inline-source-map',

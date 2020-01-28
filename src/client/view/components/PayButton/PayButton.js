@@ -26,7 +26,7 @@ class Pay extends Component {
     });
   }
   render() {
-    const { app: { checksum } } = this.props;
+    const { app: { checksum }, text } = this.props;
 
     return <PaytmButton
       amount={amount}
@@ -41,7 +41,7 @@ class Pay extends Component {
       checksum={checksum}
       callbackUrl={callbackUrl}
       url={url}
-      text={"Register"}/>;
+      text={text}/>;
   }
 }
 

@@ -9,7 +9,6 @@ import styles from './styles';
 import CopyRight from '../CopyRight/CopyRight';
 import { Typography } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
-import GitHubButton from 'react-github-btn';
 
 class RightSidebarContent extends Component {
   render() {
@@ -21,19 +20,14 @@ class RightSidebarContent extends Component {
           data-id="34636884"
           data-counter="left"></script>
         <div style={{ zoom: '110%' }}>
-          <GitHubButton
-            href="https://github.com/jsdrome/jsdrome-site"
-            data-color-scheme="no-preference: light; light: light; dark: light;"
-            data-size="small"
-            data-show-count="true"
-            aria-label="Follow @jsdrome on GitHub">Star jsDrome</GitHubButton>
+          <a className="github-button" href="https://github.com/jsdrome/jsdrome-site" data-icon="octicon-star" aria-label="Star jsdrome/jsdrome-site on GitHub">Star jsDrome</a>
         </div>
       </div>
 
       <iframe className={classes.fbPagePlugin} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
 
       <div className={classes.payButton}>
-        <PayButton />
+        <PayButton text={'Sponsor'} />
       </div>
 
       <SocialLinks />

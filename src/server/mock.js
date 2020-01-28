@@ -2,6 +2,8 @@
 /* eslint-disable no-magic-numbers */
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser')
+
 const fs = require('fs');
 // eslint-disable-next-line no-magic-numbers
 const port = process.env.PORT || 5000;
@@ -11,6 +13,7 @@ const querystring = require('querystring');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.post('/checksum', (req, res) => {
   res.send("3817iH3IQV2/tYwCJ7Mwn2/Zkw+mpmivoXGuxnFVWyYxtVHCjOQvjjcfD1dte7JhD0xMz1CCH/BAaoTqdv4QlHLTfJlzTs/OI2BH4wd4D8g=");
@@ -24,16 +27,22 @@ app.post('/paymentprocess', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
+
   const { folder, subfolder, post } = req.query;
   var file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
   res.set('Content-type', 'text/plain');
-  // eslint-disable-next-line global-require
-  res.send(file.toString());
+
+  // if(!isUserLoggedIn(req)) return res.send('### Register/Login to continue reading..');
+  return res.send(file.toString());
 });
+
+const isUserLoggedIn = req => {
+  return !!req.cookies.__session;
+};
 
 app.get('/login', (req, res) => {
   const { code } = req.query;
-  // console.log(code);
+
   return axios
     .post("https://www.linkedin.com/oauth/v2/accessToken", querystring.stringify({
       grant_type: "authorization_code",
@@ -43,23 +52,41 @@ app.get('/login', (req, res) => {
       client_secret: process.env.LINKEDIN_CLIENT_SECRET,
     }))
     .then(data => {
-      // eslint-disable-next-line no-unused-vars
-      const { access_token, expiresIn } = data.data;
+      const { access_token, expires_in } = data.data;
 
-      return axios.get('https://api.linkedin.com/v2/me', {
-        headers: {
-          Authorization: 'Bearer ' + access_token,
-        },
-      });
-    })
-    .then(data => {
-      console.log(data.data);
-      return res.redirect(302, `/?name=${data.data.localizedFirstName}`);
+      res.cookie('__session', JSON.stringify({
+        jsDromeAtLi: access_token,
+        jsDromeAtTime: new Date().getTime(),
+        jsDromeAtEx: expires_in,
+      }));
+      return res.redirect(302, '/');
     })
     .catch(err => {
       console.log(err);
       return res.redirect(302, '/?login=false');
     });
+});
+
+app.get('/logout', (req, res) => {
+  res.clearCookie("__session");
+  return res.redirect(302, '/');
+});
+
+app.get('/userData', (req, res) => {
+  const { jsDromeAtLi } = JSON.parse(req.cookies.__session);
+
+  if (!jsDromeAtLi) return;
+
+  return axios.get('https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))', {
+    headers: {
+      Authorization: `Bearer ${jsDromeAtLi}`,
+    },
+  }).then(data => {
+    const email = data.data.elements[0]['handle~'].emailAddress;
+    return res.send({
+      email,
+    });
+  });
 });
 
 app.listen(port);

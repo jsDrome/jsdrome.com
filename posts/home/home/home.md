@@ -70,12 +70,6 @@ Every student has his own take away from this. Some for new skills, some for car
         - DataStructures
         - Algorithms
 
-## 9. Cost
-
- - Basic Plan (~20 classes, Rs 4,000. Students go free.)
- - Advanced Plan (~40 classes, Rs 10,000)
- - Super Advanced Plan (~60 classes, Rs 25,000)
-
 ## 10. The mentors
 
 The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya Porwal** from Bangalore all Senior Software Engineers. Other mentors are soon joining us.
@@ -83,6 +77,11 @@ The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya P
 ## 11. Register
 
 Drop a mail to hi@jsdrome.com with subject: **Registration**
+
+## 9. Cost
+
+ - Basic Plan (~20 classes, Free for students. Others - $50/£50/€50/₹4000)
+ - Advanced Plan (~40 classes, $125/£125/€125/₹10000)
 
 ## 12. How to pay
 

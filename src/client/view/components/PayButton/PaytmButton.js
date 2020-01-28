@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import Button from '@material-ui/core/Button';
 import HourGlassIcon from '@material-ui/icons/HourglassFull';
-import SponsorIcon from '@material-ui/icons/HowToReg';
+import SponsorIcon from '@material-ui/icons/Favorite';
 // import AttachMoney from '@material-ui/icons/AttachMoney';
 // import MonetizationOnSharpIcon from '@material-ui/icons/MonetizationOnSharp';
 // import EuroTwoTone from '@material-ui/icons/EuroTwoTone';

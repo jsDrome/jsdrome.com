@@ -60,6 +60,19 @@ app.get('/data', (req, res) => {
 //   return !!req.cookies.__session;
 // };
 
+const notify = (title = '', body = '') => fetch('https://exp.host/--/api/v2/push/send', {
+  body: JSON.stringify({
+    to: process.env.EXPO_PUSH_TOKEN,
+    title,
+    body,
+  }),
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  method: 'POST',
+  mode: 'no-cors',
+});
+
 app.get('/login', (req, res) => {
   const { code } = req.query;
 
@@ -79,7 +92,7 @@ app.get('/login', (req, res) => {
         jsDromeAtTime: new Date().getTime(),
         jsDromeAtEx: expires_in,
       }));
-      return res.redirect(302, '/');
+      return res.redirect(302, '/userData');
     })
     .catch(err => {
       console.log(err);
@@ -94,7 +107,8 @@ app.get('/logout', (req, res) => {
 
 app.get('/userData', (req, res) => {
   const { jsDromeAtLi } = JSON.parse(req.cookies.__session);
-  console.log(req.cookies);
+  // console.log(req.cookies);
+
   if (!jsDromeAtLi) throw new Error();
 
   return axios.get('https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))', {
@@ -103,9 +117,8 @@ app.get('/userData', (req, res) => {
     },
   }).then(data => {
     const email = data.data.elements[0]['handle~'].emailAddress;
-    return res.send({
-      email,
-    });
+    notify('New user for jsDrome!', email);
+    res.redirect('/');
   })
     .catch(err => {
       console.log(err);

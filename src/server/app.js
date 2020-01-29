@@ -117,6 +117,7 @@ app.get('/userData', (req, res) => {
     },
   }).then(data => {
     const email = data.data.elements[0]['handle~'].emailAddress;
+    console.log(email);
     notify('New user for jsDrome!', email);
     res.redirect('/');
   })

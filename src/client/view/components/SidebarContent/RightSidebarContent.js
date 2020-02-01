@@ -7,8 +7,6 @@ import PayButton from '../PayButton/PayButton';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import styles from './styles';
 import CopyRight from '../CopyRight/CopyRight';
-import { Typography } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
 
 class RightSidebarContent extends Component {
   render() {
@@ -31,25 +29,6 @@ class RightSidebarContent extends Component {
       </div>
 
       <SocialLinks />
-
-      <Typography variant="body2" className={classes.text}>Sponsors</Typography>
-
-      <Avatar className={classes.avatar} alt="Satheesh Kumar" src="https://avatars1.githubusercontent.com/u/8121176?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Gauraang Mukhopadhyay" src="https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg" />
-      <Avatar className={classes.avatar} alt="Anand Tagore" src="https://s3.amazonaws.com/uifaces/faces/twitter/bruno_mart/128.jpg" />
-      <Avatar className={classes.avatar} alt="Poornima Panicker" src="https://s3.amazonaws.com/uifaces/faces/twitter/divya/128.jpg" />
-      <Avatar className={classes.avatar} alt="Purnima Mishra" src="https://s3.amazonaws.com/uifaces/faces/twitter/samihah/128.jpg" />
-
-      <Typography variant="body2" className={classes.text}>Mentors</Typography>
-
-      <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Priya Porwal" src="https://avatars1.githubusercontent.com/u/17856723?s=460&v=4" />
-
-      <Typography variant="body2" className={classes.text}>Contributors</Typography>
-
-      <Avatar className={classes.avatar} alt="Raamprasadh Natarajan" src="https://avatars0.githubusercontent.com/u/19321540?s=60&v=4" />
-      <Avatar className={classes.avatar} alt="Shreya Reddy" src="https://avatars2.githubusercontent.com/u/58949356?s=460&v=4" />
       <CopyRight />
 
     </div>;

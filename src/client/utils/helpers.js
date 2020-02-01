@@ -10,11 +10,16 @@ export const handleActions = (handlers, defaultState) => (state = defaultState, 
 export const updateProperty = (path, value, obj) => immutable.set(obj, path, value);
 
 export const getParameterByName = (name, url) => {
-  if (!url) url = window.location.href;
-  name = name.replace(/[[\]]/g, '\\$&');
-  let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-  const results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  try {
+    if (!url) url = window.location.href;
+    name = name.replace(/[[\]]/g, '\\$&');
+    let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+    const results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+  catch (err) {
+    return '';
+  }
 };

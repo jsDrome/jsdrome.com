@@ -354,8 +354,9 @@ docker-compose -f docker-compose.yml up --build
 docker-compose push
 
 // Heroku
-
-heroku container:push web
+heroku container:login
+git remote add heroku git@heroku.com:jsdrome.git
+heroku container:push web --app jsdrome
 heroku container:release web
 
 // Helm

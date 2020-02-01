@@ -41,13 +41,18 @@ app.get('/data', (req, res) => {
 // };
 
 app.get('/login', (req, res) => {
-  const { code } = req.query;
+  const { originalUrl } = req.query;
+  res.redirect(302, `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=78xv8akga6j22q&redirect_uri=http://localhost:9000/loginprocess?originalUrl=${originalUrl}&scope=r_liteprofile%20r_emailaddress%20w_member_social`);
+});
+
+app.get('/loginprocess', (req, res) => {
+  const { code, originalUrl } = req.query;
 
   return axios
     .post("https://www.linkedin.com/oauth/v2/accessToken", querystring.stringify({
       grant_type: "authorization_code",
       code,
-      redirect_uri: 'http://localhost:9000/login',
+      redirect_uri: `http://localhost:9000/loginprocess?originalUrl=${originalUrl}`,
       client_id: '78xv8akga6j22q',
       client_secret: process.env.LINKEDIN_CLIENT_SECRET,
     }))
@@ -59,7 +64,7 @@ app.get('/login', (req, res) => {
         jsDromeAtTime: new Date().getTime(),
         jsDromeAtEx: expires_in,
       }));
-      return res.redirect(302, '/');
+      return res.redirect(originalUrl || '/');
     })
     .catch(err => {
       console.log(err);
@@ -74,6 +79,7 @@ app.get('/logout', (req, res) => {
 
 app.get('/userData', (req, res) => {
   const { jsDromeAtLi } = JSON.parse(req.cookies.__session);
+  const { originalUrl } = req.query;
 
   if (!jsDromeAtLi) return;
 
@@ -81,11 +87,9 @@ app.get('/userData', (req, res) => {
     headers: {
       Authorization: `Bearer ${jsDromeAtLi}`,
     },
-  }).then(data => {
-    const email = data.data.elements[0]['handle~'].emailAddress;
-    return res.send({
-      email,
-    });
+  }).then(() => {
+    // const email = data.data.elements[0]['handle~'].emailAddress;
+    res.redirect(originalUrl);
   });
 });
 

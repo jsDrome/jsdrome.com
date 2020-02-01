@@ -9,7 +9,7 @@ When webpack builds our javascript code, we specify babel-loader as the module p
 
 ## Install
 
-    npm i --save-dev @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/plugin-syntax-dynamic-import @babel/plugin-transform-runtime @babel/preset-react babel-plugin-istanbul babel-eslint babel-loader
+    npm i --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-syntax-dynamic-import
 
 ## Configure
 
@@ -31,7 +31,6 @@ Create a file called `.babelrc` at the root with the following code.
         ]
       ],
       "plugins": [
-        "istanbul",
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-syntax-dynamic-import"
       ]

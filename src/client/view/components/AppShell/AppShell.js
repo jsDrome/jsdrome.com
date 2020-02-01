@@ -57,7 +57,7 @@ class App extends Component {
       </Sidebar>
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
-          <Grid container spacing={0}>
+          <Grid container spacing={0} style={{ justifyContent: 'space-around' }}>
             <Grid item sm={9} className={classes.content}>
               <Toolbar />
               <Content>

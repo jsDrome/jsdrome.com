@@ -32,9 +32,9 @@ const options = {
 
 export default props => <React.Fragment>
   <ReactMarkdown options={options} {...props} />
-  <Adsense
+  {/* <Adsense
     adFormat="fluid"
     adClient="ca-pub-6831276331714408"
     adSlot="3393854253"
-    layoutKey="-gp-3+15-68+ah" />
+    layoutKey="-gp-3+15-68+ah" /> */}
 </React.Fragment>;

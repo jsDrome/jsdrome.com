@@ -15,7 +15,7 @@ export default theme => ({
   },
   content: {
     marginTop: 15,
-    maxWidth: 700,
+    maxWidth: 900,
     minWidth: 300,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,

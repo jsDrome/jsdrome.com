@@ -10,7 +10,7 @@ class PaperSheet extends React.Component {
 
     return (
       <main className={classes.content}>
-        <Paper className={classes.root} elevation={0}>
+        <Paper className={classes.root} elevation={4}>
           {children}
         </Paper>
       </main>

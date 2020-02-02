@@ -17,9 +17,9 @@ describe('Cypress tests', function () {
     cy.title().should('eq', 'jsDrome | Mentor driven open source transformation');
   });
   it('Checks payment', function () {
-    cy.visit(STAGE_URL);
+    cy.visit(STAGE_URL + '/payment');
     cy.wait(2000);
-    cy.get('#paytm-payment-btn').click();
+    // cy.get('#paytm-payment-btn').click();
     cy.contains('jsDrome Order');
     cy.get('.backbtn button').click();
   });

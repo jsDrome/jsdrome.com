@@ -7,6 +7,8 @@ export default theme => ({
       padding: 30,
     },
     wordBreak: 'break-word',
+    maxWidth: 800,
+    margin: 'auto',
   },
   content: {
     flexGrow: 1,

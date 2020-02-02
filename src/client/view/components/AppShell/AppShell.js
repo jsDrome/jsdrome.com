@@ -56,7 +56,7 @@ class App extends Component {
         <SidebarContent onLinkClick={this.handleSidebarLinkClick.bind(this)} />
       </Sidebar>
       <div className={classes.app}>
-        <div className={classes.contentWrapper}>
+        <div className={classes.gridWrapper}>
           <Grid container spacing={0}>
             <Grid item md={9} className={classes.content}>
               <Toolbar />

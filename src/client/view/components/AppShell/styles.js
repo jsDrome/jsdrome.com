@@ -7,7 +7,7 @@ export default theme => ({
     background: theme.background.primary,
     color: '#333',
   },
-  contentWrapper: {
+  gridWrapper: {
     margin: 'auto',
     [theme.breakpoints.up('lg')]: {
       marginLeft: 275,
@@ -15,12 +15,12 @@ export default theme => ({
   },
   content: {
     marginTop: 15,
-    maxWidth: 960,
     minWidth: 300,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
       minWidth: '100%',
     },
+    // margin: 'auto',
   },
   fab: {
     position: 'fixed',

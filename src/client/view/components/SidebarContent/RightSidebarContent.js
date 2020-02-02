@@ -15,6 +15,34 @@ class RightSidebarContent extends Component {
     const { classes } = this.props;
     return <div className={classnames(classes.box, classes.fixed)}>
 
+      {/* <Typography variant="body2" className={classes.text}>Sponsors</Typography>
+
+      <Avatar className={classes.avatar} alt="Satheesh Kumar" src="https://avatars1.githubusercontent.com/u/8121176?s=460&v=4" />
+      <Avatar className={classes.avatar} alt="Gauraang Mukhopadhyay" src="https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg" />
+      <Avatar className={classes.avatar} alt="Anand Tagore" src="https://s3.amazonaws.com/uifaces/faces/twitter/bruno_mart/128.jpg" />
+      <Avatar className={classes.avatar} alt="Poornima Panicker" src="https://s3.amazonaws.com/uifaces/faces/twitter/divya/128.jpg" />
+      <Avatar className={classes.avatar} alt="Purnima Mishra" src="https://s3.amazonaws.com/uifaces/faces/twitter/samihah/128.jpg" /> */}
+
+      <Typography variant="body2" className={classes.text}>Mentors</Typography>
+
+      <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
+      <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
+      <Avatar className={classes.avatar} alt="Priya Porwal" src="https://avatars1.githubusercontent.com/u/17856723?s=460&v=4" />
+      <Avatar className={classes.avatar} alt="Preethy Krishnamoorthy" src="https://avatars1.githubusercontent.com/u/29339469?s=460&v=4" />
+
+      <Typography variant="body2" className={classes.text}>Contributors</Typography>
+
+      <Avatar className={classes.avatar} alt="Priyam Patel" src="https://avatars2.githubusercontent.com/u/43856835?s=96&v=4" />
+      <Avatar className={classes.avatar} alt="Vignesh AZ" src="https://avatars1.githubusercontent.com/u/59390973?s=96&v=4" />
+      <Avatar className={classes.avatar} alt="Balaji Vaishnav" src="https://avatars0.githubusercontent.com/u/10260400?s=96&v=4" />
+      <Avatar className={classes.avatar} alt="Bhuvanash" src="https://avatars0.githubusercontent.com/u/59439338?s=96&v=4" />
+      <Avatar className={classes.avatar} alt="Vinoth" src="https://avatars0.githubusercontent.com/u/59483735?s=96&v=4" />
+
+      <Typography variant="body2" className={classes.text}>Outside contributors</Typography>
+
+      <Avatar className={classes.avatar} alt="Raamprasadh Natarajan" src="https://avatars0.githubusercontent.com/u/19321540?s=60&v=4" />
+      <Avatar className={classes.avatar} alt="Shreya Reddy" src="https://avatars2.githubusercontent.com/u/58949356?s=460&v=4" />
+
       <div className={classes.pagePlugins}>
         <script type="IN/FollowCompany"
           data-id="34636884"
@@ -24,32 +52,12 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <iframe className={classes.fbPagePlugin} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549&tabs=reviews" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
-
+      <iframe className={classes.fbPagePlugin} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
       <div className={classes.payButton}>
         <PayButton text={'Sponsor'} />
       </div>
-
       <SocialLinks />
 
-      <Typography variant="body2" className={classes.text}>Sponsors</Typography>
-
-      <Avatar className={classes.avatar} alt="Satheesh Kumar" src="https://avatars1.githubusercontent.com/u/8121176?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Gauraang Mukhopadhyay" src="https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg" />
-      <Avatar className={classes.avatar} alt="Anand Tagore" src="https://s3.amazonaws.com/uifaces/faces/twitter/bruno_mart/128.jpg" />
-      <Avatar className={classes.avatar} alt="Poornima Panicker" src="https://s3.amazonaws.com/uifaces/faces/twitter/divya/128.jpg" />
-      <Avatar className={classes.avatar} alt="Purnima Mishra" src="https://s3.amazonaws.com/uifaces/faces/twitter/samihah/128.jpg" />
-
-      <Typography variant="body2" className={classes.text}>Mentors</Typography>
-
-      <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
-      <Avatar className={classes.avatar} alt="Priya Porwal" src="https://avatars1.githubusercontent.com/u/17856723?s=460&v=4" />
-
-      <Typography variant="body2" className={classes.text}>Contributors</Typography>
-
-      <Avatar className={classes.avatar} alt="Raamprasadh Natarajan" src="https://avatars0.githubusercontent.com/u/19321540?s=60&v=4" />
-      <Avatar className={classes.avatar} alt="Shreya Reddy" src="https://avatars2.githubusercontent.com/u/58949356?s=460&v=4" />
       <CopyRight />
 
     </div>;

@@ -3,6 +3,9 @@
 export default theme => ({
   root: {
     padding: 15,
+    [theme.breakpoints.up('sm')]: {
+      padding: 30,
+    },
     wordBreak: 'break-word',
   },
   content: {

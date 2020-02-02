@@ -1,4 +1,4 @@
-const width = 250;
+const width = 300;
 
 export default theme => ({
   root: {
@@ -36,7 +36,7 @@ export default theme => ({
     margin: 0,
   },
   fbPagePlugin: {
-    width: 250,
+    width,
     height: 70,
   },
   pagePlugins: {

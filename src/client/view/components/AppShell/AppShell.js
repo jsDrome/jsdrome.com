@@ -58,7 +58,7 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
           <Grid container spacing={0} style={{ justifyContent: 'space-around' }}>
-            <Grid item sm={9} className={classes.content}>
+            <Grid item md={9} className={classes.content}>
               <Toolbar />
               <Content>
                 <noscript><Typography style={{ textAlign: 'center' }} variant="h6">Please enable Javascript to continue.</Typography></noscript>
@@ -72,8 +72,8 @@ class App extends Component {
                 </div>
               </Hidden>
             </Grid>
-            <Grid item sm={3} className={classes.sidebar}>
-              <Hidden xsDown implementation="css">
+            <Grid item md={3} className={classes.sidebar}>
+              <Hidden smDown implementation="css">
                 <RightSidebar>
                   <Toolbar />
                   <RightSidebarContent />

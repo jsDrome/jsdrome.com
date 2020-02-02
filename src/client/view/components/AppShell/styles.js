@@ -10,12 +10,12 @@ export default theme => ({
   contentWrapper: {
     margin: 'auto',
     [theme.breakpoints.up('md')]: {
-      marginLeft: 275,
+      marginLeft: 285,
     },
   },
   content: {
     marginTop: 15,
-    maxWidth: 900,
+    // maxWidth: 900,
     minWidth: 300,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,

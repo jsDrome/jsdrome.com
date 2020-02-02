@@ -28,7 +28,7 @@ class Sidebar extends React.Component {
         </Drawer>
       </Hidden>
       {/* MD up */}
-      <Hidden smDown implementation="css">
+      <Hidden mdDown implementation="css">
         <Drawer
           classes={{ paper: classes.drawer }}
           variant="persistent"

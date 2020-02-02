@@ -8,7 +8,7 @@ export default theme => ({
     cursor: 'pointer',
     padding: 8,
     marginRight: 0,
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       display: 'none',
     },
     [theme.breakpoints.down('xs')]: {

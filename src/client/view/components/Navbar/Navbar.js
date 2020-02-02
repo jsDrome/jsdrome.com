@@ -24,7 +24,7 @@ class Navbar extends React.Component {
     const { classes, title = '', description = '', onNavbarMenuClick, onNavbarTitleClick } = this.props;
 
     return (
-      <AppBar id="navbar" className={classes.appBar} elevation={2}>
+      <AppBar id="navbar" className={classes.appBar} elevation={4}>
         <Toolbar className={classes.toolBar}>
           <IconButton
             color="inherit"

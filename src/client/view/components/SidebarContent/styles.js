@@ -8,10 +8,6 @@ export default theme => ({
       marginTop: -15,
     },
   },
-  box: {
-    width,
-    textAlign: 'center',
-  },
   nestedListItem: {
     paddingLeft: 30,
     padding: 3,
@@ -22,29 +18,41 @@ export default theme => ({
     borderLeft: `solid 5px`,
     background: theme.background.primary,
   },
-  fixed: {
-    position: 'fixed',
-    top: 65,
-  },
   payButton: {
-    marginTop: 15,
-    // marginBottom: 15,
-  },
-  text: { display: 'block', width: '100%', textAlign: 'center', margin: 10 },
-  avatar: {
-    display: 'inline-block',
-    margin: 0,
+    // padding: 10,
   },
   fbPagePlugin: {
     width,
     height: 70,
+    margin: 'auto',
+    marginTop: 20,
+    display: 'block',
+  },
+  text: {
+    display: 'block',
+    width: '100%',
+    textAlign: 'center',
+    margin: 10,
+  },
+  people: {
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  contributors: {
+    width,
+    // padding: 20,
+    margin: 'auto',
+    display: 'block',
+  },
+  avatar: {
+    display: 'inline-block',
+    margin: 0,
   },
   pagePlugins: {
-    width,
-    height: 50,
+    // height: 50,/
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    // padding: 10,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    padding: 20,
   },
 });

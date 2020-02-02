@@ -1,13 +1,17 @@
 import React from 'react';
+import classnames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
 
-class PaperSheet extends React.Component {
+import styles from './styles';
+
+class RightSidebar extends React.Component {
   render() {
-    const { children } = this.props;
+    const { classes, children } = this.props;
 
-    return <React.Fragment>
+    return <div className={classnames(classes.box, classes.fixed)}>
       {children}
-    </React.Fragment>;
+    </div>;
   }
 }
 
-export default PaperSheet;
+export default withStyles(styles, { withTheme: true })(RightSidebar);

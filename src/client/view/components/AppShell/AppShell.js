@@ -12,13 +12,13 @@ import Sidebar from '../Sidebar/Sidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import SidebarContent from '../SidebarContent/SidebarContent';
 import RightSidebarContent from '../SidebarContent/RightSidebarContent';
-import PayButton from '../PayButton/PayButton';
+// import PayButton from '../PayButton/PayButton';
 import Toolbar from '../Toolbar/Toolbar';
-import SocialLinks from '../SocialLinks/SocialLinks';
+// import SocialLinks from '../SocialLinks/SocialLinks';
 import FBChat from '../FBChat/FBChat';
 
 import styles from './styles';
-import CopyRight from '../CopyRight/CopyRight';
+// import CopyRight from '../CopyRight/CopyRight';
 
 const { TITLE, DESCRIPTION } = require('../../../../variables');
 
@@ -57,25 +57,23 @@ class App extends Component {
       </Sidebar>
       <div className={classes.app}>
         <div className={classes.contentWrapper}>
-          <Grid container spacing={0} style={{ justifyContent: 'space-around' }}>
+          <Grid container spacing={0}>
             <Grid item md={9} className={classes.content}>
               <Toolbar />
               <Content>
                 <noscript><Typography style={{ textAlign: 'center' }} variant="h6">Please enable Javascript to continue.</Typography></noscript>
                 {children}
               </Content>
-              <Hidden smUp>
+              <Hidden mdUp>
                 <div style={{ margin: 10 }}>
-                  <PayButton />
-                  <SocialLinks />
-                  <CopyRight />
+                  <RightSidebarContent />
                 </div>
               </Hidden>
             </Grid>
             <Grid item md={3} className={classes.sidebar}>
               <Hidden smDown implementation="css">
                 <RightSidebar>
-                  <Toolbar />
+                  {/* <Toolbar /> */}
                   <RightSidebarContent />
                 </RightSidebar>
               </Hidden>

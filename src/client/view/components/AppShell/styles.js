@@ -9,13 +9,13 @@ export default theme => ({
   },
   contentWrapper: {
     margin: 'auto',
-    [theme.breakpoints.up('md')]: {
-      marginLeft: 285,
+    [theme.breakpoints.up('lg')]: {
+      marginLeft: 275,
     },
   },
   content: {
     marginTop: 15,
-    // maxWidth: 900,
+    maxWidth: 960,
     minWidth: 300,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,

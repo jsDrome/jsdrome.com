@@ -24,7 +24,7 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <iframe className={classes.fbPagePlugin} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
+      <iframe className={classes.fbPagePlugin} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549&tabs=reviews" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
 
       <div className={classes.payButton}>
         <PayButton text={'Sponsor'} />

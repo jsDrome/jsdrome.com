@@ -26,7 +26,7 @@ class Pay extends Component {
     });
   }
   render() {
-    const { app: { checksum }, text } = this.props;
+    const { app: { checksum }, text = 'Sponsor', autoSubmit = false } = this.props;
 
     return <PaytmButton
       amount={amount}
@@ -41,7 +41,8 @@ class Pay extends Component {
       checksum={checksum}
       callbackUrl={callbackUrl}
       url={url}
-      text={text}/>;
+      text={text}
+      autoSubmit={autoSubmit} />;
   }
 }
 

@@ -18,11 +18,16 @@ class Paytmbutton extends Component {
     });
     document.getElementById('pay-form').submit();
   }
+  componentDidUpdate() {
+    if(this.props.checksum && this.props.autoSubmit) {
+      document.getElementById('paytm-payment-btn').click();
+    }
+  }
   render() {
     // const { classes } = this.props;
     const { url, orderId, merchantId, website, industryTypeId, channelId, customerId, amount, phone, email, callbackUrl, checksum, text } = this.props;
 
-    return <form id="pay-form" action={url} name="f1" method="POST" style={{ margin: 0 }}>
+    return checksum && <form id="pay-form" action={url} name="f1" method="POST" style={{ margin: 0 }}>
       <input type="hidden" name="MID" value={merchantId} />
       <input type="hidden" name="WEBSITE" value={website} />
       <input type="hidden" name="INDUSTRY_TYPE_ID" value={industryTypeId} />

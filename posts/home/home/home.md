@@ -7,7 +7,7 @@ As part of your inception, we provide you with a bootcamp.
 
 ## 1. What you will be learning
 
-Web Software Engineering (Frontend, Backend, DevOps, Testing). After the course, you will be inducted into the community.
+Web Software Engineering (Frontend, Backend, DevOps, Testing). After the course, you will be inducted into the community, given a contributor badge and will be put in a team of other engineers working to build this community.
 
 ## 2. How long will it take
 
@@ -68,25 +68,11 @@ Every student has his own take away from this. Some for new skills, some for car
         - DataStructures
         - Algorithms
 
-## 10. The mentors
-
-The mentors are **Sreeram Padmanabhan** from Berlin, **Pooja Singh** & **Priya Porwal** from Bangalore all Senior Software Engineers. Other mentors are soon joining us.
-
-## 11. Register
+## 10. Register
 
 Drop a mail to hi@jsdrome.com with subject: **Registration**
 
-## 9. Cost
 
- - Basic Plan (~20 classes, Free for students. Others - $50/£50/€50/₹4000)
- - Advanced Plan (~40 classes, $125/£125/€125/₹10000)
-
-## 12. How to pay
-
- - India: Google Pay to +91 9496368177
- - Germany: IBAN: GB53 REVO 0099 7096 4381 71 BIC: REVOGB21
- - UK: Sort Code: 040075 A/C No.: 12480363
-
-## Read/Submit a feedback
+## 12. Read/Submit a feedback
 
 Head over to our facebook page.

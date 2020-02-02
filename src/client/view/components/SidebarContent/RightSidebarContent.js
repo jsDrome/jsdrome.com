@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-import PayButton from '../PayButton/PayButton';
+// import PayButton from '../PayButton/PayButton';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import styles from './styles';
 import CopyRight from '../CopyRight/CopyRight';
@@ -13,9 +13,9 @@ class RightSidebarContent extends Component {
   render() {
     const { classes } = this.props;
     return <div>
-      <div className={classes.payButton}>
+      {/* <div className={classes.payButton}>
         <PayButton text={'Sponsor'} />
-      </div>
+      </div> */}
 
       <div className={classes.fbPagePlugin}>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>

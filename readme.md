@@ -4,6 +4,8 @@
 
 # What is jsDrome?
 
+
+
 &nbsp;
 
 Some time back in 2018, I wanted to create the perfect Web App boilerplate project. So I started creating a template from scratch wth everything configured. All I required to do is change some configurables to get a full fledged website. I called it `jsDrome`.

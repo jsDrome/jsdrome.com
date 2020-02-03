@@ -43,7 +43,7 @@ class Navbar extends React.Component {
           {!this.state.isUserLoggedIn && <Button
             id="login-linkedin-btn"
             color="secondary"
-            href={`/login?originalUrl=${getParameterByName('originalUrl') || '/'}`}>Login / Register</Button>}
+            href={`/login?originalUrl=${getParameterByName('originalUrl') || '/'}`}><img src="/img/Sign-In-Large---Active.png" className={classes.loginImg} /></Button>}
           {this.state.isUserLoggedIn && <Button
             id="logout-linkedin-btn"
             color="secondary"

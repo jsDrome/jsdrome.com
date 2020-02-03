@@ -50,4 +50,10 @@ export default theme => ({
       marginRight: 10,
     },
   },
+  loginImg: {
+    height: 25,
+    [theme.breakpoints.up('sm')]: {
+      height: 30,
+    },
+  },
 });

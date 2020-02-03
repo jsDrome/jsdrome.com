@@ -1,4 +1,4 @@
-const width = 300;
+const width = 250;
 
 export default theme => ({
   root: {

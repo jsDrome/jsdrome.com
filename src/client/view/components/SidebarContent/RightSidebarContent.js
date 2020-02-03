@@ -13,22 +13,14 @@ class RightSidebarContent extends Component {
   render() {
     const { classes } = this.props;
     return <div>
-      {/* <div className={classes.payButton}>
-        <PayButton text={'Sponsor'} />
-      </div> */}
-
-      <div className={classes.fbPagePlugin}>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
-      </div>
-
       <div className={classes.people}>
         <Typography variant="body1" className={classes.text}>Sponsors</Typography>
         <div className={classes.contributors}>
-          <Avatar className={classes.avatar} alt="Satheesh Kumar" src="https://avatars1.githubusercontent.com/u/8121176?s=460&v=4" />
-          <Avatar className={classes.avatar} alt="Gauraang Mukhopadhyay" src="https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg" />
-          <Avatar className={classes.avatar} alt="Anand Tagore" src="https://s3.amazonaws.com/uifaces/faces/twitter/bruno_mart/128.jpg" />
-          <Avatar className={classes.avatar} alt="Poornima Panicker" src="https://s3.amazonaws.com/uifaces/faces/twitter/divya/128.jpg" />
-          <Avatar className={classes.avatar} alt="Purnima Mishra" src="https://s3.amazonaws.com/uifaces/faces/twitter/samihah/128.jpg" />
+          <Avatar variant="square" className={classes.avatar} alt="Satheesh Kumar" src="https://avatars1.githubusercontent.com/u/8121176?s=460&v=4" />
+          <Avatar variant="square" className={classes.avatar} alt="Gauraang Mukhopadhyay" src="https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg" />
+          <Avatar variant="square" className={classes.avatar} alt="Anand Tagore" src="https://s3.amazonaws.com/uifaces/faces/twitter/bruno_mart/128.jpg" />
+          <Avatar variant="square" className={classes.avatar} alt="Poornima Panicker" src="https://s3.amazonaws.com/uifaces/faces/twitter/divya/128.jpg" />
+          <Avatar variant="square" className={classes.avatar} alt="Purnima Mishra" src="https://s3.amazonaws.com/uifaces/faces/twitter/samihah/128.jpg" />
         </div>
         <Typography variant="body1" className={classes.text}>Mentors</Typography>
         <div className={classes.contributors}>
@@ -51,6 +43,14 @@ class RightSidebarContent extends Component {
           <Avatar className={classes.avatar} alt="Shreya Reddy" src="https://avatars2.githubusercontent.com/u/58949356?s=460&v=4" />
         </div>
       </div>
+
+      <div className={classes.fbPagePlugin}>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" width="250" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
+      </div>
+
+      {/* <div className={classes.payButton}>
+        <PayButton text={'Sponsor'} />
+      </div> */}
 
       <SocialLinks />
 

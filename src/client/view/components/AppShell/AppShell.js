@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
-import Fab from '@material-ui/core/Fab';
+// import Fab from '@material-ui/core/Fab';
 import ShareIcon from '@material-ui/icons/Share';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 import { Typography } from '@material-ui/core';
 import Navbar from '../Navbar/Navbar';
 import Content from '../Content/Content';
@@ -61,6 +61,9 @@ class App extends Component {
             <Grid item md={9} className={classes.content}>
               <Toolbar />
               <Content>
+                <div className={classes.homeIcon}>
+                  <ShareIcon onClick={this.handleShareClick} />
+                </div>
                 <noscript><Typography style={{ textAlign: 'center' }} variant="h6">Please enable Javascript to continue.</Typography></noscript>
                 {children}
               </Content>
@@ -81,10 +84,10 @@ class App extends Component {
           </Grid>
         </div>
       </div>
-      <Fab className={classNames(classes.fab)} color={'secondary'} onClick={this.handleShareClick} aria-label="share" name="share">
+      {/* <Fab className={classNames(classes.fab)} color={'secondary'} onClick={this.handleShareClick} aria-label="share" name="share">
         <span className="hidden-accessiiblity">Share</span>
         <ShareIcon />
-      </Fab>
+      </Fab> */}
       <FBChat pageId={"102642487897333"} />
     </div>;
   }

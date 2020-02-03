@@ -30,11 +30,27 @@ const options = {
   },
 };
 
-export default props => <React.Fragment>
-  <ReactMarkdown options={options} {...props} />
-  {/* <Adsense
-    adFormat="fluid"
-    adClient="ca-pub-6831276331714408"
-    adSlot="3393854253"
-    layoutKey="-gp-3+15-68+ah" /> */}
-</React.Fragment>;
+class Markdown extends React.Component {
+  state = {
+    isUserLoggedIn: false,
+  }
+  componentDidMount() {
+    this.setState({
+      isUserLoggedIn: !!document.cookie.match(/^(.*;)?\s*__session\s*=\s*[^;]+(.*)?$/),
+    });
+  }
+  render() {
+    const { isUserLoggedIn } = this.state;
+
+    return <React.Fragment>
+      <ReactMarkdown options={options} {...this.props} />
+      {isUserLoggedIn && <Adsense
+        adFormat="fluid"
+        adClient="ca-pub-6831276331714408"
+        adSlot="3393854253"
+        layoutKey="-gp-3+15-68+ah" />}
+    </React.Fragment>
+  }
+}
+
+export default Markdown;

@@ -41,9 +41,11 @@ class Navbar extends React.Component {
             </Hidden>
           </div>
           {!this.state.isUserLoggedIn && <Button
+            id="login-linkedin-btn"
             color="secondary"
             href={`/login?originalUrl=${getParameterByName('originalUrl') || '/'}`}>Login / Register</Button>}
           {this.state.isUserLoggedIn && <Button
+            id="logout-linkedin-btn"
             color="secondary"
             href="/logout">Logout</Button>}
         </Toolbar>

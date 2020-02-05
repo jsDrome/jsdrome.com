@@ -37,6 +37,7 @@ export default theme => ({
   people: {
     marginTop: 20,
     marginBottom: 20,
+    textAlign: 'center',
   },
   contributors: {
     width,

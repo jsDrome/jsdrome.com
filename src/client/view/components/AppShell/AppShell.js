@@ -58,7 +58,7 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.gridWrapper}>
           <Grid container spacing={0}>
-            <Grid item lg={9} md={8} className={classes.content}>
+            <Grid item md={8} className={classes.content}>
               <Toolbar />
               <Content>
                 <ShareIcon className={classes.homeIcon} onClick={this.handleShareClick} />

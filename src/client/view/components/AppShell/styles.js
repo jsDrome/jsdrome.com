@@ -4,7 +4,7 @@ export default theme => ({
     position: 'relative',
     width: '100%',
     minHeight: '100vh',
-    background: theme.background.primary,
+    background: 'linear-gradient(to bottom, #1a73e8 20%, #eceff1 20%)',
     color: '#333',
   },
   gridWrapper: {

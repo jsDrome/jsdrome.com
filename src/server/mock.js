@@ -27,18 +27,23 @@ app.post('/paymentprocess', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
-
   const { folder, subfolder, post } = req.query;
-  var file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
-  res.set('Content-type', 'text/plain');
+  const file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
 
-  // if(!isUserLoggedIn(req)) return res.send('### Register/Login to continue reading..');
-  return res.send(file.toString());
+  if (!isUserLoggedIn(req) && `${folder}/${subfolder}/${post}` !== 'home/home/home') {
+    res.status(401).send({
+      errorCode: "1234",
+    });
+  } else {
+    res.set('Content-type', 'text/plain');
+    return res.send(file.toString());
+  }
+
 });
 
-// const isUserLoggedIn = req => {
-//   return !!req.cookies.__session;
-// };
+const isUserLoggedIn = req => {
+  return !!req.cookies.__session;
+};
 
 app.get('/login', (req, res) => {
   const { originalUrl } = req.query;

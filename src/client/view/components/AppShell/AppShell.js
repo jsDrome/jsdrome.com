@@ -58,12 +58,10 @@ class App extends Component {
       <div className={classes.app}>
         <div className={classes.gridWrapper}>
           <Grid container spacing={0}>
-            <Grid item md={9} className={classes.content}>
+            <Grid item lg={9} md={8} className={classes.content}>
               <Toolbar />
               <Content>
-                <div className={classes.homeIcon}>
-                  <ShareIcon onClick={this.handleShareClick} />
-                </div>
+                <ShareIcon className={classes.homeIcon} onClick={this.handleShareClick} />
                 <noscript><Typography style={{ textAlign: 'center' }} variant="h6">Please enable Javascript to continue.</Typography></noscript>
                 {children}
               </Content>

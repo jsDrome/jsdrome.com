@@ -9,7 +9,7 @@ When webpack builds our javascript code, we specify babel-loader as the module p
 
 ## Install
 
-    npm i --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-syntax-dynamic-import
+    npm i --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-syntax-dynamic-import babel-loader
 
 ## Configure
 

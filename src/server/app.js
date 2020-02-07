@@ -58,10 +58,17 @@ app.post('/checksum', (req, res) => {
 app.get('/data', (req, res) => {
 
   const { folder, subfolder, post } = req.query;
-  var file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
-  res.set('Content-type', 'text/plain');
+  const file = fs.readFileSync(`./posts/${folder}/${subfolder}/${post}.md`, 'utf8');
 
-  return res.send(file.toString());
+  if (!isUserLoggedIn(req) && `${folder}/${subfolder}/${post}` !== 'home/home/home') {
+    res.status(401).send({
+      errorCode: "1234",
+    });
+  } else {
+    res.set('Content-type', 'text/plain');
+    return res.send(file.toString());
+  }
+
 });
 
 app.get('/login', (req, res) => {
@@ -155,9 +162,9 @@ app.get('**', (req, res) => {
 
 export default app;
 
-// const isUserLoggedIn = req => {
-//   return !!req.cookies.__session;
-// };
+const isUserLoggedIn = req => {
+  return !!req.cookies.__session;
+};
 
 // const notify = (title = '', body = '') => fetch('https://exp.host/--/api/v2/push/send', {
 //   body: JSON.stringify({

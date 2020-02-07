@@ -71,7 +71,9 @@ export const getContent = (folder = 'home', subfolder = 'home', post = 'home') =
   fetch(`/data?folder=${folder}&subfolder=${subfolder}&post=${post}`)
     .then(response => {
       if(response.ok) return response.text();
-      throw new Error('Network response was not ok.');
+      // eslint-disable-next-line no-magic-numbers
+      if(response.status === 401) throw new Error('Unauthorized. Please login to view this page.');
+      throw new Error('Network Issues.');
     })
     .then(text => {
       content[`${folder}/${subfolder}/${post}`] = text;
@@ -79,10 +81,13 @@ export const getContent = (folder = 'home', subfolder = 'home', post = 'home') =
         setContent(content),
       ]);
     })
-    .catch(() => {
+    .catch(err => {
       dispatch([
-        setContent(null),
-        setMessage('Network Issues.'),
+        setMessage({
+          message: err.toString(),
+          type: 'error',
+          permanent: true,
+        }),
       ]);
     });
 };

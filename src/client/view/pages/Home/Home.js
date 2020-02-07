@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -40,14 +41,14 @@ class Page extends Component {
     setMessage(null);
   }
   render() {
-    const { app: { content, error, message }, match: { params: { folder = 'home', subfolder = 'home', post = 'home' } } } = this.props;
+    const { app: { content, message }, match: { params: { folder = 'home', subfolder = 'home', post = 'home' } } } = this.props;
     const { metaTags } = this.state;
 
     return <div>
       <MetaTags {...metaTags} />
-      {message && message.message && <ErrorMessage variant={message.type} message={message.message} duration={2000} handleErrorClose={this.handleErrorClose.bind(this)} />}
-      {!error && !content[`${folder}/${subfolder}/${post}`] && <FullpageLoader />}
-      {content[`${folder}/${subfolder}/${post}`] && <React.Fragment>
+      {message && message.message && <ErrorMessage variant={message.type} message={message.message} duration={message.permanent ? 200000 : 2000} handleErrorClose={message.permanent ? undefined : this.handleErrorClose.bind(this)} />}
+      {!message && !content[`${folder}/${subfolder}/${post}`] && <FullpageLoader />}
+      {!message && content[`${folder}/${subfolder}/${post}`] && <React.Fragment>
         <Post>{content[`${folder}/${subfolder}/${post}`]}</Post>
         <Navigation links={getLinks(folder, subfolder, post)} />
       </React.Fragment>}

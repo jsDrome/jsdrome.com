@@ -21,7 +21,7 @@ class Page extends Component {
     const { app: { message } } = this.props;
     return <div>
       {message && message.message && <ErrorMessage variant={message.type} message={message.message} duration={20000} handleErrorClose={this.handleErrorClose.bind(this)} />}
-      <Post>Please login access this page.</Post>
+      <Post>Error: Unauthorized. Please login to view this page.</Post>
     </div>;
   }
 }

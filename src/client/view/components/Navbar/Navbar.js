@@ -8,7 +8,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
 
-import { getParameterByName } from '../../../utils/helpers';
 import styles from './styles';
 
 class Navbar extends React.Component {
@@ -24,7 +23,7 @@ class Navbar extends React.Component {
     const { classes, title = '', description = '', onNavbarMenuClick, onNavbarTitleClick } = this.props;
 
     return (
-      <AppBar id="navbar" className={classes.appBar} elevation={4}>
+      <AppBar id="navbar" className={classes.appBar} elevation={1}>
         <Toolbar className={classes.toolBar}>
           <IconButton
             color="inherit"
@@ -43,7 +42,7 @@ class Navbar extends React.Component {
           {!this.state.isUserLoggedIn && <Button
             id="login-linkedin-btn"
             color="secondary"
-            href={`/login?originalUrl=${getParameterByName('originalUrl') || '/'}`}><img src="/img/Sign-In-Large---Active.png" className={classes.loginImg} /></Button>}
+            href={`/login?originalUrl=${window.location.pathname}`}><img src="/img/Sign-In-Large---Active.png" className={classes.loginImg} /></Button>}
           {this.state.isUserLoggedIn && <Button
             id="logout-linkedin-btn"
             color="secondary"

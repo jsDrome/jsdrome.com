@@ -15,17 +15,6 @@ const HomeIcon = props => <SvgIcon {...props}>
 </SvgIcon>;
 
 class Navigation extends React.Component {
-  state = {
-    isUserLoggedIn: false,
-  }
-  componentDidMount() {
-    this.setState({
-      isUserLoggedIn: !!document.cookie.match(/^(.*;)?\s*__session\s*=\s*[^;]+(.*)?$/),
-    });
-  }
-  onLinkClick = link => {
-    window.location = this.state.isUserLoggedIn ? link : '/restricted';
-  }
   render() {
     const { classes, links: { prevLink, prevTitle, nextLink, nextTitle } } = this.props;
 
@@ -36,8 +25,7 @@ class Navigation extends React.Component {
             className={classes.link}
             color={"primary"}
             component="button"
-            variant="body2"
-            onClick={() => this.onLinkClick(prevLink)}>{prevTitle}</Link> : <HomeIcon />}
+            variant="body2">{prevTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}
       {<Step>
@@ -46,8 +34,7 @@ class Navigation extends React.Component {
             className={classes.link}
             color={"primary"}
             component="button"
-            variant="body2"
-            onClick={() => this.onLinkClick(nextLink)}>{nextTitle}</Link> : <HomeIcon />}
+            variant="body2">{nextTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}
     </Stepper>;

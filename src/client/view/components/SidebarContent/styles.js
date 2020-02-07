@@ -18,14 +18,29 @@ export default theme => ({
     borderLeft: `solid 5px`,
     background: theme.background.primary,
   },
-  payButton: {
-    // padding: 10,
+  people: {
+    padding: 20,
+    textAlign: 'center',
   },
   fbPagePlugin: {
     width,
     height: 70,
     margin: 'auto',
-    marginTop: 20,
+    marginBottom: 5,
+    display: 'block',
+  },
+  pagePlugins: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  contributorsSection: {
+    margin: '30px 0',
+  },
+  contributors: {
+    width,
+    margin: 'auto',
     display: 'block',
   },
   text: {
@@ -34,26 +49,14 @@ export default theme => ({
     textAlign: 'center',
     margin: 10,
   },
-  people: {
-    marginTop: 20,
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  contributors: {
-    width,
-    // padding: 20,
-    margin: 'auto',
-    display: 'block',
-  },
   avatar: {
     display: 'inline-block',
-    margin: 0,
+    padding: 2,
   },
-  pagePlugins: {
-    // height: 50,/
-    display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-    padding: 20,
+  socialLinks: {
+    marginBottom: 20,
+  },
+  payButton: {
+    marginBottom: 20,
   },
 });

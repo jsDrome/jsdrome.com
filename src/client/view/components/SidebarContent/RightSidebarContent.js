@@ -9,6 +9,7 @@ import CopyRight from '../CopyRight/CopyRight';
 import { Typography } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import Content from '../Content/Content';
+import Adsense from '../Adsense/Adsense';
 
 class RightSidebarContent extends Component {
   render() {
@@ -31,8 +32,13 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
+      <Typography variant="body1" className={classes.text}>Take the Z-Axis creative thinking test</Typography>
+      <a href="https://z-axis.web.app">
+        <img className={classes.googlePlayAd} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
+      </a>
+
       <div className={classes.contributorsSection}>
-        <Typography variant="body2" className={classes.text}>The Team</Typography>
+        <Typography variant="body1" className={classes.text}>Mentors & Contributors</Typography>
         <div className={classes.contributors}>
           <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
           <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
@@ -65,18 +71,24 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <Typography variant="body2" className={classes.text}>Take the Z-Axis Challenge</Typography>
-      <a href="https://play.google.com/store/apps/details?id=com.londonz.app">
-        <img className={classes.googlePlayAd} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
-      </a>
+      <Adsense
+        adFormat="fluid"
+        adClient="ca-pub-6831276331714408"
+        adSlot="3393854253"
+        layoutKey="-ih+5+1+2-3"/>
+
+      <Typography variant="body1" className={classes.text}>Did we help you? Support our efforts</Typography>
+
+      <div className={classes.payButton}>
+        <PayButton text={'Sponsor'} />
+      </div>
+
+      {/* <Typography variant="body1" className={classes.text}>Questions/Suggestions/Concerns</Typography> */}
 
       <div className={classes.socialLinks}>
         <SocialLinks />
       </div>
 
-      <div className={classes.payButton}>
-        <PayButton text={'Sponsor'} />
-      </div>
       <CopyRight />
     </Content>;
   }

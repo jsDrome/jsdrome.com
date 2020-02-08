@@ -5,8 +5,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from '@material-ui/core/Link';
 
-import Adsense from '../Adsense/Adsense';
-
 const styles = theme => ({
   listItem: {
     marginTop: theme.spacing(1),
@@ -31,24 +29,9 @@ const options = {
 };
 
 class Markdown extends React.Component {
-  state = {
-    isUserLoggedIn: false,
-  }
-  componentDidMount() {
-    this.setState({
-      isUserLoggedIn: !!document.cookie.match(/^(.*;)?\s*__session\s*=\s*[^;]+(.*)?$/),
-    });
-  }
   render() {
-    const { isUserLoggedIn } = this.state;
-
     return <React.Fragment>
       <ReactMarkdown options={options} {...this.props} />
-      {isUserLoggedIn && <Adsense
-        adFormat="fluid"
-        adClient="ca-pub-6831276331714408"
-        adSlot="3393854253"
-        layoutKey="-gn-h+1j-5o+ae" />}
     </React.Fragment>
   }
 }

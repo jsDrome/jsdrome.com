@@ -22,7 +22,7 @@ export default theme => ({
     [theme.breakpoints.up('md')]: {
       paddingLeft: 0,
     },
-    textAlign: 'center',
+    textAlign: 'left',
   },
   fbPagePlugin: {
     width,
@@ -39,7 +39,7 @@ export default theme => ({
   },
   contributorsSection: {
     margin: '30px 0',
-    textAlign: 'center',
+    textAlign: 'justify',
   },
   contributors: {
     [theme.breakpoints.up('md')]: {
@@ -52,7 +52,7 @@ export default theme => ({
   text: {
     display: 'block',
     width: '100%',
-    textAlign: 'center',
+    // textAlign: 'center',
     margin: 10,
   },
   avatar: {
@@ -66,8 +66,9 @@ export default theme => ({
     marginBottom: 20,
   },
   googlePlayAd: {
-    width,
-    margin: '-10px auto 0',
+    // eslint-disable-next-line no-magic-numbers
+    width: width + 40,
+    margin: '-10px -15px',
     display: 'block',
   },
 });

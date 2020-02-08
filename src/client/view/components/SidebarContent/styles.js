@@ -62,4 +62,9 @@ export default theme => ({
   payButton: {
     marginBottom: 20,
   },
+  googlePlayAd: {
+    width,
+    margin: '-10px auto 0',
+    display: 'block',
+  },
 });

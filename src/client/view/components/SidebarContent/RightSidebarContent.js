@@ -66,6 +66,11 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
+      <Typography variant="body2" className={classes.text}>Take the Z-Axis Challenge</Typography>
+      <a href="https://play.google.com/store/apps/details?id=com.londonz.app">
+        <img className={classes.googlePlayAd} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
+      </a>
+
       <div className={classes.socialLinks}>
         <SocialLinks />
       </div>
@@ -73,7 +78,6 @@ class RightSidebarContent extends Component {
       <div className={classes.payButton}>
         <PayButton text={'Sponsor'} />
       </div>
-
       <CopyRight />
     </Content>;
   }

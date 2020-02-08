@@ -6,6 +6,6 @@ export default theme => ({
   },
   fixed: {
     position: 'fixed',
-    top: 65,
+    top: 50,
   },
 });

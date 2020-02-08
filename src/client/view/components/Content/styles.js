@@ -25,13 +25,10 @@ export default theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: 0,
-    [theme.breakpoints.up('sm')]: {
-      padding: 20,
-      paddingTop: 0,
-    },
+    padding: 20,
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 10,
+      padding: 10,
     },
+    // paddingTop: 0,
   },
 });

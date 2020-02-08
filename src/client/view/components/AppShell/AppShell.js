@@ -66,7 +66,7 @@ class App extends Component {
                 {children}
               </Content>
               <Hidden mdUp>
-                <div style={{ margin: '20px 0' }}>
+                <div >
                   <RightSidebarContent />
                 </div>
               </Hidden>

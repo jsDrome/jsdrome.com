@@ -13,10 +13,12 @@ import styles from './styles';
 class Navbar extends React.Component {
   state = {
     isUserLoggedIn: false,
+    pathname: '',
   }
   componentDidMount() {
     this.setState({
       isUserLoggedIn: !!document.cookie.match(/^(.*;)?\s*__session\s*=\s*[^;]+(.*)?$/),
+      pathname: window.location.pathname,
     });
   }
   render() {
@@ -42,7 +44,7 @@ class Navbar extends React.Component {
           {!this.state.isUserLoggedIn && <Button
             id="login-linkedin-btn"
             color="secondary"
-            href={`/login?originalUrl=${window.location.pathname}`}><img src="/img/Sign-In-Large---Active.png" className={classes.loginImg} /></Button>}
+            href={`/login?originalUrl=${this.state.pathname}`}><img src="/img/Sign-In-Large---Active.png" className={classes.loginImg} /></Button>}
           {this.state.isUserLoggedIn && <Button
             id="logout-linkedin-btn"
             color="secondary"

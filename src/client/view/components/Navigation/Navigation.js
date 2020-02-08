@@ -23,8 +23,8 @@ class Navigation extends React.Component {
         <StepLabel icon={null}>
           {prevLink ? <Link
             className={classes.link}
+            href={prevLink}
             color={"primary"}
-            component="button"
             variant="body2">{prevTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}
@@ -32,8 +32,8 @@ class Navigation extends React.Component {
         <StepLabel icon={null}>
           {nextLink ? <Link
             className={classes.link}
+            href={nextLink}
             color={"primary"}
-            component="button"
             variant="body2">{nextTitle}</Link> : <HomeIcon />}
         </StepLabel>
       </Step>}

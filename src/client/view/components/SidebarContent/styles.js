@@ -37,9 +37,12 @@ export default theme => ({
   },
   contributorsSection: {
     margin: '30px 0',
+    textAlign: 'center',
   },
   contributors: {
-    width,
+    [theme.breakpoints.up('md')]: {
+      width,
+    },
     margin: 'auto',
     display: 'block',
   },
@@ -51,7 +54,7 @@ export default theme => ({
   },
   avatar: {
     display: 'inline-block',
-    padding: 2,
+    margin: 0,
   },
   socialLinks: {
     marginBottom: 20,

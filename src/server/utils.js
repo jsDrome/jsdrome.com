@@ -1,12 +1,12 @@
 /* eslint-disable no-magic-numbers */
-import fs from 'fs';
-import crypto from 'crypto';
-import moment from 'moment';
+const fs = require('fs');
+const crypto = require('crypto');
+const moment = require('moment');
 
 const { THEME_COLOR, AUTHOR, KEYWORDS, OG_IMAGE_ALT, OG_TYPE, OG_FB_APP_ID } = require('../../src/variables');
 const template = fs.readFileSync('./templates/server.html', 'utf8');
 
-export const renderFullPage = (html, css, title, ogTitle, ogUrl, description, ogDescription, ogImage) => template
+const renderFullPage = (html, css, title, ogTitle, ogUrl, description, ogDescription, ogImage) => template
   .replace('<!-- html here -->', html)
   .replace('/* css here */', css)
   // variables
@@ -68,7 +68,7 @@ const genSalt = (length, cb) => {
   });
 };
 
-export const genchecksum = (params, key, cb) => {
+const genchecksum = (params, key, cb) => {
   var data = paramsToString(params);
   let encrypted;
   // eslint-disable-next-line handle-callback-err
@@ -78,4 +78,9 @@ export const genchecksum = (params, key, cb) => {
     encrypted = encrypt(checkSum, key);
     cb(encrypted);
   });
+};
+
+module.exports = {
+  renderFullPage,
+  genchecksum,
 };

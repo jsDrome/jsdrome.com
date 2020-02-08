@@ -27,7 +27,7 @@ export const getCheckSum = (body = {}) => (dispatch, getState) => {
   })
     .then(response => {
       if (response.ok) return response.text();
-      throw new Error('Network response was not ok.');
+      throw new Error('Reduced functionality.');
     })
     .then(text => {
       dispatch([
@@ -35,11 +35,12 @@ export const getCheckSum = (body = {}) => (dispatch, getState) => {
         setLoading(false),
       ]);
     })
-    .catch(() => {
+    .catch(err => {
       dispatch([
         setMessage({
-          message: 'Techincal error! Reduced functionality.',
+          message: err.toString(),
           type: 'warning',
+          permanent: true,
         }),
       ]);
     });

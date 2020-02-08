@@ -19,7 +19,9 @@ export default theme => ({
     background: theme.background.primary,
   },
   people: {
-    padding: 20,
+    [theme.breakpoints.up('md')]: {
+      paddingLeft: 0,
+    },
     textAlign: 'center',
   },
   fbPagePlugin: {
@@ -45,6 +47,7 @@ export default theme => ({
     },
     margin: 'auto',
     display: 'block',
+    // padding: '0 20px',
   },
   text: {
     display: 'block',

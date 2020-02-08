@@ -1,15 +1,16 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
+import cn from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 
 import styles from './styles';
 
 class PaperSheet extends React.Component {
   render() {
-    const { classes, children } = this.props;
+    const { classes, children, className } = this.props;
 
     return (
-      <main className={classes.content}>
+      <main className={cn(classes.content, className)}>
         <Paper className={classes.root} elevation={2}>
           {children}
         </Paper>

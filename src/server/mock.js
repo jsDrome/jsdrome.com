@@ -3,20 +3,21 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser')
-
 const fs = require('fs');
+
 // eslint-disable-next-line no-magic-numbers
 const port = process.env.PORT || 5000;
 const app = express();
 const axios = require('axios');
 const querystring = require('querystring');
+const { genchecksum } = require('./utils');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.post('/checksum', (req, res) => {
-  res.send("3817iH3IQV2/tYwCJ7Mwn2/Zkw+mpmivoXGuxnFVWyYxtVHCjOQvjjcfD1dte7JhD0xMz1CCH/BAaoTqdv4QlHLTfJlzTs/OI2BH4wd4D8g=");
+  genchecksum(req.body, 'qWzN4AATjzd8pRPC', cs => res.send(cs));
 });
 
 app.post('/paymentprocess', (req, res) => {

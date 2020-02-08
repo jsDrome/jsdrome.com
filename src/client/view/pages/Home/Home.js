@@ -48,7 +48,7 @@ class Page extends Component {
       <MetaTags {...metaTags} />
       {message && message.message && <ErrorMessage variant={message.type} message={message.message} duration={message.permanent ? 200000 : 2000} handleErrorClose={message.permanent ? undefined : this.handleErrorClose.bind(this)} />}
       {!message && !content[`${folder}/${subfolder}/${post}`] && <FullpageLoader />}
-      {!message && content[`${folder}/${subfolder}/${post}`] && <React.Fragment>
+      {content[`${folder}/${subfolder}/${post}`] && <React.Fragment>
         <Post>{content[`${folder}/${subfolder}/${post}`]}</Post>
         <Navigation links={getLinks(folder, subfolder, post)} />
       </React.Fragment>}

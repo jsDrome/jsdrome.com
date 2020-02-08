@@ -13,8 +13,7 @@ import Content from '../Content/Content';
 class RightSidebarContent extends Component {
   render() {
     const { classes } = this.props;
-    return <Content>
-
+    return <Content className={classes.people}>
       <div className={classes.fbPagePlugin}>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjsdrome%2F&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=277326689897549" width="250" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
       </div>

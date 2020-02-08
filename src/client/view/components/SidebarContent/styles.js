@@ -27,18 +27,17 @@ export default theme => ({
   fbPagePlugin: {
     width,
     height: 70,
-    margin: 'auto',
+    margin: 0,
     marginBottom: 5,
     display: 'block',
   },
   pagePlugins: {
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'center',
     marginBottom: 20,
   },
   contributorsSection: {
-    margin: '30px 0',
+    margin: '10px 0 20px',
     textAlign: 'justify',
   },
   contributors: {
@@ -52,8 +51,8 @@ export default theme => ({
   text: {
     display: 'block',
     width: '100%',
-    // textAlign: 'center',
-    margin: 10,
+    textAlign: 'center',
+    marginBottom: 10,
   },
   avatar: {
     display: 'inline-block',
@@ -68,7 +67,8 @@ export default theme => ({
   googlePlayAd: {
     // eslint-disable-next-line no-magic-numbers
     width: width + 40,
-    margin: '-10px -15px',
+    margin: -20,
+    marginBottom: -10,
     display: 'block',
   },
 });

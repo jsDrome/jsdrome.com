@@ -32,13 +32,13 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <Typography variant="body1" className={classes.text}>Take the Z-Axis creative thinking test</Typography>
+      <Typography variant="body2" className={classes.text}>Take the Z-Axis creative thinking test</Typography>
       <a href="https://z-axis.web.app">
         <img className={classes.googlePlayAd} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
       </a>
 
       <div className={classes.contributorsSection}>
-        <Typography variant="body1" className={classes.text}>Mentors & Contributors</Typography>
+        <Typography variant="body2" className={classes.text}>Mentors & Contributors</Typography>
         <div className={classes.contributors}>
           <Avatar className={classes.avatar} alt="Sreeram Padmanabhan" src="https://avatars0.githubusercontent.com/u/8502281?s=460&v=4" />
           <Avatar className={classes.avatar} alt="Pooja Singh" src="https://avatars2.githubusercontent.com/u/55156772?s=460&v=4" />
@@ -77,7 +77,7 @@ class RightSidebarContent extends Component {
         adSlot="3393854253"
         layoutKey="-ih+5+1+2-3"/>
 
-      <Typography variant="body1" className={classes.text}>Did we help you? Support our efforts</Typography>
+      <Typography variant="body2" className={classes.text}>Did we help you? Support our efforts</Typography>
 
       <div className={classes.payButton}>
         <PayButton text={'Sponsor'} />

@@ -117,12 +117,18 @@ workflows:
   version: 2
   build_and_activate:
     jobs:
-      - stage
       - unit_test
+      - stage:
+          filters:
+            branches:
+              only: master
       - performance:
           requires:
             - stage
             - unit_test
+          filters:
+            branches:
+              only: master
       - activate:
           requires:
             - stage

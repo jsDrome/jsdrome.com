@@ -89,6 +89,9 @@ jobs:
       - run:
           name: Puppeteer Coverage
           command: npm run test:puppeteer:coverage
+      - run:
+          name: Percy Snapshost
+          command: npm run test:percy:snapshot
 
   activate:
     docker:

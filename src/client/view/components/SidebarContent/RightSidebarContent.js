@@ -32,9 +32,9 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <Typography variant="body2" className={classes.text}>Take the Z-Axis creative thinking test</Typography>
-      <a href="https://z-axis.web.app">
-        <img className={classes.googlePlayAd} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
+      <Typography variant="body2" className={classes.text}>Take out Z-Axis creative thinking test</Typography>
+      <a href="https://z-axis.web.app" className={classes.googlePlayAd}>
+        <img className={classes.googlePlayAdImg} src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png" />
       </a>
 
       <div className={classes.contributorsSection}>
@@ -71,11 +71,13 @@ class RightSidebarContent extends Component {
         </div>
       </div>
 
-      <Adsense
-        adFormat="fluid"
-        adClient="ca-pub-6831276331714408"
-        adSlot="3393854253"
-        layoutKey="-ih+5+1+2-3"/>
+      <div className={classes.adsense}>
+        <Adsense
+          adFormat="fluid"
+          adClient="ca-pub-6831276331714408"
+          adSlot="3393854253"
+          layoutKey="-ih+5+1+2-3" />
+      </div>
 
       <Typography variant="body2" className={classes.text}>Did we help you? Support our efforts</Typography>
 

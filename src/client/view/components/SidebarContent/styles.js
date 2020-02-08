@@ -27,18 +27,19 @@ export default theme => ({
   fbPagePlugin: {
     width,
     height: 70,
-    margin: 0,
+    margin: 'auto',
     marginBottom: 5,
     display: 'block',
   },
   pagePlugins: {
     display: 'flex',
-    alignItems: 'flex-start',
+    // alignItems: 'flex-start',
+    justifyContent: 'center',
     marginBottom: 20,
   },
   contributorsSection: {
     margin: '10px 0 20px',
-    textAlign: 'justify',
+    textAlign: 'center',
   },
   contributors: {
     [theme.breakpoints.up('md')]: {
@@ -65,10 +66,19 @@ export default theme => ({
     marginBottom: 20,
   },
   googlePlayAd: {
+    display: 'block',
+    margin: 'auto',
+    marginBottom: -10,
     // eslint-disable-next-line no-magic-numbers
     width: width + 40,
-    margin: -20,
-    marginBottom: -10,
-    display: 'block',
+  },
+  googlePlayAdImg: {
+    // eslint-disable-next-line no-magic-numbers
+    width: width + 40,
+    marginTop: -20,
+    textAlign: 'center',
+  },
+  adsense: {
+    marginBottom: 20,
   },
 });
